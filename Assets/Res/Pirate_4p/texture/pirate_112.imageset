@@ -1,0 +1,13 @@
+<Imagesets>
+    <Imageset Name="pirate_112" NativeHorzRes="1024" NativeVertRes="1024">
+        <Image Name="blue4P_miss0053" XPos="0" YPos="0" Width="271" Height="282" OffX="0" OffY="52" SrcW="368" SrcH="375" AlphaType="0" />
+        <Image Name="blue4P_miss0047" XPos="0" YPos="283" Width="271" Height="282" OffX="0" OffY="52" SrcW="368" SrcH="375" AlphaType="0" />
+        <Image Name="blue4P_miss0046" XPos="0" YPos="566" Width="271" Height="282" OffX="0" OffY="52" SrcW="368" SrcH="375" AlphaType="0" />
+        <Image Name="blue4P_miss0045" XPos="272" YPos="0" Width="271" Height="282" OffX="0" OffY="52" SrcW="368" SrcH="375" AlphaType="0" />
+        <Image Name="blue4P_miss0044" XPos="544" YPos="0" Width="271" Height="282" OffX="0" OffY="52" SrcW="368" SrcH="375" AlphaType="0" />
+        <Image Name="blue4P_miss0037" XPos="272" YPos="283" Width="271" Height="282" OffX="0" OffY="52" SrcW="368" SrcH="375" AlphaType="0" />
+        <Image Name="blue4P_miss0036" XPos="272" YPos="566" Width="271" Height="282" OffX="0" OffY="52" SrcW="368" SrcH="375" AlphaType="0" />
+        <Image Name="blue4P_miss0035" XPos="544" YPos="283" Width="271" Height="282" OffX="0" OffY="52" SrcW="368" SrcH="375" AlphaType="0" />
+        <Image Name="blue4P_miss0034" XPos="544" YPos="566" Width="271" Height="282" OffX="0" OffY="52" SrcW="368" SrcH="375" AlphaType="0" />
+    </Imageset>
+</Imagesets>

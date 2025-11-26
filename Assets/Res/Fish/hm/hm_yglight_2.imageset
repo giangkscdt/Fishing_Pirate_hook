@@ -1,0 +1,24 @@
+<Imagesets>
+    <Imageset Name="hm_yglight_2" NativeHorzRes="1024" NativeVertRes="1024">
+        <Image Name="hm_lg0024" XPos="0" YPos="0" Width="258" Height="246" OffX="112" OffY="38" SrcW="500" SrcH="375" AlphaType="0" />
+        <Image Name="hm_lg0071" XPos="259" YPos="0" Width="213" Height="246" OffX="153" OffY="44" SrcW="500" SrcH="375" AlphaType="0" />
+        <Image Name="hm_lg0070" XPos="473" YPos="0" Width="211" Height="246" OffX="154" OffY="44" SrcW="500" SrcH="375" AlphaType="0" />
+        <Image Name="hm_lg0050" XPos="685" YPos="0" Width="211" Height="246" OffX="154" OffY="44" SrcW="500" SrcH="375" AlphaType="0" />
+        <Image Name="hm_lg0018" XPos="0" YPos="247" Width="202" Height="246" OffX="132" OffY="56" SrcW="500" SrcH="375" AlphaType="0" />
+        <Image Name="hm_lg0033" XPos="0" YPos="494" Width="199" Height="246" OffX="148" OffY="40" SrcW="500" SrcH="375" AlphaType="0" />
+        <Image Name="hm_lg0030" XPos="0" YPos="741" Width="199" Height="244" OffX="143" OffY="38" SrcW="500" SrcH="375" AlphaType="0" />
+        <Image Name="hm_lg0032" XPos="203" YPos="247" Width="199" Height="243" OffX="147" OffY="39" SrcW="500" SrcH="375" AlphaType="0" />
+        <Image Name="hm_lg0031" XPos="203" YPos="491" Width="198" Height="243" OffX="146" OffY="38" SrcW="500" SrcH="375" AlphaType="0" />
+        <Image Name="hm_lg0023" XPos="403" YPos="247" Width="261" Height="234" OffX="108" OffY="41" SrcW="500" SrcH="375" AlphaType="0" />
+        <Image Name="hm_lg0022" XPos="665" YPos="247" Width="262" Height="229" OffX="105" OffY="43" SrcW="500" SrcH="375" AlphaType="0" />
+        <Image Name="hm_lg0021" XPos="403" YPos="482" Width="262" Height="225" OffX="103" OffY="45" SrcW="500" SrcH="375" AlphaType="0" />
+        <Image Name="hm_lg0019" XPos="666" YPos="482" Width="244" Height="225" OffX="113" OffY="51" SrcW="500" SrcH="375" AlphaType="0" />
+        <Image Name="hm_lg0020" XPos="403" YPos="708" Width="258" Height="220" OffX="105" OffY="47" SrcW="500" SrcH="375" AlphaType="0" />
+        <Image Name="hm_lg0014" XPos="203" YPos="735" Width="138" Height="188" OffX="223" OffY="83" SrcW="500" SrcH="375" AlphaType="0" />
+        <Image Name="hm_lg0006" XPos="911" YPos="482" Width="110" Height="180" OffX="220" OffY="93" SrcW="500" SrcH="375" AlphaType="0" />
+        <Image Name="hm_lg0013" XPos="662" YPos="708" Width="130" Height="179" OffX="235" OffY="89" SrcW="500" SrcH="375" AlphaType="0" />
+        <Image Name="hm_lg0012" XPos="897" YPos="0" Width="123" Height="174" OffX="241" OffY="93" SrcW="500" SrcH="375" AlphaType="0" />
+        <Image Name="hm_lg0011" XPos="793" YPos="708" Width="117" Height="171" OffX="242" OffY="94" SrcW="500" SrcH="375" AlphaType="0" />
+        <Image Name="hm_lg0007" XPos="911" YPos="708" Width="107" Height="171" OffX="228" OffY="95" SrcW="500" SrcH="375" AlphaType="0" />
+    </Imageset>
+</Imagesets>

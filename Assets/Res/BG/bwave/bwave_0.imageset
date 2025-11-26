@@ -1,0 +1,11 @@
+<Imagesets>
+    <Imageset Name="bwave_0" NativeHorzRes="2048" NativeVertRes="2048">
+        <Image Name="wave0005" XPos="0" YPos="0" Width="1920" Height="263" OffX="0" OffY="229" SrcW="1920" SrcH="1080" AlphaType="0" />
+        <Image Name="wave0003" XPos="0" YPos="264" Width="1920" Height="263" OffX="0" OffY="229" SrcW="1920" SrcH="1080" AlphaType="0" />
+        <Image Name="wave0002" XPos="0" YPos="528" Width="1920" Height="263" OffX="0" OffY="229" SrcW="1920" SrcH="1080" AlphaType="0" />
+        <Image Name="wave0006" XPos="0" YPos="792" Width="1920" Height="262" OffX="0" OffY="229" SrcW="1920" SrcH="1080" AlphaType="0" />
+        <Image Name="wave0004" XPos="0" YPos="1055" Width="1920" Height="262" OffX="0" OffY="230" SrcW="1920" SrcH="1080" AlphaType="0" />
+        <Image Name="wave0000" XPos="0" YPos="1318" Width="1920" Height="262" OffX="0" OffY="229" SrcW="1920" SrcH="1080" AlphaType="0" />
+        <Image Name="wave0029" XPos="0" YPos="1581" Width="1920" Height="261" OffX="0" OffY="229" SrcW="1920" SrcH="1080" AlphaType="0" />
+    </Imageset>
+</Imagesets>

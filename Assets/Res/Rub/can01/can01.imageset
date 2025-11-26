@@ -1,0 +1,34 @@
+<Imagesets>
+    <Imageset Name="can01" NativeHorzRes="1024" NativeVertRes="512">
+        <Image Name="can010015" XPos="0" YPos="0" Width="89" Height="146" OffX="147" OffY="38" SrcW="380" SrcH="285" AlphaType="0" />
+        <Image Name="can010014" XPos="0" YPos="147" Width="87" Height="146" OffX="148" OffY="38" SrcW="380" SrcH="285" AlphaType="0" />
+        <Image Name="can010013" XPos="0" YPos="294" Width="84" Height="146" OffX="149" OffY="39" SrcW="380" SrcH="285" AlphaType="0" />
+        <Image Name="can010012" XPos="90" YPos="0" Width="82" Height="146" OffX="150" OffY="40" SrcW="380" SrcH="285" AlphaType="0" />
+        <Image Name="can010011" XPos="90" YPos="147" Width="80" Height="146" OffX="151" OffY="41" SrcW="380" SrcH="285" AlphaType="0" />
+        <Image Name="can010010" XPos="90" YPos="294" Width="76" Height="146" OffX="153" OffY="42" SrcW="380" SrcH="285" AlphaType="0" />
+        <Image Name="can010009" XPos="173" YPos="0" Width="74" Height="146" OffX="154" OffY="43" SrcW="380" SrcH="285" AlphaType="0" />
+        <Image Name="can010016" XPos="248" YPos="0" Width="88" Height="145" OffX="147" OffY="38" SrcW="380" SrcH="285" AlphaType="0" />
+        <Image Name="can010018" XPos="337" YPos="0" Width="83" Height="145" OffX="149" OffY="39" SrcW="380" SrcH="285" AlphaType="0" />
+        <Image Name="can010008" XPos="421" YPos="0" Width="74" Height="145" OffX="153" OffY="45" SrcW="380" SrcH="285" AlphaType="0" />
+        <Image Name="can010007" XPos="496" YPos="0" Width="74" Height="145" OffX="153" OffY="46" SrcW="380" SrcH="285" AlphaType="0" />
+        <Image Name="can010017" XPos="571" YPos="0" Width="85" Height="144" OffX="148" OffY="39" SrcW="380" SrcH="285" AlphaType="0" />
+        <Image Name="can010019" XPos="657" YPos="0" Width="79" Height="144" OffX="151" OffY="40" SrcW="380" SrcH="285" AlphaType="0" />
+        <Image Name="can010020" XPos="737" YPos="0" Width="77" Height="144" OffX="152" OffY="42" SrcW="380" SrcH="285" AlphaType="0" />
+        <Image Name="can010024" XPos="815" YPos="0" Width="74" Height="144" OffX="154" OffY="50" SrcW="380" SrcH="285" AlphaType="0" />
+        <Image Name="can010023" XPos="890" YPos="0" Width="74" Height="144" OffX="153" OffY="48" SrcW="380" SrcH="285" AlphaType="0" />
+        <Image Name="can010022" XPos="173" YPos="147" Width="74" Height="144" OffX="153" OffY="46" SrcW="380" SrcH="285" AlphaType="0" />
+        <Image Name="can010006" XPos="173" YPos="292" Width="73" Height="144" OffX="154" OffY="48" SrcW="380" SrcH="285" AlphaType="0" />
+        <Image Name="can010000" XPos="248" YPos="147" Width="87" Height="143" OffX="147" OffY="56" SrcW="380" SrcH="285" AlphaType="0" />
+        <Image Name="can010029" XPos="248" YPos="291" Width="86" Height="143" OffX="148" OffY="56" SrcW="380" SrcH="285" AlphaType="0" />
+        <Image Name="can010028" XPos="336" YPos="147" Width="84" Height="143" OffX="149" OffY="56" SrcW="380" SrcH="285" AlphaType="0" />
+        <Image Name="can010027" XPos="336" YPos="291" Width="82" Height="143" OffX="150" OffY="55" SrcW="380" SrcH="285" AlphaType="0" />
+        <Image Name="can010026" XPos="421" YPos="147" Width="78" Height="143" OffX="152" OffY="54" SrcW="380" SrcH="285" AlphaType="0" />
+        <Image Name="can010025" XPos="421" YPos="291" Width="76" Height="143" OffX="153" OffY="52" SrcW="380" SrcH="285" AlphaType="0" />
+        <Image Name="can010005" XPos="500" YPos="147" Width="75" Height="143" OffX="153" OffY="50" SrcW="380" SrcH="285" AlphaType="0" />
+        <Image Name="can010021" XPos="500" YPos="291" Width="74" Height="143" OffX="154" OffY="44" SrcW="380" SrcH="285" AlphaType="0" />
+        <Image Name="can010001" XPos="576" YPos="147" Width="86" Height="142" OffX="148" OffY="56" SrcW="380" SrcH="285" AlphaType="0" />
+        <Image Name="can010002" XPos="576" YPos="290" Width="85" Height="142" OffX="148" OffY="55" SrcW="380" SrcH="285" AlphaType="0" />
+        <Image Name="can010003" XPos="663" YPos="147" Width="81" Height="142" OffX="150" OffY="53" SrcW="380" SrcH="285" AlphaType="0" />
+        <Image Name="can010004" XPos="663" YPos="290" Width="79" Height="142" OffX="151" OffY="52" SrcW="380" SrcH="285" AlphaType="0" />
+    </Imageset>
+</Imagesets>

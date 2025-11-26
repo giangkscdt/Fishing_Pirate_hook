@@ -1,0 +1,39 @@
+Font fontEnglish
+{
+ filename = "Res/font/font1.fnt"
+ zorder = 0.3f
+ color = FFFFFFFF
+ resgroup = 1
+}
+
+Font fontFish
+{
+ filename = "Res/font/font1.fnt"
+ zorder = 0.3f
+ color = FFFFFFFF
+ resgroup = 1
+}
+
+Font fontCmpDjs
+{
+ filename = "Res/font/font2.fnt"
+ zorder = 0.3f
+ color = FFFFFFFF
+ resgroup = 1
+}
+
+Font fontLeftpt
+{
+ filename = "Res/font/font3.fnt"
+ zorder = 0.3f
+ color = FFFFFFFF
+ resgroup = 1
+}
+
+Font fontResault
+{
+ filename = "Res/font/font3.fnt"
+ zorder = 0.3f
+ color = FFFFFFFF
+ resgroup = 1
+}

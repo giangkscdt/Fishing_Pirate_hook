@@ -1,0 +1,5 @@
+<Imagesets>
+    <Imageset Name="bomus1000_1" NativeHorzRes="512" NativeVertRes="256">
+        <Image Name="bonus_01" XPos="0" YPos="0" Width="323" Height="248" OffX="32" OffY="33" SrcW="380" SrcH="317" AlphaType="0" />
+    </Imageset>
+</Imagesets>

@@ -1,0 +1,36 @@
+<Imagesets>
+    <Imageset Name="fork_yglight_1" NativeHorzRes="1024" NativeVertRes="1024">
+        <Image Name="fork_fg0041" XPos="0" YPos="0" Width="188" Height="212" OffX="101" OffY="33" SrcW="380" SrcH="285" AlphaType="0" />
+        <Image Name="fork_fg0031" XPos="0" YPos="213" Width="188" Height="212" OffX="100" OffY="33" SrcW="380" SrcH="285" AlphaType="0" />
+        <Image Name="fork_fg0057" XPos="0" YPos="426" Width="134" Height="210" OffX="128" OffY="32" SrcW="380" SrcH="285" AlphaType="0" />
+        <Image Name="fork_fg0027" XPos="0" YPos="637" Width="133" Height="208" OffX="128" OffY="33" SrcW="380" SrcH="285" AlphaType="0" />
+        <Image Name="fork_fg0045" XPos="189" YPos="0" Width="211" Height="207" OffX="84" OffY="39" SrcW="380" SrcH="285" AlphaType="0" />
+        <Image Name="fork_fg0042" XPos="401" YPos="0" Width="202" Height="207" OffX="93" OffY="36" SrcW="380" SrcH="285" AlphaType="0" />
+        <Image Name="fork_fg0030" XPos="604" YPos="0" Width="183" Height="207" OffX="103" OffY="35" SrcW="380" SrcH="285" AlphaType="0" />
+        <Image Name="fork_fg0019" XPos="788" YPos="0" Width="97" Height="207" OffX="142" OffY="44" SrcW="380" SrcH="285" AlphaType="0" />
+        <Image Name="fork_fg0058" XPos="189" YPos="208" Width="153" Height="206" OffX="119" OffY="34" SrcW="380" SrcH="285" AlphaType="0" />
+        <Image Name="fork_fg0059" XPos="343" YPos="208" Width="171" Height="205" OffX="110" OffY="35" SrcW="380" SrcH="285" AlphaType="0" />
+        <Image Name="fork_fg0029" XPos="515" YPos="208" Width="171" Height="205" OffX="110" OffY="35" SrcW="380" SrcH="285" AlphaType="0" />
+        <Image Name="fork_fg0028" XPos="687" YPos="208" Width="153" Height="205" OffX="119" OffY="35" SrcW="380" SrcH="285" AlphaType="0" />
+        <Image Name="fork_fg0044" XPos="189" YPos="415" Width="215" Height="204" OffX="84" OffY="39" SrcW="380" SrcH="285" AlphaType="0" />
+        <Image Name="fork_fg0043" XPos="189" YPos="620" Width="212" Height="204" OffX="87" OffY="38" SrcW="380" SrcH="285" AlphaType="0" />
+        <Image Name="fork_fg0018" XPos="886" YPos="0" Width="117" Height="194" OffX="131" OffY="50" SrcW="380" SrcH="285" AlphaType="0" />
+        <Image Name="fork_fg0017" XPos="841" YPos="208" Width="137" Height="181" OffX="120" OffY="55" SrcW="380" SrcH="285" AlphaType="0" />
+        <Image Name="fork_fg0016" XPos="189" YPos="825" Width="151" Height="166" OffX="113" OffY="61" SrcW="380" SrcH="285" AlphaType="0" />
+        <Image Name="fork_fg0015" XPos="405" YPos="415" Width="160" Height="157" OffX="110" OffY="64" SrcW="380" SrcH="285" AlphaType="0" />
+        <Image Name="fork_fg0005" XPos="0" YPos="846" Width="65" Height="150" OffX="159" OffY="67" SrcW="380" SrcH="285" AlphaType="0" />
+        <Image Name="fork_fg0007" XPos="341" YPos="825" Width="52" Height="150" OffX="166" OffY="66" SrcW="380" SrcH="285" AlphaType="0" />
+        <Image Name="fork_fg0014" XPos="566" YPos="415" Width="159" Height="148" OffX="112" OffY="67" SrcW="380" SrcH="285" AlphaType="0" />
+        <Image Name="fork_fg0008" XPos="66" YPos="846" Width="58" Height="147" OffX="164" OffY="67" SrcW="380" SrcH="285" AlphaType="0" />
+        <Image Name="fork_fg0009" XPos="726" YPos="415" Width="76" Height="146" OffX="156" OffY="66" SrcW="380" SrcH="285" AlphaType="0" />
+        <Image Name="fork_fg0004" XPos="803" YPos="415" Width="78" Height="145" OffX="153" OffY="70" SrcW="380" SrcH="285" AlphaType="0" />
+        <Image Name="fork_fg0010" XPos="882" YPos="415" Width="95" Height="143" OffX="147" OffY="67" SrcW="380" SrcH="285" AlphaType="0" />
+        <Image Name="fork_fg0013" XPos="405" YPos="573" Width="151" Height="142" OffX="118" OffY="69" SrcW="380" SrcH="285" AlphaType="0" />
+        <Image Name="fork_fg0011" XPos="405" YPos="716" Width="116" Height="141" OffX="137" OffY="68" SrcW="380" SrcH="285" AlphaType="0" />
+        <Image Name="fork_fg0012" XPos="405" YPos="858" Width="135" Height="140" OffX="127" OffY="69" SrcW="380" SrcH="285" AlphaType="0" />
+        <Image Name="fork_fg0003" XPos="557" YPos="573" Width="90" Height="138" OffX="147" OffY="73" SrcW="380" SrcH="285" AlphaType="0" />
+        <Image Name="fork_fg0002" XPos="648" YPos="573" Width="98" Height="131" OffX="144" OffY="75" SrcW="380" SrcH="285" AlphaType="0" />
+        <Image Name="fork_fg0001" XPos="747" YPos="573" Width="102" Height="125" OffX="143" OffY="77" SrcW="380" SrcH="285" AlphaType="0" />
+        <Image Name="fork_fg0000" XPos="850" YPos="573" Width="96" Height="119" OffX="147" OffY="79" SrcW="380" SrcH="285" AlphaType="0" />
+    </Imageset>
+</Imagesets>

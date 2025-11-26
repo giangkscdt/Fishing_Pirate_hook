@@ -1,0 +1,18 @@
+<Imagesets>
+    <Imageset Name="zy_yglight_5" NativeHorzRes="1024" NativeVertRes="1024">
+        <Image Name="zy_lg0079" XPos="0" YPos="0" Width="253" Height="231" OffX="114" OffY="68" SrcW="480" SrcH="361" AlphaType="0" />
+        <Image Name="zy_lg0099" XPos="254" YPos="0" Width="290" Height="230" OffX="100" OffY="70" SrcW="480" SrcH="361" AlphaType="0" />
+        <Image Name="zy_lg0054" XPos="545" YPos="0" Width="254" Height="230" OffX="114" OffY="69" SrcW="480" SrcH="361" AlphaType="0" />
+        <Image Name="zy_lg0047" XPos="0" YPos="232" Width="294" Height="225" OffX="97" OffY="70" SrcW="480" SrcH="361" AlphaType="0" />
+        <Image Name="zy_lg0078" XPos="295" YPos="232" Width="268" Height="225" OffX="106" OffY="70" SrcW="480" SrcH="361" AlphaType="0" />
+        <Image Name="zy_lg0048" XPos="564" YPos="232" Width="295" Height="224" OffX="96" OffY="70" SrcW="480" SrcH="361" AlphaType="0" />
+        <Image Name="zy_lg0049" XPos="0" YPos="458" Width="296" Height="222" OffX="96" OffY="71" SrcW="480" SrcH="361" AlphaType="0" />
+        <Image Name="zy_lg0075" XPos="297" YPos="458" Width="297" Height="221" OffX="95" OffY="71" SrcW="480" SrcH="361" AlphaType="0" />
+        <Image Name="zy_lg0050" XPos="595" YPos="458" Width="297" Height="221" OffX="95" OffY="71" SrcW="480" SrcH="361" AlphaType="0" />
+        <Image Name="zy_lg0052" XPos="0" YPos="681" Width="292" Height="220" OffX="96" OffY="71" SrcW="480" SrcH="361" AlphaType="0" />
+        <Image Name="zy_lg0051" XPos="293" YPos="681" Width="298" Height="219" OffX="94" OffY="71" SrcW="480" SrcH="361" AlphaType="0" />
+        <Image Name="zy_lg0077" XPos="592" YPos="681" Width="289" Height="218" OffX="96" OffY="71" SrcW="480" SrcH="361" AlphaType="0" />
+        <Image Name="zy_lg0003" XPos="800" YPos="0" Width="215" Height="119" OffX="144" OffY="121" SrcW="480" SrcH="361" AlphaType="0" />
+        <Image Name="zy_lg0004" XPos="0" YPos="902" Width="211" Height="119" OffX="151" OffY="123" SrcW="480" SrcH="361" AlphaType="0" />
+    </Imageset>
+</Imagesets>

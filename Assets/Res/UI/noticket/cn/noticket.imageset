@@ -1,0 +1,6 @@
+<Imagesets>
+    <Imageset Name="noticket" NativeHorzRes="256" NativeVertRes="512">
+        <Image Name="out of ticket" XPos="0" YPos="0" Width="253" Height="261" OffX="1" OffY="1" SrcW="254" SrcH="263" AlphaType="0" />
+        <Image Name="excalmatory mark" XPos="0" YPos="262" Width="44" Height="106" OffX="105" OffY="82" SrcW="254" SrcH="263" AlphaType="0" />
+    </Imageset>
+</Imagesets>

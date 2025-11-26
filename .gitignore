@@ -1,0 +1,111 @@
+# =========================================
+# Unity generated folders
+# =========================================
+Library/
+Temp/
+Obj/
+Logs/
+UserSettings/
+MemoryCaptures/
+
+# Crash reports
+*.stacktrace
+
+# Build folders
+Build/
+Builds/
+bin/
+obj/
+
+# Cache
+/.vs/
+.vscode/
+.vsconfig
+*.csproj
+*.sln
+*.user
+*.unityproj
+*.pidb
+*.booproj
+*.svd
+*.pdb
+
+# Rider/JetBrains
+.idea/
+*.dotSettings
+
+# =========================================
+# Unity Asset Store + Cache
+# =========================================
+UnityPackageManager/
+Assets/AssetStoreTools*
+
+# =========================================
+# Auto-generated files
+# =========================================
+/ExportedObj/
+*.apk
+*.aab
+*.xcodeproj
+*.xcworkspace
+
+# iOS build
+Pods/
+DerivedData/
+*.mode1v3
+*.mode2v3
+*.pbxuser
+*.xcuserstate
+*.xcuserdatad
+*.xccheckout
+
+# Android Gradle
+.gradle/
+**/gradle-wrapper.jar
+**/gradle/
+**/local.properties
+
+# =========================================
+# Logs
+# =========================================
+*.log
+
+# =========================================
+# TextMeshPro auto-generated folder
+# =========================================
+Assets/TextMesh Pro/*
+!Assets/TextMesh Pro/Resources/
+
+# =========================================
+# Unity Collaborate
+# =========================================
+.uvprojx
+.uvoptx
+
+# =========================================
+# Addressables / AssetBundles
+# =========================================
+/ServerData/
+*.bundle
+*.unityweb
+
+# Cache files
+*.mdb
+*.bak
+*.tmp
+*.temp
+*.copy
+
+# =========================================
+# OS specific
+# =========================================
+# Windows
+Thumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+
+# macOS
+.DS_Store
+._*
+.Spotlight-V100
+.Trashes

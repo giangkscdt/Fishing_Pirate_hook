@@ -1,0 +1,18 @@
+<Imagesets>
+    <Imageset Name="pot_yglight_1" NativeHorzRes="1024" NativeVertRes="1024">
+        <Image Name="pot_fg0045" XPos="0" YPos="0" Width="190" Height="262" OffX="102" OffY="19" SrcW="380" SrcH="285" AlphaType="0" />
+        <Image Name="pot_fg0047" XPos="0" YPos="263" Width="187" Height="262" OffX="95" OffY="18" SrcW="380" SrcH="285" AlphaType="0" />
+        <Image Name="pot_fg0044" XPos="0" YPos="526" Width="187" Height="262" OffX="108" OffY="19" SrcW="380" SrcH="285" AlphaType="0" />
+        <Image Name="pot_fg0043" XPos="191" YPos="0" Width="181" Height="262" OffX="114" OffY="19" SrcW="380" SrcH="285" AlphaType="0" />
+        <Image Name="pot_fg0046" XPos="373" YPos="0" Width="189" Height="261" OffX="98" OffY="19" SrcW="380" SrcH="285" AlphaType="0" />
+        <Image Name="pot_fg0024" XPos="563" YPos="0" Width="188" Height="261" OffX="96" OffY="14" SrcW="380" SrcH="285" AlphaType="0" />
+        <Image Name="pot_fg0023" XPos="752" YPos="0" Width="189" Height="254" OffX="97" OffY="18" SrcW="380" SrcH="285" AlphaType="0" />
+        <Image Name="pot_fg0022" XPos="191" YPos="263" Width="186" Height="247" OffX="100" OffY="22" SrcW="380" SrcH="285" AlphaType="0" />
+        <Image Name="pot_fg0021" XPos="191" YPos="511" Width="180" Height="244" OffX="105" OffY="24" SrcW="380" SrcH="285" AlphaType="0" />
+        <Image Name="pot_fg0020" XPos="191" YPos="756" Width="169" Height="237" OffX="113" OffY="28" SrcW="380" SrcH="285" AlphaType="0" />
+        <Image Name="pot_fg0019" XPos="0" YPos="789" Width="165" Height="231" OffX="112" OffY="32" SrcW="380" SrcH="285" AlphaType="0" />
+        <Image Name="pot_fg0018" XPos="378" YPos="263" Width="157" Height="225" OffX="113" OffY="36" SrcW="380" SrcH="285" AlphaType="0" />
+        <Image Name="pot_fg0007" XPos="378" YPos="489" Width="118" Height="184" OffX="130" OffY="55" SrcW="380" SrcH="285" AlphaType="0" />
+        <Image Name="pot_fg0008" XPos="378" YPos="674" Width="118" Height="184" OffX="129" OffY="56" SrcW="380" SrcH="285" AlphaType="0" />
+    </Imageset>
+</Imagesets>

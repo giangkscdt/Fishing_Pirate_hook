@@ -1,0 +1,19 @@
+<Imagesets>
+    <Imageset Name="hat_yglight_1" NativeHorzRes="1024" NativeVertRes="1024">
+        <Image Name="hat_fg0053" XPos="0" YPos="0" Width="292" Height="211" OffX="50" OffY="44" SrcW="380" SrcH="285" AlphaType="0" />
+        <Image Name="hat_fg0040" XPos="293" YPos="0" Width="288" Height="206" OffX="35" OffY="37" SrcW="380" SrcH="285" AlphaType="0" />
+        <Image Name="hat_fg0020" XPos="582" YPos="0" Width="266" Height="206" OffX="61" OffY="47" SrcW="380" SrcH="285" AlphaType="0" />
+        <Image Name="hat_fg0021" XPos="0" YPos="212" Width="271" Height="205" OffX="60" OffY="48" SrcW="380" SrcH="285" AlphaType="0" />
+        <Image Name="hat_fg0054" XPos="272" YPos="212" Width="292" Height="204" OffX="49" OffY="47" SrcW="380" SrcH="285" AlphaType="0" />
+        <Image Name="hat_fg0019" XPos="565" YPos="212" Width="262" Height="204" OffX="61" OffY="47" SrcW="380" SrcH="285" AlphaType="0" />
+        <Image Name="hat_fg0022" XPos="0" YPos="418" Width="274" Height="202" OffX="59" OffY="49" SrcW="380" SrcH="285" AlphaType="0" />
+        <Image Name="hat_fg0018" XPos="0" YPos="621" Width="255" Height="201" OffX="62" OffY="48" SrcW="380" SrcH="285" AlphaType="0" />
+        <Image Name="hat_fg0055" XPos="275" YPos="418" Width="293" Height="200" OffX="47" OffY="50" SrcW="380" SrcH="285" AlphaType="0" />
+        <Image Name="hat_fg0058" XPos="569" YPos="418" Width="295" Height="199" OffX="43" OffY="55" SrcW="380" SrcH="285" AlphaType="0" />
+        <Image Name="hat_fg0032" XPos="275" YPos="619" Width="295" Height="199" OffX="43" OffY="53" SrcW="380" SrcH="285" AlphaType="0" />
+        <Image Name="hat_fg0031" XPos="275" YPos="819" Width="295" Height="199" OffX="43" OffY="54" SrcW="380" SrcH="285" AlphaType="0" />
+        <Image Name="hat_fg0059" XPos="571" YPos="619" Width="294" Height="199" OffX="43" OffY="54" SrcW="380" SrcH="285" AlphaType="0" />
+        <Image Name="hat_fg0057" XPos="571" YPos="819" Width="294" Height="199" OffX="44" OffY="54" SrcW="380" SrcH="285" AlphaType="0" />
+        <Image Name="hat_fg0017" XPos="0" YPos="823" Width="249" Height="199" OffX="62" OffY="48" SrcW="380" SrcH="285" AlphaType="0" />
+    </Imageset>
+</Imagesets>

@@ -1,0 +1,24 @@
+<Imagesets>
+    <Imageset Name="zy1_yglight_1" NativeHorzRes="1024" NativeVertRes="1024">
+        <Image Name="zy1_yglight0037" XPos="0" YPos="0" Width="233" Height="182" OffX="46" OffY="32" SrcW="330" SrcH="248" AlphaType="0" />
+        <Image Name="zy1_yglight0076" XPos="234" YPos="0" Width="230" Height="182" OffX="45" OffY="33" SrcW="330" SrcH="248" AlphaType="0" />
+        <Image Name="zy1_yglight0074" XPos="465" YPos="0" Width="230" Height="182" OffX="45" OffY="33" SrcW="330" SrcH="248" AlphaType="0" />
+        <Image Name="zy1_yglight0066" XPos="696" YPos="0" Width="230" Height="182" OffX="45" OffY="33" SrcW="330" SrcH="248" AlphaType="0" />
+        <Image Name="zy1_yglight0064" XPos="0" YPos="183" Width="230" Height="182" OffX="45" OffY="33" SrcW="330" SrcH="248" AlphaType="0" />
+        <Image Name="zy1_yglight0056" XPos="231" YPos="183" Width="230" Height="182" OffX="45" OffY="33" SrcW="330" SrcH="248" AlphaType="0" />
+        <Image Name="zy1_yglight0054" XPos="462" YPos="183" Width="230" Height="182" OffX="45" OffY="33" SrcW="330" SrcH="248" AlphaType="0" />
+        <Image Name="zy1_yglight0080" XPos="693" YPos="183" Width="227" Height="182" OffX="46" OffY="33" SrcW="330" SrcH="248" AlphaType="0" />
+        <Image Name="zy1_yglight0070" XPos="0" YPos="366" Width="227" Height="182" OffX="46" OffY="33" SrcW="330" SrcH="248" AlphaType="0" />
+        <Image Name="zy1_yglight0060" XPos="0" YPos="549" Width="227" Height="182" OffX="46" OffY="33" SrcW="330" SrcH="248" AlphaType="0" />
+        <Image Name="zy1_yglight0050" XPos="0" YPos="732" Width="227" Height="182" OffX="46" OffY="33" SrcW="330" SrcH="248" AlphaType="0" />
+        <Image Name="zy1_yglight0075" XPos="228" YPos="366" Width="224" Height="182" OffX="45" OffY="33" SrcW="330" SrcH="248" AlphaType="0" />
+        <Image Name="zy1_yglight0065" XPos="453" YPos="366" Width="224" Height="182" OffX="45" OffY="33" SrcW="330" SrcH="248" AlphaType="0" />
+        <Image Name="zy1_yglight0055" XPos="678" YPos="366" Width="224" Height="182" OffX="45" OffY="33" SrcW="330" SrcH="248" AlphaType="0" />
+        <Image Name="zy1_yglight0048" XPos="228" YPos="549" Width="241" Height="181" OffX="46" OffY="33" SrcW="330" SrcH="248" AlphaType="0" />
+        <Image Name="zy1_yglight0032" XPos="228" YPos="731" Width="241" Height="181" OffX="46" OffY="33" SrcW="330" SrcH="248" AlphaType="0" />
+        <Image Name="zy1_yglight0042" XPos="470" YPos="549" Width="239" Height="181" OffX="46" OffY="33" SrcW="330" SrcH="248" AlphaType="0" />
+        <Image Name="zy1_yglight0038" XPos="710" YPos="549" Width="239" Height="181" OffX="46" OffY="32" SrcW="330" SrcH="248" AlphaType="0" />
+        <Image Name="zy1_yglight0047" XPos="470" YPos="731" Width="238" Height="181" OffX="46" OffY="33" SrcW="330" SrcH="248" AlphaType="0" />
+        <Image Name="zy1_yglight0033" XPos="709" YPos="731" Width="236" Height="181" OffX="46" OffY="33" SrcW="330" SrcH="248" AlphaType="0" />
+    </Imageset>
+</Imagesets>

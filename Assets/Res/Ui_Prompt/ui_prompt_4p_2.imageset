@@ -1,0 +1,12 @@
+<Imagesets>
+    <Imageset Name="ui_prompt_4p_2" NativeHorzRes="1024" NativeVertRes="512">
+        <Image Name="multi face off0006" XPos="0" YPos="0" Width="209" Height="245" OffX="84" OffY="26" SrcW="380" SrcH="285" AlphaType="0" />
+        <Image Name="multi face off0007" XPos="210" YPos="0" Width="210" Height="245" OffX="83" OffY="26" SrcW="380" SrcH="285" AlphaType="0" />
+        <Image Name="multi face off0008" XPos="421" YPos="0" Width="210" Height="245" OffX="83" OffY="26" SrcW="380" SrcH="285" AlphaType="0" />
+        <Image Name="multi face off0015" XPos="632" YPos="0" Width="209" Height="245" OffX="84" OffY="26" SrcW="380" SrcH="285" AlphaType="0" />
+        <Image Name="multi face off0016" XPos="0" YPos="246" Width="208" Height="245" OffX="84" OffY="26" SrcW="380" SrcH="285" AlphaType="0" />
+        <Image Name="multi face off0017" XPos="209" YPos="246" Width="207" Height="245" OffX="85" OffY="26" SrcW="380" SrcH="285" AlphaType="0" />
+        <Image Name="multi face off0018" XPos="417" YPos="246" Width="207" Height="245" OffX="85" OffY="26" SrcW="380" SrcH="285" AlphaType="0" />
+        <Image Name="multi face off0019" XPos="625" YPos="246" Width="207" Height="245" OffX="85" OffY="26" SrcW="380" SrcH="285" AlphaType="0" />
+    </Imageset>
+</Imagesets>

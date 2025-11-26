@@ -1,0 +1,20 @@
+<Imagesets>
+    <Imageset Name="r_xhd_dj2_3" NativeHorzRes="1024" NativeVertRes="1024">
+        <Image Name="r_xhd_dj20037" XPos="0" YPos="0" Width="237" Height="230" OffX="156" OffY="64" SrcW="500" SrcH="375" AlphaType="0" />
+        <Image Name="r_xhd_dj20036" XPos="238" YPos="0" Width="237" Height="230" OffX="156" OffY="64" SrcW="500" SrcH="375" AlphaType="0" />
+        <Image Name="r_xhd_dj20035" XPos="476" YPos="0" Width="237" Height="230" OffX="156" OffY="64" SrcW="500" SrcH="375" AlphaType="0" />
+        <Image Name="r_xhd_dj20034" XPos="714" YPos="0" Width="237" Height="230" OffX="156" OffY="64" SrcW="500" SrcH="375" AlphaType="0" />
+        <Image Name="r_xhd_dj20027" XPos="0" YPos="231" Width="237" Height="230" OffX="156" OffY="64" SrcW="500" SrcH="375" AlphaType="0" />
+        <Image Name="r_xhd_dj20017" XPos="0" YPos="462" Width="237" Height="230" OffX="156" OffY="64" SrcW="500" SrcH="375" AlphaType="0" />
+        <Image Name="r_xhd_dj20016" XPos="0" YPos="693" Width="237" Height="230" OffX="156" OffY="64" SrcW="500" SrcH="375" AlphaType="0" />
+        <Image Name="r_xhd_dj20015" XPos="238" YPos="231" Width="237" Height="230" OffX="156" OffY="64" SrcW="500" SrcH="375" AlphaType="0" />
+        <Image Name="r_xhd_dj20014" XPos="476" YPos="231" Width="237" Height="230" OffX="156" OffY="64" SrcW="500" SrcH="375" AlphaType="0" />
+        <Image Name="r_xhd_dj20007" XPos="714" YPos="231" Width="237" Height="230" OffX="156" OffY="64" SrcW="500" SrcH="375" AlphaType="0" />
+        <Image Name="r_xhd_dj20053" XPos="238" YPos="462" Width="237" Height="229" OffX="156" OffY="65" SrcW="500" SrcH="375" AlphaType="0" />
+        <Image Name="r_xhd_dj20052" XPos="238" YPos="692" Width="237" Height="229" OffX="156" OffY="65" SrcW="500" SrcH="375" AlphaType="0" />
+        <Image Name="r_xhd_dj20048" XPos="476" YPos="462" Width="237" Height="229" OffX="156" OffY="65" SrcW="500" SrcH="375" AlphaType="0" />
+        <Image Name="r_xhd_dj20033" XPos="714" YPos="462" Width="237" Height="229" OffX="156" OffY="65" SrcW="500" SrcH="375" AlphaType="0" />
+        <Image Name="r_xhd_dj20032" XPos="476" YPos="692" Width="237" Height="229" OffX="156" OffY="65" SrcW="500" SrcH="375" AlphaType="0" />
+        <Image Name="r_xhd_dj20028" XPos="714" YPos="692" Width="237" Height="229" OffX="156" OffY="65" SrcW="500" SrcH="375" AlphaType="0" />
+    </Imageset>
+</Imagesets>

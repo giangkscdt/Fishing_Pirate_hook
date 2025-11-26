@@ -1,0 +1,5 @@
+<Imagesets>
+    <Imageset Name="needmorept" NativeHorzRes="512" NativeVertRes="128">
+        <Image Name="need points" XPos="0" YPos="0" Width="453" Height="69" OffX="4" OffY="2" SrcW="459" SrcH="73" AlphaType="0" />
+    </Imageset>
+</Imagesets>

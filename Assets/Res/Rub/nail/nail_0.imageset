@@ -1,0 +1,14 @@
+<Imagesets>
+    <Imageset Name="nail_0" NativeHorzRes="256" NativeVertRes="256">
+        <Image Name="nail0015" XPos="0" YPos="0" Width="51" Height="91" OffX="141" OffY="97" SrcW="380" SrcH="285" AlphaType="0" />
+        <Image Name="nail0021" XPos="0" YPos="92" Width="49" Height="91" OffX="188" OffY="97" SrcW="380" SrcH="285" AlphaType="0" />
+        <Image Name="nail0024" XPos="52" YPos="0" Width="48" Height="91" OffX="170" OffY="97" SrcW="380" SrcH="285" AlphaType="0" />
+        <Image Name="nail0023" XPos="52" YPos="92" Width="48" Height="91" OffX="178" OffY="97" SrcW="380" SrcH="285" AlphaType="0" />
+        <Image Name="nail0009" XPos="101" YPos="0" Width="48" Height="91" OffX="183" OffY="98" SrcW="380" SrcH="285" AlphaType="0" />
+        <Image Name="nail0022" XPos="101" YPos="92" Width="47" Height="91" OffX="186" OffY="97" SrcW="380" SrcH="285" AlphaType="0" />
+        <Image Name="nail0010" XPos="150" YPos="0" Width="49" Height="90" OffX="177" OffY="99" SrcW="380" SrcH="285" AlphaType="0" />
+        <Image Name="nail0013" XPos="200" YPos="0" Width="48" Height="90" OffX="145" OffY="99" SrcW="380" SrcH="285" AlphaType="0" />
+        <Image Name="nail0011" XPos="150" YPos="91" Width="49" Height="89" OffX="167" OffY="100" SrcW="380" SrcH="285" AlphaType="0" />
+        <Image Name="nail0012" XPos="200" YPos="91" Width="49" Height="89" OffX="155" OffY="100" SrcW="380" SrcH="285" AlphaType="0" />
+    </Imageset>
+</Imagesets>

@@ -1,0 +1,24 @@
+<Imagesets>
+    <Imageset Name="ct_yglight_0" NativeHorzRes="1024" NativeVertRes="1024">
+        <Image Name="ct_lg0044" XPos="0" YPos="0" Width="258" Height="214" OffX="35" OffY="24" SrcW="330" SrcH="248" AlphaType="0" />
+        <Image Name="ct_lg0032" XPos="0" YPos="215" Width="257" Height="215" OffX="35" OffY="24" SrcW="330" SrcH="248" AlphaType="0" />
+        <Image Name="ct_lg0058" XPos="0" YPos="431" Width="257" Height="214" OffX="35" OffY="24" SrcW="330" SrcH="248" AlphaType="0" />
+        <Image Name="ct_lg0028" XPos="0" YPos="646" Width="257" Height="211" OffX="33" OffY="23" SrcW="330" SrcH="248" AlphaType="0" />
+        <Image Name="ct_lg0057" XPos="259" YPos="0" Width="254" Height="215" OffX="35" OffY="23" SrcW="330" SrcH="248" AlphaType="0" />
+        <Image Name="ct_lg0033" XPos="514" YPos="0" Width="254" Height="215" OffX="35" OffY="24" SrcW="330" SrcH="248" AlphaType="0" />
+        <Image Name="ct_lg0043" XPos="769" YPos="0" Width="253" Height="214" OffX="34" OffY="24" SrcW="330" SrcH="248" AlphaType="0" />
+        <Image Name="ct_lg0041" XPos="259" YPos="216" Width="253" Height="214" OffX="34" OffY="24" SrcW="330" SrcH="248" AlphaType="0" />
+        <Image Name="ct_lg0027" XPos="513" YPos="216" Width="253" Height="206" OffX="32" OffY="23" SrcW="330" SrcH="248" AlphaType="0" />
+        <Image Name="ct_lg0053" XPos="259" YPos="431" Width="252" Height="215" OffX="35" OffY="22" SrcW="330" SrcH="248" AlphaType="0" />
+        <Image Name="ct_lg0049" XPos="259" YPos="647" Width="252" Height="215" OffX="35" OffY="24" SrcW="330" SrcH="248" AlphaType="0" />
+        <Image Name="ct_lg0047" XPos="512" YPos="431" Width="252" Height="215" OffX="35" OffY="24" SrcW="330" SrcH="248" AlphaType="0" />
+        <Image Name="ct_lg0037" XPos="765" YPos="431" Width="252" Height="215" OffX="35" OffY="23" SrcW="330" SrcH="248" AlphaType="0" />
+        <Image Name="ct_lg0034" XPos="512" YPos="647" Width="251" Height="215" OffX="35" OffY="24" SrcW="330" SrcH="248" AlphaType="0" />
+        <Image Name="ct_lg0056" XPos="767" YPos="216" Width="251" Height="214" OffX="35" OffY="23" SrcW="330" SrcH="248" AlphaType="0" />
+        <Image Name="ct_lg0035" XPos="764" YPos="647" Width="250" Height="215" OffX="35" OffY="24" SrcW="330" SrcH="248" AlphaType="0" />
+        <Image Name="ct_lg0015" XPos="259" YPos="863" Width="211" Height="117" OffX="78" OffY="69" SrcW="330" SrcH="248" AlphaType="0" />
+        <Image Name="ct_lg0014" XPos="0" YPos="858" Width="205" Height="112" OffX="86" OffY="76" SrcW="330" SrcH="248" AlphaType="0" />
+        <Image Name="ct_lg0013" XPos="512" YPos="863" Width="197" Height="107" OffX="90" OffY="80" SrcW="330" SrcH="248" AlphaType="0" />
+        <Image Name="ct_lg0012" XPos="710" YPos="863" Width="188" Height="101" OffX="93" OffY="83" SrcW="330" SrcH="248" AlphaType="0" />
+    </Imageset>
+</Imagesets>

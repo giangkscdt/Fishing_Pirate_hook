@@ -1,0 +1,19 @@
+<Imagesets>
+    <Imageset Name="jy_yglight_0" NativeHorzRes="1024" NativeVertRes="1024">
+        <Image Name="jy_lg0055" XPos="0" YPos="0" Width="323" Height="198" OffX="85" OffY="96" SrcW="500" SrcH="375" AlphaType="0" />
+        <Image Name="jy_lg0040" XPos="324" YPos="0" Width="323" Height="198" OffX="85" OffY="96" SrcW="500" SrcH="375" AlphaType="0" />
+        <Image Name="jy_lg0056" XPos="648" YPos="0" Width="323" Height="197" OffX="85" OffY="96" SrcW="500" SrcH="375" AlphaType="0" />
+        <Image Name="jy_lg0041" XPos="0" YPos="199" Width="323" Height="197" OffX="85" OffY="96" SrcW="500" SrcH="375" AlphaType="0" />
+        <Image Name="jy_lg0042" XPos="324" YPos="199" Width="323" Height="196" OffX="85" OffY="96" SrcW="500" SrcH="375" AlphaType="0" />
+        <Image Name="jy_lg0054" XPos="648" YPos="199" Width="327" Height="195" OffX="84" OffY="96" SrcW="500" SrcH="375" AlphaType="0" />
+        <Image Name="jy_lg0039" XPos="0" YPos="397" Width="327" Height="195" OffX="84" OffY="96" SrcW="500" SrcH="375" AlphaType="0" />
+        <Image Name="jy_lg0057" XPos="328" YPos="397" Width="323" Height="195" OffX="85" OffY="96" SrcW="500" SrcH="375" AlphaType="0" />
+        <Image Name="jy_lg0043" XPos="652" YPos="397" Width="326" Height="193" OffX="84" OffY="96" SrcW="500" SrcH="375" AlphaType="0" />
+        <Image Name="jy_lg0050" XPos="0" YPos="593" Width="320" Height="193" OffX="87" OffY="95" SrcW="500" SrcH="375" AlphaType="0" />
+        <Image Name="jy_lg0030" XPos="321" YPos="593" Width="327" Height="191" OffX="84" OffY="96" SrcW="500" SrcH="375" AlphaType="0" />
+        <Image Name="jy_lg0058" XPos="649" YPos="593" Width="326" Height="191" OffX="84" OffY="96" SrcW="500" SrcH="375" AlphaType="0" />
+        <Image Name="jy_lg0044" XPos="0" YPos="787" Width="327" Height="189" OffX="84" OffY="96" SrcW="500" SrcH="375" AlphaType="0" />
+        <Image Name="jy_lg0029" XPos="328" YPos="787" Width="327" Height="189" OffX="84" OffY="96" SrcW="500" SrcH="375" AlphaType="0" />
+        <Image Name="jy_lg0059" XPos="656" YPos="787" Width="327" Height="188" OffX="84" OffY="96" SrcW="500" SrcH="375" AlphaType="0" />
+    </Imageset>
+</Imagesets>

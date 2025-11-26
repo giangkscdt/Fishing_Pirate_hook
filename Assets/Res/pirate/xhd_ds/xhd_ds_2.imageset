@@ -1,0 +1,16 @@
+<Imagesets>
+    <Imageset Name="xhd_ds_2" NativeHorzRes="1024" NativeVertRes="1024">
+        <Image Name="xhd_ds0043" XPos="0" YPos="0" Width="220" Height="232" OffX="159" OffY="62" SrcW="500" SrcH="375" AlphaType="0" />
+        <Image Name="xhd_ds0039" XPos="0" YPos="233" Width="220" Height="232" OffX="159" OffY="62" SrcW="500" SrcH="375" AlphaType="0" />
+        <Image Name="xhd_ds0038" XPos="0" YPos="466" Width="220" Height="232" OffX="159" OffY="62" SrcW="500" SrcH="375" AlphaType="0" />
+        <Image Name="xhd_ds0044" XPos="0" YPos="699" Width="218" Height="232" OffX="161" OffY="62" SrcW="500" SrcH="375" AlphaType="0" />
+        <Image Name="xhd_ds0045" XPos="221" YPos="0" Width="216" Height="232" OffX="163" OffY="62" SrcW="500" SrcH="375" AlphaType="0" />
+        <Image Name="xhd_ds0000" XPos="438" YPos="0" Width="232" Height="231" OffX="161" OffY="63" SrcW="500" SrcH="375" AlphaType="0" />
+        <Image Name="xhd_ds0001" XPos="671" YPos="0" Width="231" Height="231" OffX="161" OffY="63" SrcW="500" SrcH="375" AlphaType="0" />
+        <Image Name="xhd_ds0020" XPos="221" YPos="233" Width="224" Height="231" OffX="155" OffY="63" SrcW="500" SrcH="375" AlphaType="0" />
+        <Image Name="xhd_ds0021" XPos="221" YPos="465" Width="224" Height="231" OffX="155" OffY="63" SrcW="500" SrcH="375" AlphaType="0" />
+        <Image Name="xhd_ds0040" XPos="221" YPos="697" Width="219" Height="231" OffX="160" OffY="63" SrcW="500" SrcH="375" AlphaType="0" />
+        <Image Name="xhd_ds0041" XPos="446" YPos="233" Width="221" Height="231" OffX="158" OffY="63" SrcW="500" SrcH="375" AlphaType="0" />
+        <Image Name="xhd_ds0058" XPos="668" YPos="233" Width="230" Height="231" OffX="161" OffY="63" SrcW="500" SrcH="375" AlphaType="0" />
+    </Imageset>
+</Imagesets>

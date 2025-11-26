@@ -1,0 +1,13 @@
+<Imagesets>
+    <Imageset Name="pirate_2" NativeHorzRes="1024" NativeVertRes="1024">
+        <Image Name="blue4P_dj20049" XPos="0" YPos="0" Width="271" Height="284" OffX="0" OffY="50" SrcW="368" SrcH="375" AlphaType="0" />
+        <Image Name="blue4P_dj20030" XPos="0" YPos="285" Width="271" Height="284" OffX="0" OffY="50" SrcW="368" SrcH="375" AlphaType="0" />
+        <Image Name="blue4P_dj20029" XPos="0" YPos="570" Width="271" Height="284" OffX="0" OffY="50" SrcW="368" SrcH="375" AlphaType="0" />
+        <Image Name="blue4P_dj20010" XPos="272" YPos="0" Width="271" Height="284" OffX="0" OffY="50" SrcW="368" SrcH="375" AlphaType="0" />
+        <Image Name="blue4P_dj20009" XPos="544" YPos="0" Width="271" Height="284" OffX="0" OffY="50" SrcW="368" SrcH="375" AlphaType="0" />
+        <Image Name="blue4P_dj0050" XPos="272" YPos="285" Width="271" Height="284" OffX="0" OffY="50" SrcW="368" SrcH="375" AlphaType="0" />
+        <Image Name="blue4P_dj0049" XPos="272" YPos="570" Width="271" Height="284" OffX="0" OffY="50" SrcW="368" SrcH="375" AlphaType="0" />
+        <Image Name="blue4P_dj0030" XPos="544" YPos="285" Width="271" Height="284" OffX="0" OffY="50" SrcW="368" SrcH="375" AlphaType="0" />
+        <Image Name="blue4P_dj0029" XPos="544" YPos="570" Width="271" Height="284" OffX="0" OffY="50" SrcW="368" SrcH="375" AlphaType="0" />
+    </Imageset>
+</Imagesets>

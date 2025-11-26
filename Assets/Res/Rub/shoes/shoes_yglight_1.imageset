@@ -1,0 +1,19 @@
+<Imagesets>
+    <Imageset Name="shoes_yglight_1" NativeHorzRes="1024" NativeVertRes="1024">
+        <Image Name="shoes_fg0027" XPos="0" YPos="0" Width="221" Height="218" OffX="108" OffY="15" SrcW="380" SrcH="285" AlphaType="0" />
+        <Image Name="shoes_fg0026" XPos="222" YPos="0" Width="222" Height="217" OffX="107" OffY="17" SrcW="380" SrcH="285" AlphaType="0" />
+        <Image Name="shoes_fg0025" XPos="445" YPos="0" Width="222" Height="217" OffX="107" OffY="18" SrcW="380" SrcH="285" AlphaType="0" />
+        <Image Name="shoes_fg0024" XPos="668" YPos="0" Width="217" Height="212" OffX="109" OffY="21" SrcW="380" SrcH="285" AlphaType="0" />
+        <Image Name="shoes_fg0023" XPos="0" YPos="219" Width="212" Height="207" OffX="111" OffY="25" SrcW="380" SrcH="285" AlphaType="0" />
+        <Image Name="shoes_fg0022" XPos="0" YPos="427" Width="207" Height="203" OffX="113" OffY="28" SrcW="380" SrcH="285" AlphaType="0" />
+        <Image Name="shoes_fg0021" XPos="0" YPos="631" Width="202" Height="199" OffX="115" OffY="31" SrcW="380" SrcH="285" AlphaType="0" />
+        <Image Name="shoes_fg0020" XPos="213" YPos="219" Width="196" Height="194" OffX="118" OffY="35" SrcW="380" SrcH="285" AlphaType="0" />
+        <Image Name="shoes_fg0019" XPos="0" YPos="831" Width="190" Height="188" OffX="121" OffY="39" SrcW="380" SrcH="285" AlphaType="0" />
+        <Image Name="shoes_fg0018" XPos="410" YPos="219" Width="182" Height="182" OffX="125" OffY="44" SrcW="380" SrcH="285" AlphaType="0" />
+        <Image Name="shoes_fg0017" XPos="593" YPos="219" Width="175" Height="178" OffX="129" OffY="48" SrcW="380" SrcH="285" AlphaType="0" />
+        <Image Name="shoes_fg0016" XPos="769" YPos="219" Width="167" Height="173" OffX="134" OffY="52" SrcW="380" SrcH="285" AlphaType="0" />
+        <Image Name="shoes_fg0015" XPos="213" YPos="414" Width="163" Height="172" OffX="135" OffY="53" SrcW="380" SrcH="285" AlphaType="0" />
+        <Image Name="shoes_fg0014" XPos="213" YPos="587" Width="158" Height="168" OffX="137" OffY="55" SrcW="380" SrcH="285" AlphaType="0" />
+        <Image Name="shoes_fg0009" XPos="886" YPos="0" Width="135" Height="151" OffX="146" OffY="60" SrcW="380" SrcH="285" AlphaType="0" />
+    </Imageset>
+</Imagesets>

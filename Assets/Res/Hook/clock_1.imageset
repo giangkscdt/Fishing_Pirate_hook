@@ -1,0 +1,5 @@
+<Imagesets>
+    <Imageset Name="clock_1" NativeHorzRes="128" NativeVertRes="128">
+        <Image Name="clock" XPos="0" YPos="0" Width="99" Height="106" OffX="40" OffY="37" SrcW="180" SrcH="180" AlphaType="0" />
+    </Imageset>
+</Imagesets>

@@ -1,0 +1,23 @@
+<Imagesets>
+    <Imageset Name="zy_yglight_1" NativeHorzRes="1024" NativeVertRes="1024">
+        <Image Name="zy_lg0029" XPos="0" YPos="0" Width="202" Height="270" OffX="145" OffY="48" SrcW="480" SrcH="361" AlphaType="0" />
+        <Image Name="zy_lg0035" XPos="203" YPos="0" Width="237" Height="269" OffX="134" OffY="55" SrcW="480" SrcH="361" AlphaType="0" />
+        <Image Name="zy_lg0028" XPos="441" YPos="0" Width="199" Height="269" OffX="145" OffY="48" SrcW="480" SrcH="361" AlphaType="0" />
+        <Image Name="zy_lg0025" XPos="641" YPos="0" Width="198" Height="269" OffX="143" OffY="46" SrcW="480" SrcH="361" AlphaType="0" />
+        <Image Name="zy_lg0068" XPos="0" YPos="271" Width="208" Height="268" OffX="144" OffY="56" SrcW="480" SrcH="361" AlphaType="0" />
+        <Image Name="zy_lg0027" XPos="0" YPos="540" Width="198" Height="268" OffX="144" OffY="47" SrcW="480" SrcH="361" AlphaType="0" />
+        <Image Name="zy_lg0026" XPos="209" YPos="271" Width="197" Height="268" OffX="144" OffY="47" SrcW="480" SrcH="361" AlphaType="0" />
+        <Image Name="zy_lg0094" XPos="407" YPos="271" Width="219" Height="267" OffX="140" OffY="60" SrcW="480" SrcH="361" AlphaType="0" />
+        <Image Name="zy_lg0069" XPos="627" YPos="271" Width="219" Height="267" OffX="140" OffY="59" SrcW="480" SrcH="361" AlphaType="0" />
+        <Image Name="zy_lg0085" XPos="209" YPos="540" Width="214" Height="267" OffX="148" OffY="53" SrcW="480" SrcH="361" AlphaType="0" />
+        <Image Name="zy_lg0093" XPos="424" YPos="540" Width="208" Height="267" OffX="144" OffY="58" SrcW="480" SrcH="361" AlphaType="0" />
+        <Image Name="zy_lg0067" XPos="633" YPos="540" Width="197" Height="267" OffX="148" OffY="54" SrcW="480" SrcH="361" AlphaType="0" />
+        <Image Name="zy_lg0090" XPos="831" YPos="540" Width="188" Height="266" OffX="150" OffY="53" SrcW="480" SrcH="361" AlphaType="0" />
+        <Image Name="zy_lg0076" XPos="209" YPos="808" Width="300" Height="214" OffX="92" OffY="71" SrcW="480" SrcH="361" AlphaType="0" />
+        <Image Name="zy_lg0011" XPos="0" YPos="809" Width="183" Height="144" OffX="191" OffY="118" SrcW="480" SrcH="361" AlphaType="0" />
+        <Image Name="zy_lg0000" XPos="510" YPos="808" Width="212" Height="134" OffX="138" OffY="116" SrcW="480" SrcH="361" AlphaType="0" />
+        <Image Name="zy_lg0010" XPos="723" YPos="808" Width="180" Height="133" OffX="194" OffY="124" SrcW="480" SrcH="361" AlphaType="0" />
+        <Image Name="zy_lg0009" XPos="840" YPos="0" Width="177" Height="127" OffX="194" OffY="127" SrcW="480" SrcH="361" AlphaType="0" />
+        <Image Name="zy_lg0008" XPos="840" YPos="128" Width="173" Height="120" OffX="193" OffY="130" SrcW="480" SrcH="361" AlphaType="0" />
+    </Imageset>
+</Imagesets>

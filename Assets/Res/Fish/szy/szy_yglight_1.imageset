@@ -1,0 +1,21 @@
+<Imagesets>
+    <Imageset Name="szy_yglight_1" NativeHorzRes="1024" NativeVertRes="1024">
+        <Image Name="szy_light0057" XPos="0" YPos="0" Width="265" Height="260" OffX="56" OffY="13" SrcW="380" SrcH="285" AlphaType="0" />
+        <Image Name="szy_light0047" XPos="266" YPos="0" Width="265" Height="260" OffX="56" OffY="13" SrcW="380" SrcH="285" AlphaType="0" />
+        <Image Name="szy_light0033" XPos="532" YPos="0" Width="265" Height="260" OffX="56" OffY="13" SrcW="380" SrcH="285" AlphaType="0" />
+        <Image Name="szy_light0046" XPos="0" YPos="261" Width="262" Height="260" OffX="56" OffY="13" SrcW="380" SrcH="285" AlphaType="0" />
+        <Image Name="szy_light0044" XPos="0" YPos="522" Width="262" Height="260" OffX="56" OffY="13" SrcW="380" SrcH="285" AlphaType="0" />
+        <Image Name="szy_light0042" XPos="263" YPos="261" Width="264" Height="259" OffX="56" OffY="11" SrcW="380" SrcH="285" AlphaType="0" />
+        <Image Name="szy_light0052" XPos="528" YPos="261" Width="252" Height="259" OffX="55" OffY="11" SrcW="380" SrcH="285" AlphaType="0" />
+        <Image Name="szy_light0038" XPos="263" YPos="521" Width="252" Height="259" OffX="55" OffY="11" SrcW="380" SrcH="285" AlphaType="0" />
+        <Image Name="szy_light0048" XPos="516" YPos="521" Width="266" Height="258" OffX="56" OffY="12" SrcW="380" SrcH="285" AlphaType="0" />
+        <Image Name="szy_light0022" XPos="781" YPos="261" Width="242" Height="244" OffX="54" OffY="16" SrcW="380" SrcH="285" AlphaType="0" />
+        <Image Name="szy_light0014" XPos="798" YPos="0" Width="200" Height="204" OffX="86" OffY="38" SrcW="380" SrcH="285" AlphaType="0" />
+        <Image Name="szy_light0013" XPos="783" YPos="521" Width="198" Height="199" OffX="94" OffY="40" SrcW="380" SrcH="285" AlphaType="0" />
+        <Image Name="szy_light0012" XPos="0" YPos="783" Width="196" Height="192" OffX="101" OffY="44" SrcW="380" SrcH="285" AlphaType="0" />
+        <Image Name="szy_light0011" XPos="263" YPos="781" Width="194" Height="186" OffX="106" OffY="48" SrcW="380" SrcH="285" AlphaType="0" />
+        <Image Name="szy_light0010" XPos="458" YPos="781" Width="192" Height="181" OffX="109" OffY="51" SrcW="380" SrcH="285" AlphaType="0" />
+        <Image Name="szy_light0009" XPos="651" YPos="781" Width="190" Height="176" OffX="109" OffY="55" SrcW="380" SrcH="285" AlphaType="0" />
+        <Image Name="szy_light0006" XPos="842" YPos="781" Width="180" Height="165" OffX="107" OffY="61" SrcW="380" SrcH="285" AlphaType="0" />
+    </Imageset>
+</Imagesets>

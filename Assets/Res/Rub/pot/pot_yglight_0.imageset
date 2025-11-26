@@ -1,0 +1,28 @@
+<Imagesets>
+    <Imageset Name="pot_yglight_0" NativeHorzRes="1024" NativeVertRes="1024">
+        <Image Name="pot_fg0032" XPos="0" YPos="0" Width="193" Height="276" OffX="97" OffY="8" SrcW="380" SrcH="285" AlphaType="0" />
+        <Image Name="pot_fg0031" XPos="194" YPos="0" Width="198" Height="275" OffX="92" OffY="8" SrcW="380" SrcH="285" AlphaType="0" />
+        <Image Name="pot_fg0033" XPos="393" YPos="0" Width="188" Height="275" OffX="100" OffY="9" SrcW="380" SrcH="285" AlphaType="0" />
+        <Image Name="pot_fg0034" XPos="582" YPos="0" Width="186" Height="275" OffX="98" OffY="10" SrcW="380" SrcH="285" AlphaType="0" />
+        <Image Name="pot_fg0030" XPos="769" YPos="0" Width="198" Height="274" OffX="89" OffY="8" SrcW="380" SrcH="285" AlphaType="0" />
+        <Image Name="pot_fg0035" XPos="0" YPos="277" Width="196" Height="274" OffX="92" OffY="11" SrcW="380" SrcH="285" AlphaType="0" />
+        <Image Name="pot_fg0036" XPos="197" YPos="277" Width="203" Height="273" OffX="87" OffY="12" SrcW="380" SrcH="285" AlphaType="0" />
+        <Image Name="pot_fg0059" XPos="401" YPos="277" Width="193" Height="273" OffX="89" OffY="8" SrcW="380" SrcH="285" AlphaType="0" />
+        <Image Name="pot_fg0029" XPos="595" YPos="277" Width="193" Height="273" OffX="89" OffY="8" SrcW="380" SrcH="285" AlphaType="0" />
+        <Image Name="pot_fg0058" XPos="789" YPos="277" Width="183" Height="272" OffX="91" OffY="8" SrcW="380" SrcH="285" AlphaType="0" />
+        <Image Name="pot_fg0037" XPos="0" YPos="552" Width="205" Height="271" OffX="85" OffY="13" SrcW="380" SrcH="285" AlphaType="0" />
+        <Image Name="pot_fg0028" XPos="206" YPos="552" Width="183" Height="271" OffX="91" OffY="9" SrcW="380" SrcH="285" AlphaType="0" />
+        <Image Name="pot_fg0038" XPos="390" YPos="552" Width="204" Height="270" OffX="85" OffY="14" SrcW="380" SrcH="285" AlphaType="0" />
+        <Image Name="pot_fg0056" XPos="595" YPos="552" Width="176" Height="270" OffX="99" OffY="9" SrcW="380" SrcH="285" AlphaType="0" />
+        <Image Name="pot_fg0057" XPos="772" YPos="552" Width="174" Height="270" OffX="94" OffY="9" SrcW="380" SrcH="285" AlphaType="0" />
+        <Image Name="pot_fg0012" XPos="0" YPos="824" Width="113" Height="195" OffX="146" OffY="52" SrcW="380" SrcH="285" AlphaType="0" />
+        <Image Name="pot_fg0011" XPos="114" YPos="824" Width="110" Height="191" OffX="141" OffY="54" SrcW="380" SrcH="285" AlphaType="0" />
+        <Image Name="pot_fg0001" XPos="225" YPos="824" Width="111" Height="188" OffX="137" OffY="50" SrcW="380" SrcH="285" AlphaType="0" />
+        <Image Name="pot_fg0010" XPos="337" YPos="824" Width="108" Height="188" OffX="135" OffY="55" SrcW="380" SrcH="285" AlphaType="0" />
+        <Image Name="pot_fg0003" XPos="446" YPos="824" Width="101" Height="188" OffX="144" OffY="51" SrcW="380" SrcH="285" AlphaType="0" />
+        <Image Name="pot_fg0004" XPos="548" YPos="824" Width="98" Height="188" OffX="143" OffY="52" SrcW="380" SrcH="285" AlphaType="0" />
+        <Image Name="pot_fg0009" XPos="647" YPos="824" Width="116" Height="187" OffX="130" OffY="55" SrcW="380" SrcH="285" AlphaType="0" />
+        <Image Name="pot_fg0000" XPos="764" YPos="824" Width="111" Height="187" OffX="134" OffY="50" SrcW="380" SrcH="285" AlphaType="0" />
+        <Image Name="pot_fg0005" XPos="876" YPos="824" Width="108" Height="187" OffX="137" OffY="53" SrcW="380" SrcH="285" AlphaType="0" />
+    </Imageset>
+</Imagesets>

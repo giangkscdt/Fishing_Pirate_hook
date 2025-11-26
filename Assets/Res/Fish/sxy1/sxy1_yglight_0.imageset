@@ -1,0 +1,25 @@
+<Imagesets>
+    <Imageset Name="sxy1_yglight_0" NativeHorzRes="1024" NativeVertRes="1024">
+        <Image Name="sxy1_lg0051" XPos="0" YPos="0" Width="234" Height="220" OffX="69" OffY="26" SrcW="350" SrcH="263" AlphaType="0" />
+        <Image Name="sxy1_lg0052" XPos="235" YPos="0" Width="234" Height="219" OffX="69" OffY="26" SrcW="350" SrcH="263" AlphaType="0" />
+        <Image Name="sxy1_lg0037" XPos="470" YPos="0" Width="234" Height="219" OffX="69" OffY="27" SrcW="350" SrcH="263" AlphaType="0" />
+        <Image Name="sxy1_lg0038" XPos="705" YPos="0" Width="233" Height="219" OffX="69" OffY="26" SrcW="350" SrcH="263" AlphaType="0" />
+        <Image Name="sxy1_lg0036" XPos="0" YPos="221" Width="233" Height="219" OffX="69" OffY="27" SrcW="350" SrcH="263" AlphaType="0" />
+        <Image Name="sxy1_lg0053" XPos="0" YPos="441" Width="232" Height="219" OffX="69" OffY="26" SrcW="350" SrcH="263" AlphaType="0" />
+        <Image Name="sxy1_lg0035" XPos="0" YPos="661" Width="230" Height="219" OffX="69" OffY="27" SrcW="350" SrcH="263" AlphaType="0" />
+        <Image Name="sxy1_lg0050" XPos="234" YPos="221" Width="231" Height="218" OffX="69" OffY="27" SrcW="350" SrcH="263" AlphaType="0" />
+        <Image Name="sxy1_lg0054" XPos="466" YPos="221" Width="228" Height="218" OffX="69" OffY="26" SrcW="350" SrcH="263" AlphaType="0" />
+        <Image Name="sxy1_lg0039" XPos="695" YPos="221" Width="229" Height="216" OffX="69" OffY="27" SrcW="350" SrcH="263" AlphaType="0" />
+        <Image Name="sxy1_lg0034" XPos="234" YPos="440" Width="226" Height="216" OffX="69" OffY="28" SrcW="350" SrcH="263" AlphaType="0" />
+        <Image Name="sxy1_lg0055" XPos="234" YPos="657" Width="224" Height="216" OffX="69" OffY="27" SrcW="350" SrcH="263" AlphaType="0" />
+        <Image Name="sxy1_lg0049" XPos="461" YPos="440" Width="226" Height="215" OffX="69" OffY="28" SrcW="350" SrcH="263" AlphaType="0" />
+        <Image Name="sxy1_lg0040" XPos="688" YPos="440" Width="224" Height="215" OffX="69" OffY="27" SrcW="350" SrcH="263" AlphaType="0" />
+        <Image Name="sxy1_lg0033" XPos="461" YPos="656" Width="224" Height="215" OffX="69" OffY="28" SrcW="350" SrcH="263" AlphaType="0" />
+        <Image Name="sxy1_lg0056" XPos="686" YPos="656" Width="221" Height="215" OffX="69" OffY="27" SrcW="350" SrcH="263" AlphaType="0" />
+        <Image Name="sxy1_lg0013" XPos="461" YPos="872" Width="181" Height="150" OffX="130" OffY="66" SrcW="350" SrcH="263" AlphaType="0" />
+        <Image Name="sxy1_lg0012" XPos="234" YPos="874" Width="174" Height="143" OffX="136" OffY="70" SrcW="350" SrcH="263" AlphaType="0" />
+        <Image Name="sxy1_lg0011" XPos="0" YPos="881" Width="169" Height="138" OffX="137" OffY="72" SrcW="350" SrcH="263" AlphaType="0" />
+        <Image Name="sxy1_lg0010" XPos="643" YPos="872" Width="162" Height="132" OffX="137" OffY="75" SrcW="350" SrcH="263" AlphaType="0" />
+        <Image Name="sxy1_lg0009" XPos="806" YPos="872" Width="157" Height="128" OffX="136" OffY="76" SrcW="350" SrcH="263" AlphaType="0" />
+    </Imageset>
+</Imagesets>

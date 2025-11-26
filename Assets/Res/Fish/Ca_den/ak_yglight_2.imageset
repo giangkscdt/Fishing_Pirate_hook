@@ -1,0 +1,16 @@
+<Imagesets>
+    <Imageset Name="ak_yglight_2" NativeHorzRes="1024" NativeVertRes="1024">
+        <Image Name="ak_lg0037" XPos="0" YPos="0" Width="299" Height="232" OffX="32" OffY="25" SrcW="380" SrcH="285" AlphaType="0" />
+        <Image Name="ak_lg0051" XPos="300" YPos="0" Width="289" Height="232" OffX="33" OffY="24" SrcW="380" SrcH="285" AlphaType="0" />
+        <Image Name="ak_lg0050" XPos="590" YPos="0" Width="285" Height="232" OffX="35" OffY="24" SrcW="380" SrcH="285" AlphaType="0" />
+        <Image Name="ak_lg0052" XPos="0" YPos="233" Width="295" Height="231" OffX="31" OffY="25" SrcW="380" SrcH="285" AlphaType="0" />
+        <Image Name="ak_lg0035" XPos="296" YPos="233" Width="309" Height="230" OffX="28" OffY="26" SrcW="380" SrcH="285" AlphaType="0" />
+        <Image Name="ak_lg0054" XPos="606" YPos="233" Width="308" Height="230" OffX="27" OffY="26" SrcW="380" SrcH="285" AlphaType="0" />
+        <Image Name="ak_lg0036" XPos="0" YPos="465" Width="305" Height="230" OffX="30" OffY="26" SrcW="380" SrcH="285" AlphaType="0" />
+        <Image Name="ak_lg0053" XPos="0" YPos="696" Width="302" Height="230" OffX="29" OffY="26" SrcW="380" SrcH="285" AlphaType="0" />
+        <Image Name="ak_lg0055" XPos="306" YPos="465" Width="312" Height="229" OffX="25" OffY="27" SrcW="380" SrcH="285" AlphaType="0" />
+        <Image Name="ak_lg0034" XPos="619" YPos="465" Width="310" Height="229" OffX="26" OffY="27" SrcW="380" SrcH="285" AlphaType="0" />
+        <Image Name="ak_lg0056" XPos="306" YPos="695" Width="312" Height="228" OffX="24" OffY="28" SrcW="380" SrcH="285" AlphaType="0" />
+        <Image Name="ak_lg0057" XPos="619" YPos="695" Width="310" Height="228" OffX="23" OffY="28" SrcW="380" SrcH="285" AlphaType="0" />
+    </Imageset>
+</Imagesets>

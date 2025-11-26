@@ -1,0 +1,19 @@
+<Imagesets>
+    <Imageset Name="zy_yglight_4" NativeHorzRes="1024" NativeVertRes="1024">
+        <Image Name="zy_lg0097" XPos="0" YPos="0" Width="265" Height="250" OffX="116" OffY="67" SrcW="480" SrcH="361" AlphaType="0" />
+        <Image Name="zy_lg0041" XPos="266" YPos="0" Width="275" Height="249" OffX="110" OffY="63" SrcW="480" SrcH="361" AlphaType="0" />
+        <Image Name="zy_lg0042" XPos="542" YPos="0" Width="279" Height="244" OffX="107" OffY="65" SrcW="480" SrcH="361" AlphaType="0" />
+        <Image Name="zy_lg0073" XPos="0" YPos="251" Width="274" Height="244" OffX="111" OffY="69" SrcW="480" SrcH="361" AlphaType="0" />
+        <Image Name="zy_lg0098" XPos="275" YPos="251" Width="276" Height="242" OffX="109" OffY="69" SrcW="480" SrcH="361" AlphaType="0" />
+        <Image Name="zy_lg0081" XPos="552" YPos="251" Width="247" Height="241" OffX="120" OffY="63" SrcW="480" SrcH="361" AlphaType="0" />
+        <Image Name="zy_lg0043" XPos="0" YPos="496" Width="284" Height="240" OffX="104" OffY="66" SrcW="480" SrcH="361" AlphaType="0" />
+        <Image Name="zy_lg0044" XPos="285" YPos="496" Width="287" Height="236" OffX="102" OffY="67" SrcW="480" SrcH="361" AlphaType="0" />
+        <Image Name="zy_lg0080" XPos="573" YPos="496" Width="250" Height="235" OffX="117" OffY="66" SrcW="480" SrcH="361" AlphaType="0" />
+        <Image Name="zy_lg0055" XPos="0" YPos="737" Width="250" Height="234" OffX="117" OffY="67" SrcW="480" SrcH="361" AlphaType="0" />
+        <Image Name="zy_lg0074" XPos="251" YPos="737" Width="286" Height="233" OffX="103" OffY="71" SrcW="480" SrcH="361" AlphaType="0" />
+        <Image Name="zy_lg0045" XPos="538" YPos="737" Width="290" Height="232" OffX="100" OffY="68" SrcW="480" SrcH="361" AlphaType="0" />
+        <Image Name="zy_lg0002" XPos="800" YPos="251" Width="215" Height="126" OffX="140" OffY="119" SrcW="480" SrcH="361" AlphaType="0" />
+        <Image Name="zy_lg0005" XPos="822" YPos="0" Width="201" Height="118" OffX="162" OffY="126" SrcW="480" SrcH="361" AlphaType="0" />
+        <Image Name="zy_lg0007" XPos="822" YPos="119" Width="179" Height="118" OffX="185" OffY="130" SrcW="480" SrcH="361" AlphaType="0" />
+    </Imageset>
+</Imagesets>

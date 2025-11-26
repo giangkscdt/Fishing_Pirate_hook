@@ -1,0 +1,22 @@
+<Imagesets>
+    <Imageset Name="lt_yglight_2" NativeHorzRes="1024" NativeVertRes="512">
+        <Image Name="lt_lg0019" XPos="0" YPos="0" Width="210" Height="173" OffX="64" OffY="35" SrcW="380" SrcH="285" AlphaType="0" />
+        <Image Name="lt_lg0018" XPos="0" YPos="174" Width="204" Height="168" OffX="67" OffY="38" SrcW="380" SrcH="285" AlphaType="0" />
+        <Image Name="lt_lg0017" XPos="0" YPos="343" Width="205" Height="162" OffX="72" OffY="42" SrcW="380" SrcH="285" AlphaType="0" />
+        <Image Name="lt_lg0016" XPos="211" YPos="0" Width="206" Height="155" OffX="84" OffY="50" SrcW="380" SrcH="285" AlphaType="0" />
+        <Image Name="lt_lg0015" XPos="211" YPos="156" Width="206" Height="150" OffX="97" OffY="59" SrcW="380" SrcH="285" AlphaType="0" />
+        <Image Name="lt_lg0014" XPos="211" YPos="307" Width="199" Height="146" OffX="111" OffY="69" SrcW="380" SrcH="285" AlphaType="0" />
+        <Image Name="lt_lg0013" XPos="418" YPos="0" Width="187" Height="142" OffX="123" OffY="77" SrcW="380" SrcH="285" AlphaType="0" />
+        <Image Name="lt_lg0012" XPos="606" YPos="0" Width="176" Height="136" OffX="130" OffY="83" SrcW="380" SrcH="285" AlphaType="0" />
+        <Image Name="lt_lg0011" XPos="783" YPos="0" Width="172" Height="131" OffX="131" OffY="85" SrcW="380" SrcH="285" AlphaType="0" />
+        <Image Name="lt_lg0010" XPos="418" YPos="143" Width="172" Height="126" OffX="131" OffY="87" SrcW="380" SrcH="285" AlphaType="0" />
+        <Image Name="lt_lg0009" XPos="591" YPos="143" Width="175" Height="122" OffX="130" OffY="88" SrcW="380" SrcH="285" AlphaType="0" />
+        <Image Name="lt_lg0008" XPos="767" YPos="143" Width="172" Height="117" OffX="129" OffY="89" SrcW="380" SrcH="285" AlphaType="0" />
+        <Image Name="lt_lg0007" XPos="418" YPos="270" Width="168" Height="115" OffX="125" OffY="88" SrcW="380" SrcH="285" AlphaType="0" />
+        <Image Name="lt_lg0001" XPos="418" YPos="386" Width="164" Height="114" OffX="106" OffY="79" SrcW="380" SrcH="285" AlphaType="0" />
+        <Image Name="lt_lg0006" XPos="587" YPos="270" Width="160" Height="114" OffX="121" OffY="87" SrcW="380" SrcH="285" AlphaType="0" />
+        <Image Name="lt_lg0002" XPos="587" YPos="385" Width="155" Height="114" OffX="107" OffY="80" SrcW="380" SrcH="285" AlphaType="0" />
+        <Image Name="lt_lg0005" XPos="748" YPos="270" Width="151" Height="114" OffX="117" OffY="85" SrcW="380" SrcH="285" AlphaType="0" />
+        <Image Name="lt_lg0004" XPos="748" YPos="385" Width="147" Height="114" OffX="113" OffY="83" SrcW="380" SrcH="285" AlphaType="0" />
+    </Imageset>
+</Imagesets>

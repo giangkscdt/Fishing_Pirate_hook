@@ -1,0 +1,28 @@
+<Imagesets>
+    <Imageset Name="can01_yglight_0" NativeHorzRes="1024" NativeVertRes="1024">
+        <Image Name="can01_fg0038" XPos="0" YPos="0" Width="166" Height="236" OffX="107" OffY="0" SrcW="380" SrcH="285" AlphaType="0" />
+        <Image Name="can01_fg0037" XPos="0" YPos="237" Width="166" Height="236" OffX="107" OffY="1" SrcW="380" SrcH="285" AlphaType="0" />
+        <Image Name="can01_fg0039" XPos="167" YPos="0" Width="167" Height="235" OffX="107" OffY="0" SrcW="380" SrcH="285" AlphaType="0" />
+        <Image Name="can01_fg0054" XPos="0" YPos="474" Width="166" Height="235" OffX="107" OffY="4" SrcW="380" SrcH="285" AlphaType="0" />
+        <Image Name="can01_fg0053" XPos="0" YPos="710" Width="166" Height="235" OffX="107" OffY="2" SrcW="380" SrcH="285" AlphaType="0" />
+        <Image Name="can01_fg0052" XPos="167" YPos="236" Width="166" Height="235" OffX="107" OffY="0" SrcW="380" SrcH="285" AlphaType="0" />
+        <Image Name="can01_fg0036" XPos="167" YPos="472" Width="166" Height="235" OffX="107" OffY="3" SrcW="380" SrcH="285" AlphaType="0" />
+        <Image Name="can01_fg0040" XPos="335" YPos="0" Width="168" Height="234" OffX="107" OffY="0" SrcW="380" SrcH="285" AlphaType="0" />
+        <Image Name="can01_fg0055" XPos="504" YPos="0" Width="167" Height="234" OffX="107" OffY="7" SrcW="380" SrcH="285" AlphaType="0" />
+        <Image Name="can01_fg0033" XPos="672" YPos="0" Width="171" Height="233" OffX="105" OffY="8" SrcW="380" SrcH="285" AlphaType="0" />
+        <Image Name="can01_fg0056" XPos="844" YPos="0" Width="169" Height="233" OffX="106" OffY="9" SrcW="380" SrcH="285" AlphaType="0" />
+        <Image Name="can01_fg0041" XPos="335" YPos="235" Width="169" Height="233" OffX="106" OffY="0" SrcW="380" SrcH="285" AlphaType="0" />
+        <Image Name="can01_fg0034" XPos="335" YPos="469" Width="169" Height="233" OffX="106" OffY="7" SrcW="380" SrcH="285" AlphaType="0" />
+        <Image Name="can01_fg0035" XPos="335" YPos="703" Width="167" Height="233" OffX="107" OffY="5" SrcW="380" SrcH="285" AlphaType="0" />
+        <Image Name="can01_fg0026" XPos="505" YPos="235" Width="167" Height="233" OffX="107" OffY="9" SrcW="380" SrcH="285" AlphaType="0" />
+        <Image Name="can01_fg0051" XPos="167" YPos="708" Width="166" Height="233" OffX="107" OffY="0" SrcW="380" SrcH="285" AlphaType="0" />
+        <Image Name="can01_fg0025" XPos="673" YPos="235" Width="165" Height="233" OffX="108" OffY="7" SrcW="380" SrcH="285" AlphaType="0" />
+        <Image Name="can01_fg0031" XPos="839" YPos="235" Width="175" Height="232" OffX="103" OffY="11" SrcW="380" SrcH="285" AlphaType="0" />
+        <Image Name="can01_fg0030" XPos="505" YPos="469" Width="175" Height="232" OffX="103" OffY="12" SrcW="380" SrcH="285" AlphaType="0" />
+        <Image Name="can01_fg0058" XPos="505" YPos="702" Width="173" Height="232" OffX="104" OffY="12" SrcW="380" SrcH="285" AlphaType="0" />
+        <Image Name="can01_fg0032" XPos="681" YPos="469" Width="173" Height="232" OffX="104" OffY="10" SrcW="380" SrcH="285" AlphaType="0" />
+        <Image Name="can01_fg0028" XPos="681" YPos="702" Width="173" Height="232" OffX="104" OffY="12" SrcW="380" SrcH="285" AlphaType="0" />
+        <Image Name="can01_fg0050" XPos="855" YPos="469" Width="167" Height="231" OffX="107" OffY="0" SrcW="380" SrcH="285" AlphaType="0" />
+        <Image Name="can01_fg0024" XPos="855" YPos="701" Width="159" Height="228" OffX="111" OffY="8" SrcW="380" SrcH="285" AlphaType="0" />
+    </Imageset>
+</Imagesets>

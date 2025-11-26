@@ -1,0 +1,24 @@
+<Imagesets>
+    <Imageset Name="njxy_yglight_1" NativeHorzRes="1024" NativeVertRes="1024">
+        <Image Name="njxy_lg0048" XPos="0" YPos="0" Width="263" Height="200" OffX="29" OffY="27" SrcW="330" SrcH="248" AlphaType="0" />
+        <Image Name="njxy_lg0043" XPos="264" YPos="0" Width="262" Height="199" OffX="29" OffY="27" SrcW="330" SrcH="248" AlphaType="0" />
+        <Image Name="njxy_lg0053" XPos="527" YPos="0" Width="259" Height="199" OffX="32" OffY="27" SrcW="330" SrcH="248" AlphaType="0" />
+        <Image Name="njxy_lg0033" XPos="0" YPos="201" Width="259" Height="197" OffX="32" OffY="27" SrcW="330" SrcH="248" AlphaType="0" />
+        <Image Name="njxy_lg0024" XPos="260" YPos="201" Width="254" Height="196" OffX="26" OffY="17" SrcW="330" SrcH="248" AlphaType="0" />
+        <Image Name="njxy_lg0057" XPos="515" YPos="201" Width="259" Height="192" OffX="32" OffY="27" SrcW="330" SrcH="248" AlphaType="0" />
+        <Image Name="njxy_lg0047" XPos="0" YPos="399" Width="262" Height="191" OffX="29" OffY="27" SrcW="330" SrcH="248" AlphaType="0" />
+        <Image Name="njxy_lg0037" XPos="0" YPos="591" Width="259" Height="191" OffX="32" OffY="27" SrcW="330" SrcH="248" AlphaType="0" />
+        <Image Name="njxy_lg0044" XPos="0" YPos="783" Width="254" Height="190" OffX="29" OffY="27" SrcW="330" SrcH="248" AlphaType="0" />
+        <Image Name="njxy_lg0054" XPos="263" YPos="399" Width="251" Height="190" OffX="32" OffY="27" SrcW="330" SrcH="248" AlphaType="0" />
+        <Image Name="njxy_lg0023" XPos="515" YPos="399" Width="250" Height="190" OffX="27" OffY="17" SrcW="330" SrcH="248" AlphaType="0" />
+        <Image Name="njxy_lg0034" XPos="766" YPos="399" Width="251" Height="189" OffX="32" OffY="27" SrcW="330" SrcH="248" AlphaType="0" />
+        <Image Name="njxy_lg0046" XPos="263" YPos="590" Width="254" Height="184" OffX="29" OffY="27" SrcW="330" SrcH="248" AlphaType="0" />
+        <Image Name="njxy_lg0056" XPos="263" YPos="775" Width="251" Height="184" OffX="32" OffY="27" SrcW="330" SrcH="248" AlphaType="0" />
+        <Image Name="njxy_lg0036" XPos="518" YPos="590" Width="251" Height="184" OffX="32" OffY="27" SrcW="330" SrcH="248" AlphaType="0" />
+        <Image Name="njxy_lg0045" XPos="770" YPos="590" Width="249" Height="184" OffX="29" OffY="27" SrcW="330" SrcH="248" AlphaType="0" />
+        <Image Name="njxy_lg0055" XPos="775" YPos="201" Width="246" Height="184" OffX="32" OffY="27" SrcW="330" SrcH="248" AlphaType="0" />
+        <Image Name="njxy_lg0035" XPos="518" YPos="775" Width="246" Height="184" OffX="32" OffY="27" SrcW="330" SrcH="248" AlphaType="0" />
+        <Image Name="njxy_lg0021" XPos="765" YPos="775" Width="239" Height="180" OffX="29" OffY="17" SrcW="330" SrcH="248" AlphaType="0" />
+        <Image Name="njxy_lg0020" XPos="787" YPos="0" Width="232" Height="173" OffX="31" OffY="19" SrcW="330" SrcH="248" AlphaType="0" />
+    </Imageset>
+</Imagesets>

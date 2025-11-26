@@ -1,0 +1,34 @@
+<Imagesets>
+    <Imageset Name="death" NativeHorzRes="1024" NativeVertRes="1024">
+        <Image Name="death0024" XPos="0" YPos="0" Width="111" Height="168" OffX="129" OffY="74" SrcW="380" SrcH="285" AlphaType="0" />
+        <Image Name="death0023" XPos="0" YPos="169" Width="111" Height="168" OffX="129" OffY="77" SrcW="380" SrcH="285" AlphaType="0" />
+        <Image Name="death0007" XPos="0" YPos="338" Width="111" Height="168" OffX="129" OffY="77" SrcW="380" SrcH="285" AlphaType="0" />
+        <Image Name="death0006" XPos="0" YPos="507" Width="111" Height="168" OffX="129" OffY="74" SrcW="380" SrcH="285" AlphaType="0" />
+        <Image Name="death0025" XPos="112" YPos="0" Width="112" Height="167" OffX="130" OffY="71" SrcW="380" SrcH="285" AlphaType="0" />
+        <Image Name="death0005" XPos="112" YPos="168" Width="112" Height="167" OffX="130" OffY="71" SrcW="380" SrcH="285" AlphaType="0" />
+        <Image Name="death0021" XPos="225" YPos="0" Width="114" Height="166" OffX="128" OffY="84" SrcW="380" SrcH="285" AlphaType="0" />
+        <Image Name="death0009" XPos="225" YPos="167" Width="114" Height="166" OffX="128" OffY="84" SrcW="380" SrcH="285" AlphaType="0" />
+        <Image Name="death0026" XPos="225" YPos="334" Width="113" Height="166" OffX="131" OffY="69" SrcW="380" SrcH="285" AlphaType="0" />
+        <Image Name="death0022" XPos="225" YPos="501" Width="113" Height="166" OffX="128" OffY="81" SrcW="380" SrcH="285" AlphaType="0" />
+        <Image Name="death0008" XPos="225" YPos="668" Width="113" Height="166" OffX="128" OffY="81" SrcW="380" SrcH="285" AlphaType="0" />
+        <Image Name="death0004" XPos="225" YPos="835" Width="113" Height="166" OffX="131" OffY="69" SrcW="380" SrcH="285" AlphaType="0" />
+        <Image Name="death0028" XPos="340" YPos="0" Width="114" Height="165" OffX="133" OffY="65" SrcW="380" SrcH="285" AlphaType="0" />
+        <Image Name="death0027" XPos="455" YPos="0" Width="114" Height="165" OffX="132" OffY="67" SrcW="380" SrcH="285" AlphaType="0" />
+        <Image Name="death0003" XPos="570" YPos="0" Width="114" Height="165" OffX="132" OffY="67" SrcW="380" SrcH="285" AlphaType="0" />
+        <Image Name="death0002" XPos="685" YPos="0" Width="114" Height="165" OffX="133" OffY="65" SrcW="380" SrcH="285" AlphaType="0" />
+        <Image Name="death0020" XPos="800" YPos="0" Width="117" Height="164" OffX="127" OffY="87" SrcW="380" SrcH="285" AlphaType="0" />
+        <Image Name="death0010" XPos="340" YPos="166" Width="117" Height="164" OffX="127" OffY="87" SrcW="380" SrcH="285" AlphaType="0" />
+        <Image Name="death0029" XPos="340" YPos="331" Width="115" Height="164" OffX="133" OffY="64" SrcW="380" SrcH="285" AlphaType="0" />
+        <Image Name="death0001" XPos="340" YPos="496" Width="115" Height="164" OffX="133" OffY="64" SrcW="380" SrcH="285" AlphaType="0" />
+        <Image Name="death0019" XPos="458" YPos="166" Width="118" Height="163" OffX="127" OffY="90" SrcW="380" SrcH="285" AlphaType="0" />
+        <Image Name="death0011" XPos="577" YPos="166" Width="118" Height="163" OffX="127" OffY="90" SrcW="380" SrcH="285" AlphaType="0" />
+        <Image Name="death0000" XPos="340" YPos="661" Width="115" Height="163" OffX="133" OffY="64" SrcW="380" SrcH="285" AlphaType="0" />
+        <Image Name="death0018" XPos="696" YPos="166" Width="118" Height="162" OffX="127" OffY="92" SrcW="380" SrcH="285" AlphaType="0" />
+        <Image Name="death0012" XPos="815" YPos="166" Width="118" Height="162" OffX="127" OffY="92" SrcW="380" SrcH="285" AlphaType="0" />
+        <Image Name="death0017" XPos="458" YPos="330" Width="121" Height="160" OffX="126" OffY="94" SrcW="380" SrcH="285" AlphaType="0" />
+        <Image Name="death0013" XPos="458" YPos="491" Width="121" Height="160" OffX="126" OffY="94" SrcW="380" SrcH="285" AlphaType="0" />
+        <Image Name="death0016" XPos="458" YPos="652" Width="121" Height="159" OffX="126" OffY="95" SrcW="380" SrcH="285" AlphaType="0" />
+        <Image Name="death0014" XPos="458" YPos="812" Width="121" Height="159" OffX="126" OffY="95" SrcW="380" SrcH="285" AlphaType="0" />
+        <Image Name="death0015" XPos="580" YPos="330" Width="122" Height="158" OffX="126" OffY="96" SrcW="380" SrcH="285" AlphaType="0" />
+    </Imageset>
+</Imagesets>

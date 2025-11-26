@@ -1,0 +1,22 @@
+<Imagesets>
+    <Imageset Name="jy_yglight_1" NativeHorzRes="1024" NativeVertRes="1024">
+        <Image Name="jy_lg0035" XPos="0" YPos="0" Width="320" Height="176" OffX="87" OffY="95" SrcW="500" SrcH="375" AlphaType="0" />
+        <Image Name="jy_lg0037" XPos="321" YPos="0" Width="328" Height="175" OffX="85" OffY="96" SrcW="500" SrcH="375" AlphaType="0" />
+        <Image Name="jy_lg0047" XPos="650" YPos="0" Width="323" Height="175" OffX="86" OffY="97" SrcW="500" SrcH="375" AlphaType="0" />
+        <Image Name="jy_lg0033" XPos="0" YPos="177" Width="320" Height="175" OffX="87" OffY="97" SrcW="500" SrcH="375" AlphaType="0" />
+        <Image Name="jy_lg0036" XPos="321" YPos="177" Width="325" Height="174" OffX="86" OffY="97" SrcW="500" SrcH="375" AlphaType="0" />
+        <Image Name="jy_lg0034" XPos="647" YPos="177" Width="319" Height="174" OffX="87" OffY="97" SrcW="500" SrcH="375" AlphaType="0" />
+        <Image Name="jy_lg0023" XPos="0" YPos="353" Width="307" Height="173" OffX="82" OffY="92" SrcW="500" SrcH="375" AlphaType="0" />
+        <Image Name="jy_lg0022" XPos="308" YPos="353" Width="301" Height="168" OffX="83" OffY="92" SrcW="500" SrcH="375" AlphaType="0" />
+        <Image Name="jy_lg0021" XPos="610" YPos="353" Width="298" Height="163" OffX="83" OffY="92" SrcW="500" SrcH="375" AlphaType="0" />
+        <Image Name="jy_lg0020" XPos="0" YPos="527" Width="294" Height="158" OffX="83" OffY="93" SrcW="500" SrcH="375" AlphaType="0" />
+        <Image Name="jy_lg0019" XPos="0" YPos="686" Width="289" Height="151" OffX="85" OffY="94" SrcW="500" SrcH="375" AlphaType="0" />
+        <Image Name="jy_lg0018" XPos="0" YPos="838" Width="288" Height="146" OffX="86" OffY="95" SrcW="500" SrcH="375" AlphaType="0" />
+        <Image Name="jy_lg0017" XPos="295" YPos="527" Width="286" Height="140" OffX="87" OffY="97" SrcW="500" SrcH="375" AlphaType="0" />
+        <Image Name="jy_lg0015" XPos="582" YPos="527" Width="278" Height="134" OffX="96" OffY="105" SrcW="500" SrcH="375" AlphaType="0" />
+        <Image Name="jy_lg0016" XPos="295" YPos="668" Width="281" Height="133" OffX="90" OffY="100" SrcW="500" SrcH="375" AlphaType="0" />
+        <Image Name="jy_lg0014" XPos="577" YPos="668" Width="270" Height="126" OffX="111" OffY="114" SrcW="500" SrcH="375" AlphaType="0" />
+        <Image Name="jy_lg0013" XPos="295" YPos="802" Width="263" Height="126" OffX="129" OffY="124" SrcW="500" SrcH="375" AlphaType="0" />
+        <Image Name="jy_lg0012" XPos="559" YPos="802" Width="256" Height="125" OffX="148" OffY="133" SrcW="500" SrcH="375" AlphaType="0" />
+    </Imageset>
+</Imagesets>

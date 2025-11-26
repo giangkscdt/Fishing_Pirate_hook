@@ -1,0 +1,19 @@
+<Imagesets>
+    <Imageset Name="sy_yglight_1" NativeHorzRes="1024" NativeVertRes="1024">
+        <Image Name="sy_yg0035" XPos="0" YPos="0" Width="344" Height="223" OffX="4" OffY="5" SrcW="380" SrcH="285" AlphaType="0" />
+        <Image Name="sy_yg0034" XPos="345" YPos="0" Width="344" Height="223" OffX="4" OffY="6" SrcW="380" SrcH="285" AlphaType="0" />
+        <Image Name="sy_yg0036" XPos="0" YPos="224" Width="342" Height="223" OffX="4" OffY="3" SrcW="380" SrcH="285" AlphaType="0" />
+        <Image Name="sy_yg0040" XPos="343" YPos="224" Width="348" Height="222" OffX="4" OffY="1" SrcW="380" SrcH="285" AlphaType="0" />
+        <Image Name="sy_yg0033" XPos="0" YPos="448" Width="342" Height="221" OffX="4" OffY="7" SrcW="380" SrcH="285" AlphaType="0" />
+        <Image Name="sy_yg0027" XPos="0" YPos="670" Width="338" Height="221" OffX="5" OffY="13" SrcW="380" SrcH="285" AlphaType="0" />
+        <Image Name="sy_yg0039" XPos="343" YPos="448" Width="348" Height="220" OffX="4" OffY="0" SrcW="380" SrcH="285" AlphaType="0" />
+        <Image Name="sy_yg0038" XPos="343" YPos="669" Width="346" Height="219" OffX="4" OffY="1" SrcW="380" SrcH="285" AlphaType="0" />
+        <Image Name="sy_yg0030" XPos="690" YPos="0" Width="333" Height="216" OffX="4" OffY="10" SrcW="380" SrcH="285" AlphaType="0" />
+        <Image Name="sy_yg0022" XPos="692" YPos="224" Width="329" Height="214" OffX="14" OffY="29" SrcW="380" SrcH="285" AlphaType="0" />
+        <Image Name="sy_yg0019" XPos="692" YPos="448" Width="309" Height="200" OffX="21" OffY="33" SrcW="380" SrcH="285" AlphaType="0" />
+        <Image Name="sy_yg0016" XPos="692" YPos="649" Width="284" Height="184" OffX="29" OffY="32" SrcW="380" SrcH="285" AlphaType="0" />
+        <Image Name="sy_yg0015" XPos="692" YPos="834" Width="280" Height="180" OffX="30" OffY="31" SrcW="380" SrcH="285" AlphaType="0" />
+        <Image Name="sy_yg0006" XPos="343" YPos="889" Width="255" Height="133" OffX="47" OffY="41" SrcW="380" SrcH="285" AlphaType="0" />
+        <Image Name="sy_yg0005" XPos="0" YPos="892" Width="255" Height="131" OffX="47" OffY="44" SrcW="380" SrcH="285" AlphaType="0" />
+    </Imageset>
+</Imagesets>

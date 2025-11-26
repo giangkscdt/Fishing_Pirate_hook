@@ -1,0 +1,34 @@
+<Imagesets>
+    <Imageset Name="ball" NativeHorzRes="1024" NativeVertRes="1024">
+        <Image Name="ball0029" XPos="0" YPos="0" Width="130" Height="145" OffX="124" OffY="70" SrcW="380" SrcH="285" AlphaType="0" />
+        <Image Name="ball0000" XPos="0" YPos="146" Width="128" Height="145" OffX="126" OffY="70" SrcW="380" SrcH="285" AlphaType="0" />
+        <Image Name="ball0017" XPos="131" YPos="0" Width="132" Height="144" OffX="122" OffY="70" SrcW="380" SrcH="285" AlphaType="0" />
+        <Image Name="ball0013" XPos="264" YPos="0" Width="132" Height="144" OffX="126" OffY="70" SrcW="380" SrcH="285" AlphaType="0" />
+        <Image Name="ball0016" XPos="397" YPos="0" Width="130" Height="144" OffX="123" OffY="70" SrcW="380" SrcH="285" AlphaType="0" />
+        <Image Name="ball0015" XPos="528" YPos="0" Width="130" Height="144" OffX="125" OffY="70" SrcW="380" SrcH="285" AlphaType="0" />
+        <Image Name="ball0014" XPos="659" YPos="0" Width="130" Height="144" OffX="127" OffY="70" SrcW="380" SrcH="285" AlphaType="0" />
+        <Image Name="ball0001" XPos="790" YPos="0" Width="130" Height="144" OffX="126" OffY="70" SrcW="380" SrcH="285" AlphaType="0" />
+        <Image Name="ball0027" XPos="131" YPos="145" Width="135" Height="143" OffX="122" OffY="71" SrcW="380" SrcH="285" AlphaType="0" />
+        <Image Name="ball0003" XPos="131" YPos="289" Width="135" Height="143" OffX="123" OffY="71" SrcW="380" SrcH="285" AlphaType="0" />
+        <Image Name="ball0018" XPos="131" YPos="433" Width="134" Height="143" OffX="121" OffY="71" SrcW="380" SrcH="285" AlphaType="0" />
+        <Image Name="ball0028" XPos="131" YPos="577" Width="133" Height="143" OffX="123" OffY="71" SrcW="380" SrcH="285" AlphaType="0" />
+        <Image Name="ball0002" XPos="131" YPos="721" Width="132" Height="143" OffX="125" OffY="71" SrcW="380" SrcH="285" AlphaType="0" />
+        <Image Name="ball0026" XPos="267" YPos="145" Width="137" Height="142" OffX="120" OffY="72" SrcW="380" SrcH="285" AlphaType="0" />
+        <Image Name="ball0004" XPos="405" YPos="145" Width="136" Height="142" OffX="123" OffY="72" SrcW="380" SrcH="285" AlphaType="0" />
+        <Image Name="ball0012" XPos="542" YPos="145" Width="134" Height="142" OffX="125" OffY="71" SrcW="380" SrcH="285" AlphaType="0" />
+        <Image Name="ball0025" XPos="677" YPos="145" Width="138" Height="141" OffX="120" OffY="73" SrcW="380" SrcH="285" AlphaType="0" />
+        <Image Name="ball0020" XPos="816" YPos="145" Width="138" Height="141" OffX="119" OffY="72" SrcW="380" SrcH="285" AlphaType="0" />
+        <Image Name="ball0010" XPos="267" YPos="288" Width="138" Height="141" OffX="123" OffY="72" SrcW="380" SrcH="285" AlphaType="0" />
+        <Image Name="ball0005" XPos="267" YPos="430" Width="138" Height="141" OffX="122" OffY="73" SrcW="380" SrcH="285" AlphaType="0" />
+        <Image Name="ball0019" XPos="267" YPos="572" Width="136" Height="141" OffX="120" OffY="72" SrcW="380" SrcH="285" AlphaType="0" />
+        <Image Name="ball0011" XPos="267" YPos="714" Width="136" Height="141" OffX="124" OffY="72" SrcW="380" SrcH="285" AlphaType="0" />
+        <Image Name="ball0024" XPos="406" YPos="288" Width="139" Height="140" OffX="119" OffY="74" SrcW="380" SrcH="285" AlphaType="0" />
+        <Image Name="ball0021" XPos="546" YPos="288" Width="139" Height="140" OffX="119" OffY="73" SrcW="380" SrcH="285" AlphaType="0" />
+        <Image Name="ball0009" XPos="686" YPos="288" Width="139" Height="140" OffX="122" OffY="73" SrcW="380" SrcH="285" AlphaType="0" />
+        <Image Name="ball0006" XPos="826" YPos="288" Width="139" Height="140" OffX="122" OffY="74" SrcW="380" SrcH="285" AlphaType="0" />
+        <Image Name="ball0007" XPos="406" YPos="429" Width="139" Height="139" OffX="122" OffY="74" SrcW="380" SrcH="285" AlphaType="0" />
+        <Image Name="ball0008" XPos="406" YPos="569" Width="139" Height="139" OffX="122" OffY="74" SrcW="380" SrcH="285" AlphaType="0" />
+        <Image Name="ball0022" XPos="406" YPos="709" Width="139" Height="139" OffX="119" OffY="74" SrcW="380" SrcH="285" AlphaType="0" />
+        <Image Name="ball0023" XPos="406" YPos="849" Width="139" Height="139" OffX="119" OffY="74" SrcW="380" SrcH="285" AlphaType="0" />
+    </Imageset>
+</Imagesets>

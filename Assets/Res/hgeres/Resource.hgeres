@@ -1,0 +1,3 @@
+; // 资源脚本的入口
+Include "Res/hgeres/Font.hgeres"
+Include "Res/hgeres/Sprite.hgeres"

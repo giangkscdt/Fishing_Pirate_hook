@@ -1,0 +1,5 @@
+<Imagesets>
+    <Imageset Name="sy_yd_0" NativeHorzRes="256" NativeVertRes="128">
+        <Image Name="sy_yd0029" XPos="0" YPos="0" Width="246" Height="127" OffX="48" OffY="53" SrcW="380" SrcH="285" AlphaType="0" />
+    </Imageset>
+</Imagesets>

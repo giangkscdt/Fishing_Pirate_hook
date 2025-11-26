@@ -1,0 +1,255 @@
+; // ×ÖÄ¸±íÐÐ
+Sprite SprIcon0
+{
+	texture = "Res\menu_icon\lv1.png"
+	rect = 0,0,547,49
+	hotspot = 0,0
+	blendmode = COLORMUL,ALPHABLEND,ZWRITE
+	resgroup = 1
+}
+
+Sprite SprIcon1 : SprIcon0
+{
+	texture = "Res\menu_icon\lv2.png"
+	rect = 0,0,375,59
+}
+
+Sprite SprIcon2 : SprIcon0
+{
+	texture = "Res\menu_icon\lv3.png"
+	rect = 0,0,200,61
+}
+
+Sprite SprIcon3 : SprIcon0
+{
+	texture = "Res\menu_icon\lj.png"
+	rect = 0,0,107,95
+}
+
+Sprite SprIcon4 : SprIcon3
+{
+	texture = "Res\menu_icon\sy.png"
+}
+
+Sprite SprIcon5 : SprIcon3
+{
+	texture = "Res\menu_icon\zy.png"
+}
+
+Sprite SprIcon6 : SprIcon3
+{
+	texture = "Res\menu_icon\lob.png"
+}
+
+Sprite SprZhen01 : SprIcon0
+{
+	texture = "Res\Hook\zhen01.png"
+	hotspot = 9, 38
+	rect = 0,0,18,45
+}
+
+Sprite SprHead01 : SprIcon0
+{
+	texture = "Res\test\head_01.png"
+	rect = 0,0,368,375
+}
+Sprite SprHead02 : SprIcon0
+{
+	texture = "Res\test\tail_01.png"
+	rect = 0,0,368,375
+}
+Sprite SprHeadBg : SprIcon0
+{
+	texture = "Res\test\bg.png"
+	rect = 0,0,50,375
+	hotspot = 25, 0
+}
+
+Sprite SprToBeContinued
+{
+	texture = "Res\UI\ToBeContinued.png"
+	rect = 0,0,357,63
+	hotspot = 178,32
+	blendmode = COLORMUL,ALPHABLEND,ZWRITE
+	resgroup = 1
+}
+
+Sprite SprHead_p1
+{
+	texture = "Res\ui_rank_4p\1p_head.png"
+	rect = 0,0,125,115
+	hotspot = 62,57
+	blendmode = COLORMUL,ALPHABLEND,ZWRITE
+	resgroup = 1
+}
+
+Sprite SprHead_p2: SprHead_p1
+{
+	texture = "Res\ui_rank_4p\2p_head.png"
+}
+
+Sprite SprHead_p3: SprHead_p1
+{
+	texture = "Res\ui_rank_4p\3p_head.png"
+}
+
+Sprite SprHead_p4: SprHead_p1
+{
+	texture = "Res\ui_rank_4p\4p_head.png"
+}
+Sprite SprHead_flash: SprHead_p1
+{
+	texture = "Res\ui_rank_4p\4p_head_flash.png"
+	rect = 0,0,137,127
+	hotspot = 68,63
+}
+Sprite SprIconNo1: SprHead_p1
+{
+	texture = "Res\ui_rank_4p\no1.png"
+	rect = 0,0,62,83
+	hotspot = 0,0
+}
+
+Sprite SprIconNo2 : SprIconNo1
+{
+	texture = "Res\ui_rank_4p\no2.png"
+}
+
+Sprite SprIconNo3 : SprIconNo1
+{
+	texture = "Res\ui_rank_4p\no3.png"
+}
+
+Sprite SprIconNo4 : SprIconNo1
+{
+	texture = "Res\ui_rank_4p\no4.png"
+}
+
+Sprite SprHeadg_p1: SprHead_p1
+{
+	texture = "Res\ui_rank_4p\1p_head_g.png"
+}
+
+Sprite SprHeadg_p2: SprHead_p1
+{
+	texture = "Res\ui_rank_4p\2p_head_g.png"
+}
+
+Sprite SprHeadg_p3: SprHead_p1
+{
+	texture = "Res\ui_rank_4p\3p_head_g.png"
+}
+
+Sprite SprHeadg_p4: SprHead_p1
+{
+	texture = "Res\ui_rank_4p\4p_head_g.png"
+}
+
+Sprite SprRankHead_1p
+{
+	texture = "Res\resault_4p\ranking_1p.png"
+	rect = 0,0,133,133
+	hotspot = 66,66
+	blendmode = COLORMUL,ALPHABLEND,ZWRITE
+	resgroup = 1
+}
+
+Sprite SprRankHead_2p : SprRankHead_1p
+{
+	texture = "Res\resault_4p\ranking_2p.png"
+}
+
+Sprite SprRankHead_3p : SprRankHead_1p
+{
+	texture = "Res\resault_4p\ranking_3p.png"
+}
+
+Sprite SprRankHead_4p : SprRankHead_1p
+{
+	texture = "Res\resault_4p\ranking_4p.png"
+}
+
+Sprite SprRankBg_1p : SprRankHead_1p
+{
+	texture = "Res\resault_4p\ranking_no1.png"
+	rect = 0,0,553,176
+	hotspot = 276,88
+}
+Sprite SprRankGq : SprRankBg_1p
+{
+	texture = "Res\resault_4p\ranking_self.png"
+}
+Sprite SprRankBg_2p : SprRankBg_1p
+{
+	texture = "Res\resault_4p\ranking_no2.png"
+}
+
+Sprite SprRankBg_3p : SprRankBg_1p
+{
+	texture = "Res\resault_4p\ranking_no3.png"
+}
+
+Sprite SprRankBg_4p : SprRankBg_1p
+{
+	texture = "Res\resault_4p\ranking_no4.png"
+}
+
+Sprite AnglerBonusIcon 
+{
+	texture = "Res\resault_4p\angler_logo_s.png"
+	rect = 0,0,106,47
+	hotspot = 53,23
+	blendmode = COLORMUL,ALPHABLEND,ZWRITE
+	resgroup = 1
+}
+
+Sprite SprAnglerBonus :  AnglerBonusIcon
+{
+	texture = "Res\Ui_Prompt\fonts\angler_bonus.png"
+	rect = 0,0,312,247
+	hotspot = 156,123
+}
+
+Sprite Spr10secs :  SprAnglerBonus
+{
+	texture = "Res\Ui_Prompt\fonts\10secs.png"
+	rect = 0,0,723,256
+	hotspot = 361,128
+}
+
+Sprite Sprlobster_king :  SprAnglerBonus
+{
+	texture = "Res\Ui_Prompt\fonts\lobster_king.png"
+	rect = 0,0,357,176
+	hotspot = 178,88
+}
+
+Sprite Sprneed_points :  SprAnglerBonus
+{
+	texture = "Res\Ui_Prompt\fonts\need_points.png"
+	rect = 0,0,593,106
+	hotspot = 296,53
+}
+
+Sprite Sprrule :  SprAnglerBonus
+{
+	texture = "Res\Ui_Prompt\fonts\rule.png"
+	rect = 0,0,762,323
+	hotspot = 381,161
+}
+
+Sprite Sprrule2 :  SprAnglerBonus
+{
+	texture = "Res\Ui_Prompt\fonts\rule2.png"
+	rect = 0,0,546,210
+	hotspot = 273,105
+}
+
+Sprite DjsBg 
+{
+	texture = "Res\ui_new_4p\lets10.png"
+	rect = 0,0,446,78
+	hotspot = 223,39
+	blendmode = COLORMUL,ALPHABLEND,ZWRITE
+	resgroup = 1
+}

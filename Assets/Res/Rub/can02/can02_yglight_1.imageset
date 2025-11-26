@@ -1,0 +1,32 @@
+<Imagesets>
+    <Imageset Name="can02_yglight_1" NativeHorzRes="1024" NativeVertRes="1024">
+        <Image Name="can02_fg0051" XPos="0" YPos="0" Width="173" Height="197" OffX="101" OffY="22" SrcW="380" SrcH="285" AlphaType="0" />
+        <Image Name="can02_fg0023" XPos="0" YPos="198" Width="158" Height="195" OffX="107" OffY="26" SrcW="380" SrcH="285" AlphaType="0" />
+        <Image Name="can02_fg0040" XPos="0" YPos="394" Width="173" Height="194" OffX="105" OffY="23" SrcW="380" SrcH="285" AlphaType="0" />
+        <Image Name="can02_fg0050" XPos="174" YPos="0" Width="174" Height="191" OffX="101" OffY="24" SrcW="380" SrcH="285" AlphaType="0" />
+        <Image Name="can02_fg0041" XPos="349" YPos="0" Width="175" Height="189" OffX="104" OffY="24" SrcW="380" SrcH="285" AlphaType="0" />
+        <Image Name="can02_fg0049" XPos="525" YPos="0" Width="174" Height="186" OffX="101" OffY="25" SrcW="380" SrcH="285" AlphaType="0" />
+        <Image Name="can02_fg0042" XPos="700" YPos="0" Width="175" Height="185" OffX="104" OffY="25" SrcW="380" SrcH="285" AlphaType="0" />
+        <Image Name="can02_fg0022" XPos="0" YPos="589" Width="154" Height="185" OffX="110" OffY="30" SrcW="380" SrcH="285" AlphaType="0" />
+        <Image Name="can02_fg0048" XPos="0" YPos="775" Width="172" Height="183" OffX="102" OffY="25" SrcW="380" SrcH="285" AlphaType="0" />
+        <Image Name="can02_fg0043" XPos="174" YPos="192" Width="174" Height="182" OffX="105" OffY="25" SrcW="380" SrcH="285" AlphaType="0" />
+        <Image Name="can02_fg0044" XPos="174" YPos="375" Width="171" Height="180" OffX="107" OffY="25" SrcW="380" SrcH="285" AlphaType="0" />
+        <Image Name="can02_fg0047" XPos="174" YPos="556" Width="168" Height="180" OffX="104" OffY="25" SrcW="380" SrcH="285" AlphaType="0" />
+        <Image Name="can02_fg0046" XPos="174" YPos="737" Width="167" Height="179" OffX="106" OffY="25" SrcW="380" SrcH="285" AlphaType="0" />
+        <Image Name="can02_fg0045" XPos="349" YPos="192" Width="167" Height="179" OffX="109" OffY="25" SrcW="380" SrcH="285" AlphaType="0" />
+        <Image Name="can02_fg0021" XPos="517" YPos="192" Width="151" Height="176" OffX="112" OffY="33" SrcW="380" SrcH="285" AlphaType="0" />
+        <Image Name="can02_fg0003" XPos="876" YPos="0" Width="78" Height="132" OffX="157" OffY="63" SrcW="380" SrcH="285" AlphaType="0" />
+        <Image Name="can02_fg0004" XPos="669" YPos="192" Width="78" Height="130" OffX="157" OffY="63" SrcW="380" SrcH="285" AlphaType="0" />
+        <Image Name="can02_fg0005" XPos="748" YPos="192" Width="78" Height="128" OffX="156" OffY="63" SrcW="380" SrcH="285" AlphaType="0" />
+        <Image Name="can02_fg0015" XPos="827" YPos="192" Width="115" Height="127" OffX="135" OffY="51" SrcW="380" SrcH="285" AlphaType="0" />
+        <Image Name="can02_fg0006" XPos="943" YPos="192" Width="79" Height="125" OffX="155" OffY="63" SrcW="380" SrcH="285" AlphaType="0" />
+        <Image Name="can02_fg0014" XPos="349" YPos="372" Width="114" Height="122" OffX="135" OffY="54" SrcW="380" SrcH="285" AlphaType="0" />
+        <Image Name="can02_fg0007" XPos="349" YPos="495" Width="79" Height="122" OffX="154" OffY="63" SrcW="380" SrcH="285" AlphaType="0" />
+        <Image Name="can02_fg0013" XPos="349" YPos="618" Width="112" Height="120" OffX="136" OffY="56" SrcW="380" SrcH="285" AlphaType="0" />
+        <Image Name="can02_fg0009" XPos="349" YPos="739" Width="89" Height="119" OffX="148" OffY="62" SrcW="380" SrcH="285" AlphaType="0" />
+        <Image Name="can02_fg0008" XPos="349" YPos="859" Width="82" Height="119" OffX="152" OffY="63" SrcW="380" SrcH="285" AlphaType="0" />
+        <Image Name="can02_fg0012" XPos="464" YPos="372" Width="107" Height="117" OffX="138" OffY="59" SrcW="380" SrcH="285" AlphaType="0" />
+        <Image Name="can02_fg0010" XPos="572" YPos="372" Width="95" Height="116" OffX="144" OffY="62" SrcW="380" SrcH="285" AlphaType="0" />
+        <Image Name="can02_fg0011" XPos="668" YPos="372" Width="101" Height="115" OffX="141" OffY="62" SrcW="380" SrcH="285" AlphaType="0" />
+    </Imageset>
+</Imagesets>

@@ -1,0 +1,16 @@
+<Imagesets>
+    <Imageset Name="r_xhd_sg_2" NativeHorzRes="1024" NativeVertRes="1024">
+        <Image Name="r_xhd_sg0048" XPos="0" YPos="0" Width="237" Height="229" OffX="156" OffY="65" SrcW="500" SrcH="375" AlphaType="0" />
+        <Image Name="r_xhd_sg0012" XPos="238" YPos="0" Width="237" Height="229" OffX="156" OffY="65" SrcW="500" SrcH="375" AlphaType="0" />
+        <Image Name="r_xhd_sg0008" XPos="476" YPos="0" Width="237" Height="229" OffX="156" OffY="65" SrcW="500" SrcH="375" AlphaType="0" />
+        <Image Name="r_xhd_sg0031" XPos="714" YPos="0" Width="238" Height="228" OffX="156" OffY="66" SrcW="500" SrcH="375" AlphaType="0" />
+        <Image Name="r_xhd_sg0029" XPos="0" YPos="230" Width="238" Height="228" OffX="156" OffY="66" SrcW="500" SrcH="375" AlphaType="0" />
+        <Image Name="r_xhd_sg0051" XPos="0" YPos="459" Width="237" Height="228" OffX="156" OffY="66" SrcW="500" SrcH="375" AlphaType="0" />
+        <Image Name="r_xhd_sg0049" XPos="0" YPos="688" Width="237" Height="228" OffX="156" OffY="66" SrcW="500" SrcH="375" AlphaType="0" />
+        <Image Name="r_xhd_sg0011" XPos="239" YPos="230" Width="237" Height="228" OffX="156" OffY="66" SrcW="500" SrcH="375" AlphaType="0" />
+        <Image Name="r_xhd_sg0009" XPos="477" YPos="230" Width="237" Height="228" OffX="156" OffY="66" SrcW="500" SrcH="375" AlphaType="0" />
+        <Image Name="r_xhd_sg0010" XPos="715" YPos="230" Width="237" Height="227" OffX="156" OffY="67" SrcW="500" SrcH="375" AlphaType="0" />
+        <Image Name="r_xhd_sg0030" XPos="239" YPos="459" Width="238" Height="227" OffX="156" OffY="67" SrcW="500" SrcH="375" AlphaType="0" />
+        <Image Name="r_xhd_sg0050" XPos="239" YPos="687" Width="237" Height="227" OffX="156" OffY="67" SrcW="500" SrcH="375" AlphaType="0" />
+    </Imageset>
+</Imagesets>

@@ -1,0 +1,24 @@
+<Imagesets>
+    <Imageset Name="ddy_yglight_2" NativeHorzRes="1024" NativeVertRes="1024">
+        <Image Name="ddy_lg0044" XPos="0" YPos="0" Width="236" Height="194" OffX="31" OffY="33" SrcW="330" SrcH="248" AlphaType="0" />
+        <Image Name="ddy_lg0046" XPos="237" YPos="0" Width="235" Height="194" OffX="31" OffY="33" SrcW="330" SrcH="248" AlphaType="0" />
+        <Image Name="ddy_lg0058" XPos="473" YPos="0" Width="234" Height="194" OffX="31" OffY="32" SrcW="330" SrcH="248" AlphaType="0" />
+        <Image Name="ddy_lg0043" XPos="708" YPos="0" Width="226" Height="194" OffX="31" OffY="31" SrcW="330" SrcH="248" AlphaType="0" />
+        <Image Name="ddy_lg0041" XPos="0" YPos="195" Width="226" Height="194" OffX="31" OffY="27" SrcW="330" SrcH="248" AlphaType="0" />
+        <Image Name="ddy_lg0042" XPos="0" YPos="390" Width="221" Height="194" OffX="31" OffY="29" SrcW="330" SrcH="248" AlphaType="0" />
+        <Image Name="ddy_lg0045" XPos="227" YPos="195" Width="241" Height="193" OffX="31" OffY="34" SrcW="330" SrcH="248" AlphaType="0" />
+        <Image Name="ddy_lg0031" XPos="469" YPos="195" Width="238" Height="192" OffX="31" OffY="33" SrcW="330" SrcH="248" AlphaType="0" />
+        <Image Name="ddy_lg0059" XPos="708" YPos="195" Width="239" Height="191" OffX="31" OffY="34" SrcW="330" SrcH="248" AlphaType="0" />
+        <Image Name="ddy_lg0030" XPos="227" YPos="389" Width="241" Height="190" OffX="31" OffY="34" SrcW="330" SrcH="248" AlphaType="0" />
+        <Image Name="ddy_lg0025" XPos="469" YPos="389" Width="231" Height="189" OffX="30" OffY="34" SrcW="330" SrcH="248" AlphaType="0" />
+        <Image Name="ddy_lg0029" XPos="701" YPos="389" Width="240" Height="188" OffX="31" OffY="34" SrcW="330" SrcH="248" AlphaType="0" />
+        <Image Name="ddy_lg0028" XPos="227" YPos="580" Width="239" Height="188" OffX="31" OffY="34" SrcW="330" SrcH="248" AlphaType="0" />
+        <Image Name="ddy_lg0027" XPos="227" YPos="769" Width="236" Height="188" OffX="31" OffY="34" SrcW="330" SrcH="248" AlphaType="0" />
+        <Image Name="ddy_lg0026" XPos="467" YPos="580" Width="233" Height="188" OffX="31" OffY="34" SrcW="330" SrcH="248" AlphaType="0" />
+        <Image Name="ddy_lg0024" XPos="467" YPos="769" Width="224" Height="185" OffX="32" OffY="36" SrcW="330" SrcH="248" AlphaType="0" />
+        <Image Name="ddy_lg0023" XPos="0" YPos="585" Width="217" Height="181" OffX="34" OffY="39" SrcW="330" SrcH="248" AlphaType="0" />
+        <Image Name="ddy_lg0022" XPos="0" YPos="767" Width="211" Height="177" OffX="36" OffY="41" SrcW="330" SrcH="248" AlphaType="0" />
+        <Image Name="ddy_lg0021" XPos="701" YPos="580" Width="208" Height="174" OffX="37" OffY="43" SrcW="330" SrcH="248" AlphaType="0" />
+        <Image Name="ddy_lg0020" XPos="701" YPos="755" Width="205" Height="170" OffX="38" OffY="45" SrcW="330" SrcH="248" AlphaType="0" />
+    </Imageset>
+</Imagesets>

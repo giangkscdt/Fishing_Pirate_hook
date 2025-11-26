@@ -1,0 +1,20 @@
+<Imagesets>
+    <Imageset Name="r_xhd_fg_0" NativeHorzRes="1024" NativeVertRes="1024">
+        <Image Name="r_xhd_fg0023" XPos="0" YPos="0" Width="239" Height="233" OffX="154" OffY="61" SrcW="500" SrcH="375" AlphaType="0" />
+        <Image Name="r_xhd_fg0022" XPos="240" YPos="0" Width="239" Height="233" OffX="154" OffY="61" SrcW="500" SrcH="375" AlphaType="0" />
+        <Image Name="r_xhd_fg0021" XPos="480" YPos="0" Width="239" Height="233" OffX="154" OffY="61" SrcW="500" SrcH="375" AlphaType="0" />
+        <Image Name="r_xhd_fg0043" XPos="720" YPos="0" Width="238" Height="233" OffX="155" OffY="61" SrcW="500" SrcH="375" AlphaType="0" />
+        <Image Name="r_xhd_fg0042" XPos="0" YPos="234" Width="238" Height="233" OffX="155" OffY="61" SrcW="500" SrcH="375" AlphaType="0" />
+        <Image Name="r_xhd_fg0041" XPos="0" YPos="468" Width="238" Height="233" OffX="155" OffY="61" SrcW="500" SrcH="375" AlphaType="0" />
+        <Image Name="r_xhd_fg0003" XPos="0" YPos="702" Width="237" Height="233" OffX="156" OffY="61" SrcW="500" SrcH="375" AlphaType="0" />
+        <Image Name="r_xhd_fg0002" XPos="239" YPos="234" Width="237" Height="233" OffX="156" OffY="61" SrcW="500" SrcH="375" AlphaType="0" />
+        <Image Name="r_xhd_fg0001" XPos="477" YPos="234" Width="237" Height="233" OffX="156" OffY="61" SrcW="500" SrcH="375" AlphaType="0" />
+        <Image Name="r_xhd_fg0024" XPos="715" YPos="234" Width="239" Height="232" OffX="154" OffY="62" SrcW="500" SrcH="375" AlphaType="0" />
+        <Image Name="r_xhd_fg0020" XPos="239" YPos="468" Width="239" Height="232" OffX="154" OffY="62" SrcW="500" SrcH="375" AlphaType="0" />
+        <Image Name="r_xhd_fg0044" XPos="239" YPos="701" Width="238" Height="232" OffX="155" OffY="62" SrcW="500" SrcH="375" AlphaType="0" />
+        <Image Name="r_xhd_fg0040" XPos="479" YPos="468" Width="238" Height="232" OffX="155" OffY="62" SrcW="500" SrcH="375" AlphaType="0" />
+        <Image Name="r_xhd_fg0059" XPos="718" YPos="468" Width="237" Height="232" OffX="156" OffY="62" SrcW="500" SrcH="375" AlphaType="0" />
+        <Image Name="r_xhd_fg0004" XPos="479" YPos="701" Width="237" Height="232" OffX="156" OffY="62" SrcW="500" SrcH="375" AlphaType="0" />
+        <Image Name="r_xhd_fg0000" XPos="717" YPos="701" Width="237" Height="232" OffX="156" OffY="62" SrcW="500" SrcH="375" AlphaType="0" />
+    </Imageset>
+</Imagesets>

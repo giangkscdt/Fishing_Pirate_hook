@@ -1,0 +1,13 @@
+<Imagesets>
+    <Imageset Name="pirate_15" NativeHorzRes="1024" NativeVertRes="1024">
+        <Image Name="green4P_miss_h0023" XPos="0" YPos="0" Width="271" Height="280" OffX="97" OffY="54" SrcW="368" SrcH="375" AlphaType="0" />
+        <Image Name="green4P_miss_h0020" XPos="0" YPos="281" Width="271" Height="280" OffX="97" OffY="54" SrcW="368" SrcH="375" AlphaType="0" />
+        <Image Name="green4P_miss_h0019" XPos="0" YPos="562" Width="271" Height="280" OffX="97" OffY="54" SrcW="368" SrcH="375" AlphaType="0" />
+        <Image Name="green4P_miss_h0004" XPos="272" YPos="0" Width="271" Height="280" OffX="97" OffY="54" SrcW="368" SrcH="375" AlphaType="0" />
+        <Image Name="green4P_miss_h0003" XPos="544" YPos="0" Width="271" Height="280" OffX="97" OffY="54" SrcW="368" SrcH="375" AlphaType="0" />
+        <Image Name="green4P_miss_h0001" XPos="272" YPos="281" Width="271" Height="280" OffX="97" OffY="54" SrcW="368" SrcH="375" AlphaType="0" />
+        <Image Name="green4P_miss_h0000" XPos="272" YPos="562" Width="271" Height="280" OffX="97" OffY="54" SrcW="368" SrcH="375" AlphaType="0" />
+        <Image Name="green4P_down_h0059" XPos="544" YPos="281" Width="271" Height="280" OffX="97" OffY="54" SrcW="368" SrcH="375" AlphaType="0" />
+        <Image Name="green4P_down_h0044" XPos="544" YPos="562" Width="271" Height="280" OffX="97" OffY="54" SrcW="368" SrcH="375" AlphaType="0" />
+    </Imageset>
+</Imagesets>

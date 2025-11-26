@@ -1,0 +1,34 @@
+<Imagesets>
+    <Imageset Name="chips" NativeHorzRes="1024" NativeVertRes="1024">
+        <Image Name="chips0012" XPos="0" YPos="0" Width="153" Height="175" OffX="110" OffY="27" SrcW="380" SrcH="285" AlphaType="0" />
+        <Image Name="chips0013" XPos="0" YPos="176" Width="144" Height="174" OffX="117" OffY="26" SrcW="380" SrcH="285" AlphaType="0" />
+        <Image Name="chips0014" XPos="0" YPos="351" Width="122" Height="173" OffX="130" OffY="26" SrcW="380" SrcH="285" AlphaType="0" />
+        <Image Name="chips0018" XPos="154" YPos="0" Width="155" Height="171" OffX="110" OffY="27" SrcW="380" SrcH="285" AlphaType="0" />
+        <Image Name="chips0011" XPos="310" YPos="0" Width="150" Height="171" OffX="108" OffY="32" SrcW="380" SrcH="285" AlphaType="0" />
+        <Image Name="chips0017" XPos="0" YPos="525" Width="144" Height="171" OffX="116" OffY="26" SrcW="380" SrcH="285" AlphaType="0" />
+        <Image Name="chips0027" XPos="461" YPos="0" Width="153" Height="169" OffX="114" OffY="50" SrcW="380" SrcH="285" AlphaType="0" />
+        <Image Name="chips0003" XPos="615" YPos="0" Width="154" Height="167" OffX="119" OffY="51" SrcW="380" SrcH="285" AlphaType="0" />
+        <Image Name="chips0026" XPos="770" YPos="0" Width="150" Height="167" OffX="117" OffY="51" SrcW="380" SrcH="285" AlphaType="0" />
+        <Image Name="chips0002" XPos="0" YPos="697" Width="142" Height="167" OffX="123" OffY="53" SrcW="380" SrcH="285" AlphaType="0" />
+        <Image Name="chips0015" XPos="921" YPos="0" Width="99" Height="167" OffX="140" OffY="30" SrcW="380" SrcH="285" AlphaType="0" />
+        <Image Name="chips0028" XPos="154" YPos="172" Width="142" Height="166" OffX="118" OffY="53" SrcW="380" SrcH="285" AlphaType="0" />
+        <Image Name="chips0016" XPos="154" YPos="339" Width="123" Height="166" OffX="127" OffY="28" SrcW="380" SrcH="285" AlphaType="0" />
+        <Image Name="chips0010" XPos="154" YPos="506" Width="132" Height="164" OffX="114" OffY="40" SrcW="380" SrcH="285" AlphaType="0" />
+        <Image Name="chips0029" XPos="154" YPos="671" Width="121" Height="163" OffX="128" OffY="56" SrcW="380" SrcH="285" AlphaType="0" />
+        <Image Name="chips0025" XPos="154" YPos="835" Width="131" Height="162" OffX="126" OffY="53" SrcW="380" SrcH="285" AlphaType="0" />
+        <Image Name="chips0019" XPos="297" YPos="172" Width="154" Height="160" OffX="111" OffY="33" SrcW="380" SrcH="285" AlphaType="0" />
+        <Image Name="chips0001" XPos="452" YPos="172" Width="121" Height="159" OffX="132" OffY="59" SrcW="380" SrcH="285" AlphaType="0" />
+        <Image Name="chips0004" XPos="574" YPos="172" Width="150" Height="157" OffX="124" OffY="53" SrcW="380" SrcH="285" AlphaType="0" />
+        <Image Name="chips0000" XPos="0" YPos="865" Width="98" Height="157" OffX="141" OffY="59" SrcW="380" SrcH="285" AlphaType="0" />
+        <Image Name="chips0009" XPos="725" YPos="172" Width="104" Height="153" OffX="129" OffY="51" SrcW="380" SrcH="285" AlphaType="0" />
+        <Image Name="chips0024" XPos="830" YPos="172" Width="101" Height="152" OffX="139" OffY="59" SrcW="380" SrcH="285" AlphaType="0" />
+        <Image Name="chips0020" XPos="297" YPos="333" Width="136" Height="140" OffX="122" OffY="44" SrcW="380" SrcH="285" AlphaType="0" />
+        <Image Name="chips0005" XPos="297" YPos="474" Width="135" Height="138" OffX="135" OffY="59" SrcW="380" SrcH="285" AlphaType="0" />
+        <Image Name="chips0008" XPos="932" YPos="172" Width="74" Height="136" OffX="147" OffY="64" SrcW="380" SrcH="285" AlphaType="0" />
+        <Image Name="chips0023" XPos="297" YPos="613" Width="69" Height="134" OffX="156" OffY="67" SrcW="380" SrcH="285" AlphaType="0" />
+        <Image Name="chips0021" XPos="297" YPos="748" Width="104" Height="114" OffX="140" OffY="59" SrcW="380" SrcH="285" AlphaType="0" />
+        <Image Name="chips0006" XPos="297" YPos="863" Width="110" Height="112" OffX="148" OffY="69" SrcW="380" SrcH="285" AlphaType="0" />
+        <Image Name="chips0007" XPos="434" YPos="333" Width="75" Height="112" OffX="160" OffY="79" SrcW="380" SrcH="285" AlphaType="0" />
+        <Image Name="chips0022" XPos="434" YPos="446" Width="70" Height="111" OffX="154" OffY="75" SrcW="380" SrcH="285" AlphaType="0" />
+    </Imageset>
+</Imagesets>

@@ -1,0 +1,14 @@
+<Imagesets>
+    <Imageset Name="nail_yglight_1" NativeHorzRes="512" NativeVertRes="512">
+        <Image Name="nail_fg0024" XPos="0" YPos="0" Width="129" Height="172" OffX="130" OffY="56" SrcW="380" SrcH="285" AlphaType="0" />
+        <Image Name="nail_fg0023" XPos="0" YPos="173" Width="122" Height="166" OffX="141" OffY="59" SrcW="380" SrcH="285" AlphaType="0" />
+        <Image Name="nail_fg0022" XPos="0" YPos="340" Width="117" Height="161" OffX="151" OffY="61" SrcW="380" SrcH="285" AlphaType="0" />
+        <Image Name="nail_fg0021" XPos="130" YPos="0" Width="115" Height="157" OffX="154" OffY="63" SrcW="380" SrcH="285" AlphaType="0" />
+        <Image Name="nail_fg0020" XPos="130" YPos="158" Width="109" Height="154" OffX="156" OffY="64" SrcW="380" SrcH="285" AlphaType="0" />
+        <Image Name="nail_fg0019" XPos="130" YPos="313" Width="100" Height="148" OffX="155" OffY="67" SrcW="380" SrcH="285" AlphaType="0" />
+        <Image Name="nail_fg0018" XPos="246" YPos="0" Width="95" Height="143" OffX="146" OffY="69" SrcW="380" SrcH="285" AlphaType="0" />
+        <Image Name="nail_fg0017" XPos="342" YPos="0" Width="89" Height="138" OffX="137" OffY="72" SrcW="380" SrcH="285" AlphaType="0" />
+        <Image Name="nail_fg0016" XPos="246" YPos="144" Width="84" Height="132" OffX="129" OffY="75" SrcW="380" SrcH="285" AlphaType="0" />
+        <Image Name="nail_fg0015" XPos="331" YPos="144" Width="87" Height="128" OffX="124" OffY="78" SrcW="380" SrcH="285" AlphaType="0" />
+    </Imageset>
+</Imagesets>

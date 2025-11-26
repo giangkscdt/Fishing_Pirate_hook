@@ -1,0 +1,5 @@
+<Imagesets>
+    <Imageset Name="fish_num" NativeHorzRes="256" NativeVertRes="256">
+        <Image Name="bubble" XPos="0" YPos="0" Width="178" Height="178" OffX="90" OffY="59" SrcW="360" SrcH="270" AlphaType="0" />
+    </Imageset>
+</Imagesets>

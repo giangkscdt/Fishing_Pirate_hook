@@ -1,0 +1,29 @@
+<Imagesets>
+    <Imageset Name="xcy_yglight_2" NativeHorzRes="1024" NativeVertRes="1024">
+        <Image Name="xcy_light0058" XPos="0" YPos="0" Width="233" Height="193" OffX="27" OffY="12" SrcW="300" SrcH="225" AlphaType="0" />
+        <Image Name="xcy_light0054" XPos="234" YPos="0" Width="229" Height="193" OffX="26" OffY="12" SrcW="300" SrcH="225" AlphaType="0" />
+        <Image Name="xcy_light0057" XPos="464" YPos="0" Width="226" Height="193" OffX="27" OffY="12" SrcW="300" SrcH="225" AlphaType="0" />
+        <Image Name="xcy_light0026" XPos="691" YPos="0" Width="223" Height="193" OffX="26" OffY="10" SrcW="300" SrcH="225" AlphaType="0" />
+        <Image Name="xcy_light0056" XPos="0" YPos="194" Width="220" Height="193" OffX="27" OffY="12" SrcW="300" SrcH="225" AlphaType="0" />
+        <Image Name="xcy_light0041" XPos="0" YPos="388" Width="211" Height="193" OffX="26" OffY="11" SrcW="300" SrcH="225" AlphaType="0" />
+        <Image Name="xcy_light0032" XPos="221" YPos="194" Width="233" Height="192" OffX="27" OffY="12" SrcW="300" SrcH="225" AlphaType="0" />
+        <Image Name="xcy_light0033" XPos="455" YPos="194" Width="226" Height="192" OffX="27" OffY="12" SrcW="300" SrcH="225" AlphaType="0" />
+        <Image Name="xcy_light0034" XPos="682" YPos="194" Width="220" Height="192" OffX="27" OffY="12" SrcW="300" SrcH="225" AlphaType="0" />
+        <Image Name="xcy_light0040" XPos="0" YPos="582" Width="200" Height="192" OffX="26" OffY="11" SrcW="300" SrcH="225" AlphaType="0" />
+        <Image Name="xcy_light0038" XPos="221" YPos="387" Width="236" Height="191" OffX="26" OffY="11" SrcW="300" SrcH="225" AlphaType="0" />
+        <Image Name="xcy_light0036" XPos="221" YPos="579" Width="229" Height="191" OffX="26" OffY="12" SrcW="300" SrcH="225" AlphaType="0" />
+        <Image Name="xcy_light0035" XPos="221" YPos="771" Width="219" Height="191" OffX="26" OffY="12" SrcW="300" SrcH="225" AlphaType="0" />
+        <Image Name="xcy_light0039" XPos="0" YPos="775" Width="211" Height="191" OffX="26" OffY="11" SrcW="300" SrcH="225" AlphaType="0" />
+        <Image Name="xcy_light0037" XPos="458" YPos="387" Width="243" Height="190" OffX="26" OffY="12" SrcW="300" SrcH="225" AlphaType="0" />
+        <Image Name="xcy_light0024" XPos="702" YPos="387" Width="209" Height="188" OffX="28" OffY="11" SrcW="300" SrcH="225" AlphaType="0" />
+        <Image Name="xcy_light0023" XPos="458" YPos="578" Width="203" Height="183" OffX="30" OffY="13" SrcW="300" SrcH="225" AlphaType="0" />
+        <Image Name="xcy_light0022" XPos="458" YPos="762" Width="200" Height="177" OffX="31" OffY="15" SrcW="300" SrcH="225" AlphaType="0" />
+        <Image Name="xcy_light0021" XPos="662" YPos="578" Width="199" Height="173" OffX="32" OffY="16" SrcW="300" SrcH="225" AlphaType="0" />
+        <Image Name="xcy_light0020" XPos="662" YPos="752" Width="195" Height="168" OffX="34" OffY="18" SrcW="300" SrcH="225" AlphaType="0" />
+        <Image Name="xcy_light0009" XPos="862" YPos="578" Width="155" Height="108" OffX="87" OffY="45" SrcW="300" SrcH="225" AlphaType="0" />
+        <Image Name="xcy_light0002" XPos="862" YPos="687" Width="154" Height="105" OffX="73" OffY="55" SrcW="300" SrcH="225" AlphaType="0" />
+        <Image Name="xcy_light0001" XPos="862" YPos="793" Width="154" Height="105" OffX="72" OffY="56" SrcW="300" SrcH="225" AlphaType="0" />
+        <Image Name="xcy_light0000" XPos="862" YPos="899" Width="154" Height="105" OffX="71" OffY="56" SrcW="300" SrcH="225" AlphaType="0" />
+        <Image Name="xcy_light0008" XPos="662" YPos="921" Width="151" Height="102" OffX="87" OffY="49" SrcW="300" SrcH="225" AlphaType="0" />
+    </Imageset>
+</Imagesets>

@@ -1,0 +1,20 @@
+<Imagesets>
+    <Imageset Name="r_xhd_ds_1" NativeHorzRes="1024" NativeVertRes="1024">
+        <Image Name="r_xhd_ds0058" XPos="0" YPos="0" Width="235" Height="231" OffX="156" OffY="63" SrcW="500" SrcH="375" AlphaType="0" />
+        <Image Name="r_xhd_ds0026" XPos="236" YPos="0" Width="230" Height="231" OffX="149" OffY="63" SrcW="500" SrcH="375" AlphaType="0" />
+        <Image Name="r_xhd_ds0025" XPos="467" YPos="0" Width="230" Height="231" OffX="149" OffY="63" SrcW="500" SrcH="375" AlphaType="0" />
+        <Image Name="r_xhd_ds0019" XPos="698" YPos="0" Width="229" Height="231" OffX="150" OffY="63" SrcW="500" SrcH="375" AlphaType="0" />
+        <Image Name="r_xhd_ds0018" XPos="0" YPos="232" Width="229" Height="231" OffX="150" OffY="63" SrcW="500" SrcH="375" AlphaType="0" />
+        <Image Name="r_xhd_ds0005" XPos="0" YPos="464" Width="229" Height="231" OffX="155" OffY="63" SrcW="500" SrcH="375" AlphaType="0" />
+        <Image Name="r_xhd_ds0006" XPos="0" YPos="696" Width="227" Height="231" OffX="154" OffY="63" SrcW="500" SrcH="375" AlphaType="0" />
+        <Image Name="r_xhd_ds0038" XPos="230" YPos="232" Width="225" Height="231" OffX="154" OffY="63" SrcW="500" SrcH="375" AlphaType="0" />
+        <Image Name="r_xhd_ds0039" XPos="230" YPos="464" Width="224" Height="231" OffX="155" OffY="63" SrcW="500" SrcH="375" AlphaType="0" />
+        <Image Name="r_xhd_ds0046" XPos="230" YPos="696" Width="221" Height="231" OffX="158" OffY="63" SrcW="500" SrcH="375" AlphaType="0" />
+        <Image Name="r_xhd_ds0045" XPos="456" YPos="232" Width="221" Height="231" OffX="158" OffY="63" SrcW="500" SrcH="375" AlphaType="0" />
+        <Image Name="r_xhd_ds0057" XPos="678" YPos="232" Width="232" Height="230" OffX="157" OffY="64" SrcW="500" SrcH="375" AlphaType="0" />
+        <Image Name="r_xhd_ds0056" XPos="456" YPos="464" Width="230" Height="230" OffX="156" OffY="64" SrcW="500" SrcH="375" AlphaType="0" />
+        <Image Name="r_xhd_ds0027" XPos="456" YPos="695" Width="230" Height="230" OffX="149" OffY="64" SrcW="500" SrcH="375" AlphaType="0" />
+        <Image Name="r_xhd_ds0055" XPos="687" YPos="464" Width="229" Height="230" OffX="155" OffY="64" SrcW="500" SrcH="375" AlphaType="0" />
+        <Image Name="r_xhd_ds0035" XPos="687" YPos="695" Width="228" Height="230" OffX="151" OffY="64" SrcW="500" SrcH="375" AlphaType="0" />
+    </Imageset>
+</Imagesets>

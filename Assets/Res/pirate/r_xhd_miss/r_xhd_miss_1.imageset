@@ -1,0 +1,20 @@
+<Imagesets>
+    <Imageset Name="r_xhd_miss_1" NativeHorzRes="1024" NativeVertRes="1024">
+        <Image Name="r_xhd_miss0019" XPos="0" YPos="0" Width="241" Height="231" OffX="152" OffY="63" SrcW="500" SrcH="375" AlphaType="0" />
+        <Image Name="r_xhd_miss0018" XPos="242" YPos="0" Width="241" Height="231" OffX="152" OffY="63" SrcW="500" SrcH="375" AlphaType="0" />
+        <Image Name="r_xhd_miss0006" XPos="484" YPos="0" Width="241" Height="231" OffX="152" OffY="63" SrcW="500" SrcH="375" AlphaType="0" />
+        <Image Name="r_xhd_miss0038" XPos="726" YPos="0" Width="240" Height="231" OffX="153" OffY="63" SrcW="500" SrcH="375" AlphaType="0" />
+        <Image Name="r_xhd_miss0026" XPos="0" YPos="232" Width="240" Height="231" OffX="153" OffY="63" SrcW="500" SrcH="375" AlphaType="0" />
+        <Image Name="r_xhd_miss0025" XPos="0" YPos="464" Width="240" Height="231" OffX="153" OffY="63" SrcW="500" SrcH="375" AlphaType="0" />
+        <Image Name="r_xhd_miss0039" XPos="0" YPos="696" Width="239" Height="231" OffX="154" OffY="63" SrcW="500" SrcH="375" AlphaType="0" />
+        <Image Name="r_xhd_miss0005" XPos="241" YPos="232" Width="239" Height="231" OffX="154" OffY="63" SrcW="500" SrcH="375" AlphaType="0" />
+        <Image Name="r_xhd_miss0046" XPos="481" YPos="232" Width="238" Height="231" OffX="155" OffY="63" SrcW="500" SrcH="375" AlphaType="0" />
+        <Image Name="r_xhd_miss0045" XPos="720" YPos="232" Width="238" Height="231" OffX="155" OffY="63" SrcW="500" SrcH="375" AlphaType="0" />
+        <Image Name="r_xhd_miss0058" XPos="241" YPos="464" Width="237" Height="231" OffX="156" OffY="63" SrcW="500" SrcH="375" AlphaType="0" />
+        <Image Name="r_xhd_miss0016" XPos="479" YPos="464" Width="242" Height="230" OffX="151" OffY="64" SrcW="500" SrcH="375" AlphaType="0" />
+        <Image Name="r_xhd_miss0015" XPos="722" YPos="464" Width="242" Height="230" OffX="151" OffY="64" SrcW="500" SrcH="375" AlphaType="0" />
+        <Image Name="r_xhd_miss0014" XPos="241" YPos="696" Width="242" Height="230" OffX="151" OffY="64" SrcW="500" SrcH="375" AlphaType="0" />
+        <Image Name="r_xhd_miss0007" XPos="484" YPos="696" Width="242" Height="230" OffX="151" OffY="64" SrcW="500" SrcH="375" AlphaType="0" />
+        <Image Name="r_xhd_miss0017" XPos="727" YPos="696" Width="241" Height="230" OffX="152" OffY="64" SrcW="500" SrcH="375" AlphaType="0" />
+    </Imageset>
+</Imagesets>

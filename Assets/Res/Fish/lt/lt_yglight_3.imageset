@@ -1,0 +1,6 @@
+<Imagesets>
+    <Imageset Name="lt_yglight_3" NativeHorzRes="256" NativeVertRes="256">
+        <Image Name="lt_lg0003" XPos="0" YPos="0" Width="147" Height="114" OffX="110" OffY="81" SrcW="380" SrcH="285" AlphaType="0" />
+        <Image Name="lt_lg0000" XPos="0" YPos="115" Width="170" Height="113" OffX="105" OffY="79" SrcW="380" SrcH="285" AlphaType="0" />
+    </Imageset>
+</Imagesets>

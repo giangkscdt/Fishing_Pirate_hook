@@ -1,0 +1,11 @@
+<Imagesets>
+    <Imageset Name="bone_0" NativeHorzRes="256" NativeVertRes="256">
+        <Image Name="bone0019" XPos="0" YPos="0" Width="102" Height="92" OffX="134" OffY="91" SrcW="380" SrcH="285" AlphaType="0" />
+        <Image Name="bone0008" XPos="103" YPos="0" Width="64" Height="77" OffX="156" OffY="108" SrcW="380" SrcH="285" AlphaType="0" />
+        <Image Name="bone0005" XPos="168" YPos="0" Width="54" Height="69" OffX="162" OffY="105" SrcW="380" SrcH="285" AlphaType="0" />
+        <Image Name="bone0020" XPos="0" YPos="93" Width="93" Height="68" OffX="138" OffY="104" SrcW="380" SrcH="285" AlphaType="0" />
+        <Image Name="bone0007" XPos="0" YPos="162" Width="64" Height="51" OffX="156" OffY="119" SrcW="380" SrcH="285" AlphaType="0" />
+        <Image Name="bone0006" XPos="94" YPos="93" Width="62" Height="42" OffX="157" OffY="120" SrcW="380" SrcH="285" AlphaType="0" />
+        <Image Name="bone0021" XPos="157" YPos="93" Width="82" Height="42" OffX="144" OffY="118" SrcW="380" SrcH="285" AlphaType="0" />
+    </Imageset>
+</Imagesets>

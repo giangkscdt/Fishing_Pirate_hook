@@ -1,0 +1,10 @@
+<Imagesets>
+    <Imageset Name="sy_yglight_4" NativeHorzRes="512" NativeVertRes="512">
+        <Image Name="sy_yg0007" XPos="0" YPos="0" Width="255" Height="135" OffX="47" OffY="39" SrcW="380" SrcH="285" AlphaType="0" />
+        <Image Name="sy_yg0004" XPos="256" YPos="0" Width="253" Height="130" OffX="48" OffY="46" SrcW="380" SrcH="285" AlphaType="0" />
+        <Image Name="sy_yg0003" XPos="0" YPos="136" Width="251" Height="129" OffX="48" OffY="49" SrcW="380" SrcH="285" AlphaType="0" />
+        <Image Name="sy_yg0002" XPos="252" YPos="136" Width="249" Height="128" OffX="48" OffY="51" SrcW="380" SrcH="285" AlphaType="0" />
+        <Image Name="sy_yg0000" XPos="0" YPos="266" Width="246" Height="127" OffX="48" OffY="53" SrcW="380" SrcH="285" AlphaType="0" />
+        <Image Name="sy_yg0001" XPos="247" YPos="266" Width="247" Height="127" OffX="48" OffY="53" SrcW="380" SrcH="285" AlphaType="0" />
+    </Imageset>
+</Imagesets>

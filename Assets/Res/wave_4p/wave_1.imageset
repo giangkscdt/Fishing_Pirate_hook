@@ -1,0 +1,17 @@
+<Imagesets>
+    <Imageset Name="wave_1" NativeHorzRes="1024" NativeVertRes="1024">
+        <Image Name="sw15" XPos="0" YPos="0" Width="742" Height="78" OffX="1" OffY="1" SrcW="743" SrcH="79" AlphaType="0" />
+        <Image Name="sw14" XPos="0" YPos="79" Width="742" Height="78" OffX="1" OffY="1" SrcW="743" SrcH="79" AlphaType="0" />
+        <Image Name="sw13" XPos="0" YPos="158" Width="742" Height="78" OffX="1" OffY="1" SrcW="743" SrcH="79" AlphaType="0" />
+        <Image Name="sw12" XPos="0" YPos="237" Width="742" Height="78" OffX="1" OffY="1" SrcW="743" SrcH="79" AlphaType="0" />
+        <Image Name="sw11" XPos="0" YPos="316" Width="742" Height="78" OffX="1" OffY="1" SrcW="743" SrcH="79" AlphaType="0" />
+        <Image Name="sw10" XPos="0" YPos="395" Width="742" Height="78" OffX="1" OffY="1" SrcW="743" SrcH="79" AlphaType="0" />
+        <Image Name="sw09" XPos="0" YPos="474" Width="742" Height="78" OffX="1" OffY="1" SrcW="743" SrcH="79" AlphaType="0" />
+        <Image Name="sw08" XPos="0" YPos="553" Width="742" Height="78" OffX="1" OffY="1" SrcW="743" SrcH="79" AlphaType="0" />
+        <Image Name="sw07" XPos="0" YPos="632" Width="742" Height="78" OffX="1" OffY="1" SrcW="743" SrcH="79" AlphaType="0" />
+        <Image Name="sw06" XPos="0" YPos="711" Width="742" Height="78" OffX="1" OffY="1" SrcW="743" SrcH="79" AlphaType="0" />
+        <Image Name="sw05" XPos="0" YPos="790" Width="742" Height="78" OffX="1" OffY="1" SrcW="743" SrcH="79" AlphaType="0" />
+        <Image Name="sw17" XPos="0" YPos="869" Width="741" Height="77" OffX="1" OffY="1" SrcW="743" SrcH="79" AlphaType="0" />
+        <Image Name="sw00" XPos="0" YPos="947" Width="647" Height="59" OffX="63" OffY="9" SrcW="743" SrcH="79" AlphaType="0" />
+    </Imageset>
+</Imagesets>

@@ -1,0 +1,42 @@
+<objects>
+	<object name="xcy" ft="0" scoreMin="1" scoreMax="1" weight="1" x="60" y="30" w="100" h="60" light="30" />
+	<object name="zy1" ft="0" scoreMin="1" scoreMax="1" weight="1" x="70" y="40" w="120" h="80" light="50" />
+	<object name="ct" ft="0" scoreMin="1" scoreMax="1" weight="1" x="70" y="30" w="120" h="60" light="30" />
+	<object name="njby" ft="0" scoreMin="1" scoreMax="1" weight="1" x="80" y="30" w="120" h="60" light="30" />
+
+	<object name="sxy" scoreMin="2" scoreMax="3" weight="3" x="40" y="40" w="70" h="80" light="30" />
+	<object name="njxy"ft="0"  scoreMin="2" scoreMax="3" weight="3" x="70" y="30" w="110" h="60" light="30" />
+	<object name="ddy" ft="0" scoreMin="2" scoreMax="3" weight="3" x="80" y="20" w="120" h="50" light="30" />
+	<object name="lks" ft="0" scoreMin="2" scoreMax="3" weight="3" x="90" y="35" w="140" h="70" light="30" />
+
+	<object name="sxy1" ft="1" scoreMin="4" scoreMax="5" weight="5" x="30" y="30" w="60" h="70" light="30" />
+	<object name="hm" ft="1" scoreMin="4" scoreMax="5" weight="5" x="40" y="90" w="80" h="100" light="40" />
+	<object name="jw" ft="1" scoreMin="4" scoreMax="5" weight="5" x="110" y="30" w="90" h="40" light="40" />
+
+	<object name="lt" ft="1" scoreMin="6" scoreMax="7" weight="7" x="70" y="40" w="120" h="80" light="30" />
+	<object name="jy" ft="1" scoreMin="6" scoreMax="7" weight="7" x="40" y="20" w="110" h="50" light="30" />
+
+	<object name="ak" ft="2" scoreMin="8" scoreMax="10" weight="9" x="70" y="30" w="120" h="80" light="30" />
+	<object name="szy" ft="2" scoreMin="8" scoreMax="10" weight="9" x="80" y="30" w="120" h="80" light="30" />
+
+	<object name="sy" ft="5" scoreMin="100" scoreMax="100" weight="20" x="120" y="40" w="180" h="60" light="30" />
+	<object name="zy" ft="6" scoreMin="200" scoreMax="200" weight="20" x="30" y="60" w="70" h="70" light="50" />
+	<object name="lob" ft="3" scoreMin="1000" scoreMax="1000" weight="40" x="30" y="20" w="80" h="80" light="30" />
+
+	<object name="can01" ft="4" scoreMin="0" scoreMax="0" weight="5" x="10" y="10" w="50" h="50" light="30" />
+	<object name="briefs" ft="4" scoreMin="0" scoreMax="0" weight="5" x="10" y="10" w="50" h="50" light="30" />
+	<object name="ball" ft="4" scoreMin="0" scoreMax="0" weight="5" x="10" y="10" w="50" h="50" light="30" />
+	<object name="bone" ft="4" scoreMin="0" scoreMax="0" weight="5" x="10" y="10" w="50" h="50" light="30" />
+	<object name="shoes" ft="4" scoreMin="0" scoreMax="0" weight="5" x="10" y="10" w="50" h="50" light="30" />
+	<object name="pot" ft="4" scoreMin="0" scoreMax="0" weight="5" x="10" y="10" w="50" h="50" light="30" />
+	<object name="hammer" ft="4" scoreMin="0" scoreMax="0" weight="5" x="10" y="10" w="50" h="50" light="30" />
+	<object name="milk" ft="4" scoreMin="0" scoreMax="0" weight="5" x="10" y="10" w="50" h="50" light="30" />
+	<object name="death" ft="4" scoreMin="0" scoreMax="0" weight="5" x="10" y="10" w="50" h="50" light="30" />
+	<object name="nail" ft="4" scoreMin="0" scoreMax="0" weight="5" x="10" y="10" w="50" h="50" light="30" />
+	<object name="can02" ft="4" scoreMin="0" scoreMax="0" weight="5" x="10" y="10" w="50" h="50" light="30" />
+	<object name="fork" ft="4" scoreMin="0" scoreMax="0" weight="5" x="10" y="10" w="50" h="50" light="30" />
+	<object name="bottle" ft="4" scoreMin="0" scoreMax="0" weight="5" x="10" y="10" w="50" h="50" light="30" />
+	<object name="chips" ft="4" scoreMin="0" scoreMax="0" weight="5" x="10" y="10" w="50" h="50" light="30" />
+	<object name="hat" ft="4" scoreMin="0" scoreMax="0" weight="5" x="10" y="10" w="50" h="50" light="30" />
+	<object name="can03" ft="4" scoreMin="0" scoreMax="0" weight="5" x="10" y="10" w="50" h="50" light="30" />
+</objects>

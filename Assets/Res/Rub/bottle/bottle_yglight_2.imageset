@@ -1,0 +1,34 @@
+<Imagesets>
+    <Imageset Name="bottle_yglight_2" NativeHorzRes="1024" NativeVertRes="1024">
+        <Image Name="bottle_fg0031" XPos="0" YPos="0" Width="154" Height="276" OffX="113" OffY="2" SrcW="380" SrcH="285" AlphaType="0" />
+        <Image Name="bottle_fg0030" XPos="0" YPos="277" Width="154" Height="276" OffX="113" OffY="5" SrcW="380" SrcH="285" AlphaType="0" />
+        <Image Name="bottle_fg0059" XPos="0" YPos="554" Width="154" Height="275" OffX="113" OffY="8" SrcW="380" SrcH="285" AlphaType="0" />
+        <Image Name="bottle_fg0058" XPos="155" YPos="0" Width="154" Height="275" OffX="112" OffY="10" SrcW="380" SrcH="285" AlphaType="0" />
+        <Image Name="bottle_fg0032" XPos="155" YPos="276" Width="154" Height="275" OffX="112" OffY="0" SrcW="380" SrcH="285" AlphaType="0" />
+        <Image Name="bottle_fg0029" XPos="155" YPos="552" Width="154" Height="275" OffX="113" OffY="8" SrcW="380" SrcH="285" AlphaType="0" />
+        <Image Name="bottle_fg0028" XPos="310" YPos="0" Width="153" Height="275" OffX="113" OffY="10" SrcW="380" SrcH="285" AlphaType="0" />
+        <Image Name="bottle_fg0033" XPos="464" YPos="0" Width="155" Height="274" OffX="112" OffY="0" SrcW="380" SrcH="285" AlphaType="0" />
+        <Image Name="bottle_fg0034" XPos="620" YPos="0" Width="155" Height="273" OffX="113" OffY="0" SrcW="380" SrcH="285" AlphaType="0" />
+        <Image Name="bottle_fg0057" XPos="776" YPos="0" Width="153" Height="273" OffX="112" OffY="12" SrcW="380" SrcH="285" AlphaType="0" />
+        <Image Name="bottle_fg0027" XPos="310" YPos="276" Width="153" Height="272" OffX="112" OffY="13" SrcW="380" SrcH="285" AlphaType="0" />
+        <Image Name="bottle_fg0035" XPos="464" YPos="276" Width="155" Height="271" OffX="115" OffY="0" SrcW="380" SrcH="285" AlphaType="0" />
+        <Image Name="bottle_fg0056" XPos="620" YPos="276" Width="154" Height="271" OffX="110" OffY="14" SrcW="380" SrcH="285" AlphaType="0" />
+        <Image Name="bottle_fg0036" XPos="775" YPos="276" Width="157" Height="270" OffX="117" OffY="0" SrcW="380" SrcH="285" AlphaType="0" />
+        <Image Name="bottle_fg0026" XPos="310" YPos="549" Width="153" Height="270" OffX="111" OffY="15" SrcW="380" SrcH="285" AlphaType="0" />
+        <Image Name="bottle_fg0037" XPos="464" YPos="549" Width="159" Height="269" OffX="121" OffY="0" SrcW="380" SrcH="285" AlphaType="0" />
+        <Image Name="bottle_fg0055" XPos="624" YPos="549" Width="154" Height="269" OffX="109" OffY="16" SrcW="380" SrcH="285" AlphaType="0" />
+        <Image Name="bottle_fg0025" XPos="779" YPos="549" Width="152" Height="269" OffX="110" OffY="16" SrcW="380" SrcH="285" AlphaType="0" />
+        <Image Name="bottle_fg0011" XPos="310" YPos="820" Width="102" Height="202" OffX="161" OffY="24" SrcW="380" SrcH="285" AlphaType="0" />
+        <Image Name="bottle_fg0010" XPos="413" YPos="820" Width="95" Height="199" OffX="164" OffY="25" SrcW="380" SrcH="285" AlphaType="0" />
+        <Image Name="bottle_fg0009" XPos="933" YPos="276" Width="87" Height="197" OffX="166" OffY="27" SrcW="380" SrcH="285" AlphaType="0" />
+        <Image Name="bottle_fg0008" XPos="932" YPos="549" Width="76" Height="193" OffX="168" OffY="30" SrcW="380" SrcH="285" AlphaType="0" />
+        <Image Name="bottle_fg0007" XPos="930" YPos="0" Width="70" Height="192" OffX="165" OffY="32" SrcW="380" SrcH="285" AlphaType="0" />
+        <Image Name="bottle_fg0006" XPos="0" YPos="830" Width="66" Height="191" OffX="162" OffY="34" SrcW="380" SrcH="285" AlphaType="0" />
+        <Image Name="bottle_fg0005" XPos="67" YPos="830" Width="64" Height="189" OffX="160" OffY="37" SrcW="380" SrcH="285" AlphaType="0" />
+        <Image Name="bottle_fg0004" XPos="155" YPos="828" Width="64" Height="188" OffX="158" OffY="39" SrcW="380" SrcH="285" AlphaType="0" />
+        <Image Name="bottle_fg0003" XPos="220" YPos="828" Width="64" Height="187" OffX="158" OffY="42" SrcW="380" SrcH="285" AlphaType="0" />
+        <Image Name="bottle_fg0001" XPos="509" YPos="820" Width="64" Height="186" OffX="158" OffY="47" SrcW="380" SrcH="285" AlphaType="0" />
+        <Image Name="bottle_fg0002" XPos="574" YPos="820" Width="63" Height="185" OffX="158" OffY="45" SrcW="380" SrcH="285" AlphaType="0" />
+        <Image Name="bottle_fg0000" XPos="638" YPos="820" Width="64" Height="184" OffX="158" OffY="51" SrcW="380" SrcH="285" AlphaType="0" />
+    </Imageset>
+</Imagesets>

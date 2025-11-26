@@ -1,0 +1,36 @@
+<Imagesets>
+    <Imageset Name="bone_yglight_0" NativeHorzRes="1024" NativeVertRes="1024">
+        <Image Name="bone_fg0059" XPos="0" YPos="0" Width="159" Height="251" OffX="110" OffY="17" SrcW="380" SrcH="285" AlphaType="0" />
+        <Image Name="bone_fg0029" XPos="0" YPos="252" Width="159" Height="251" OffX="110" OffY="17" SrcW="380" SrcH="285" AlphaType="0" />
+        <Image Name="bone_fg0058" XPos="0" YPos="504" Width="156" Height="249" OffX="111" OffY="20" SrcW="380" SrcH="285" AlphaType="0" />
+        <Image Name="bone_fg0028" XPos="0" YPos="754" Width="154" Height="249" OffX="112" OffY="20" SrcW="380" SrcH="285" AlphaType="0" />
+        <Image Name="bone_fg0044" XPos="160" YPos="0" Width="182" Height="247" OffX="100" OffY="19" SrcW="380" SrcH="285" AlphaType="0" />
+        <Image Name="bone_fg0030" XPos="160" YPos="248" Width="160" Height="247" OffX="111" OffY="17" SrcW="380" SrcH="285" AlphaType="0" />
+        <Image Name="bone_fg0043" XPos="160" YPos="496" Width="169" Height="246" OffX="107" OffY="21" SrcW="380" SrcH="285" AlphaType="0" />
+        <Image Name="bone_fg0045" XPos="343" YPos="0" Width="192" Height="243" OffX="94" OffY="19" SrcW="380" SrcH="285" AlphaType="0" />
+        <Image Name="bone_fg0057" XPos="160" YPos="743" Width="151" Height="242" OffX="113" OffY="25" SrcW="380" SrcH="285" AlphaType="0" />
+        <Image Name="bone_fg0027" XPos="536" YPos="0" Width="150" Height="241" OffX="113" OffY="26" SrcW="380" SrcH="285" AlphaType="0" />
+        <Image Name="bone_fg0042" XPos="687" YPos="0" Width="156" Height="240" OffX="114" OffY="26" SrcW="380" SrcH="285" AlphaType="0" />
+        <Image Name="bone_fg0031" XPos="844" YPos="0" Width="159" Height="238" OffX="112" OffY="20" SrcW="380" SrcH="285" AlphaType="0" />
+        <Image Name="bone_fg0046" XPos="343" YPos="244" Width="198" Height="233" OffX="89" OffY="22" SrcW="380" SrcH="285" AlphaType="0" />
+        <Image Name="bone_fg0056" XPos="343" YPos="478" Width="147" Height="229" OffX="114" OffY="33" SrcW="380" SrcH="285" AlphaType="0" />
+        <Image Name="bone_fg0026" XPos="343" YPos="708" Width="146" Height="229" OffX="115" OffY="33" SrcW="380" SrcH="285" AlphaType="0" />
+        <Image Name="bone_fg0041" XPos="542" YPos="244" Width="142" Height="228" OffX="121" OffY="33" SrcW="380" SrcH="285" AlphaType="0" />
+        <Image Name="bone_fg0032" XPos="685" YPos="244" Width="154" Height="224" OffX="115" OffY="26" SrcW="380" SrcH="285" AlphaType="0" />
+        <Image Name="bone_fg0047" XPos="542" YPos="473" Width="200" Height="221" OffX="87" OffY="27" SrcW="380" SrcH="285" AlphaType="0" />
+        <Image Name="bone_fg0055" XPos="840" YPos="244" Width="146" Height="212" OffX="114" OffY="42" SrcW="380" SrcH="285" AlphaType="0" />
+        <Image Name="bone_fg0025" XPos="743" YPos="473" Width="144" Height="211" OffX="115" OffY="43" SrcW="380" SrcH="285" AlphaType="0" />
+        <Image Name="bone_fg0040" XPos="542" YPos="695" Width="136" Height="211" OffX="122" OffY="42" SrcW="380" SrcH="285" AlphaType="0" />
+        <Image Name="bone_fg0033" XPos="679" YPos="695" Width="147" Height="205" OffX="119" OffY="35" SrcW="380" SrcH="285" AlphaType="0" />
+        <Image Name="bone_fg0054" XPos="827" YPos="695" Width="147" Height="191" OffX="113" OffY="53" SrcW="380" SrcH="285" AlphaType="0" />
+        <Image Name="bone_fg0014" XPos="888" YPos="473" Width="126" Height="191" OffX="128" OffY="47" SrcW="380" SrcH="285" AlphaType="0" />
+        <Image Name="bone_fg0003" XPos="542" YPos="907" Width="59" Height="116" OffX="163" OffY="79" SrcW="380" SrcH="285" AlphaType="0" />
+        <Image Name="bone_fg0021" XPos="602" YPos="907" Width="148" Height="110" OffX="111" OffY="84" SrcW="380" SrcH="285" AlphaType="0" />
+        <Image Name="bone_fg0009" XPos="751" YPos="907" Width="66" Height="109" OffX="156" OffY="93" SrcW="380" SrcH="285" AlphaType="0" />
+        <Image Name="bone_fg0004" XPos="818" YPos="907" Width="51" Height="94" OffX="167" OffY="91" SrcW="380" SrcH="285" AlphaType="0" />
+        <Image Name="bone_fg0008" XPos="343" YPos="938" Width="66" Height="78" OffX="155" OffY="107" SrcW="380" SrcH="285" AlphaType="0" />
+        <Image Name="bone_fg0005" XPos="410" YPos="938" Width="54" Height="69" OffX="162" OffY="105" SrcW="380" SrcH="285" AlphaType="0" />
+        <Image Name="bone_fg0007" XPos="870" YPos="907" Width="64" Height="51" OffX="156" OffY="119" SrcW="380" SrcH="285" AlphaType="0" />
+        <Image Name="bone_fg0006" XPos="870" YPos="959" Width="62" Height="42" OffX="157" OffY="120" SrcW="380" SrcH="285" AlphaType="0" />
+    </Imageset>
+</Imagesets>

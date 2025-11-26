@@ -1,0 +1,10 @@
+<Imagesets>
+    <Imageset Name="lob_yd_0" NativeHorzRes="512" NativeVertRes="512">
+        <Image Name="lx_yd0027" XPos="0" YPos="0" Width="170" Height="153" OffX="109" OffY="69" SrcW="380" SrcH="286" AlphaType="0" />
+        <Image Name="lx_yd0002" XPos="171" YPos="0" Width="171" Height="147" OffX="111" OffY="74" SrcW="380" SrcH="286" AlphaType="0" />
+        <Image Name="lx_yd0028" XPos="343" YPos="0" Width="167" Height="147" OffX="111" OffY="73" SrcW="380" SrcH="286" AlphaType="0" />
+        <Image Name="lx_yd0001" XPos="0" YPos="154" Width="168" Height="142" OffX="113" OffY="77" SrcW="380" SrcH="286" AlphaType="0" />
+        <Image Name="lx_yd0029" XPos="0" YPos="297" Width="164" Height="142" OffX="113" OffY="77" SrcW="380" SrcH="286" AlphaType="0" />
+        <Image Name="lx_yd0000" XPos="169" YPos="154" Width="160" Height="136" OffX="116" OffY="80" SrcW="380" SrcH="286" AlphaType="0" />
+    </Imageset>
+</Imagesets>

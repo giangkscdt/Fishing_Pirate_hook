@@ -1,0 +1,24 @@
+<Imagesets>
+    <Imageset Name="death_yglight_1" NativeHorzRes="1024" NativeVertRes="1024">
+        <Image Name="death_fg0051" XPos="0" YPos="0" Width="204" Height="255" OffX="83" OffY="39" SrcW="380" SrcH="300" AlphaType="0" />
+        <Image Name="death_fg0039" XPos="0" YPos="256" Width="204" Height="255" OffX="83" OffY="39" SrcW="380" SrcH="300" AlphaType="0" />
+        <Image Name="death_fg0033" XPos="0" YPos="512" Width="204" Height="255" OffX="87" OffY="22" SrcW="380" SrcH="300" AlphaType="0" />
+        <Image Name="death_fg0058" XPos="0" YPos="768" Width="204" Height="254" OffX="88" OffY="20" SrcW="380" SrcH="300" AlphaType="0" />
+        <Image Name="death_fg0032" XPos="205" YPos="0" Width="204" Height="254" OffX="88" OffY="20" SrcW="380" SrcH="300" AlphaType="0" />
+        <Image Name="death_fg0028" XPos="410" YPos="0" Width="204" Height="254" OffX="88" OffY="20" SrcW="380" SrcH="300" AlphaType="0" />
+        <Image Name="death_fg0056" XPos="205" YPos="255" Width="203" Height="256" OffX="86" OffY="24" SrcW="380" SrcH="300" AlphaType="0" />
+        <Image Name="death_fg0055" XPos="205" YPos="512" Width="203" Height="256" OffX="85" OffY="27" SrcW="380" SrcH="300" AlphaType="0" />
+        <Image Name="death_fg0052" XPos="409" YPos="255" Width="203" Height="256" OffX="83" OffY="36" SrcW="380" SrcH="300" AlphaType="0" />
+        <Image Name="death_fg0038" XPos="409" YPos="512" Width="203" Height="256" OffX="83" OffY="36" SrcW="380" SrcH="300" AlphaType="0" />
+        <Image Name="death_fg0035" XPos="613" YPos="255" Width="203" Height="256" OffX="85" OffY="27" SrcW="380" SrcH="300" AlphaType="0" />
+        <Image Name="death_fg0034" XPos="817" YPos="255" Width="203" Height="256" OffX="86" OffY="24" SrcW="380" SrcH="300" AlphaType="0" />
+        <Image Name="death_fg0027" XPos="205" YPos="769" Width="203" Height="254" OffX="87" OffY="22" SrcW="380" SrcH="300" AlphaType="0" />
+        <Image Name="death_fg0026" XPos="409" YPos="769" Width="202" Height="254" OffX="87" OffY="25" SrcW="380" SrcH="300" AlphaType="0" />
+        <Image Name="death_fg0054" XPos="613" YPos="512" Width="201" Height="257" OffX="85" OffY="29" SrcW="380" SrcH="300" AlphaType="0" />
+        <Image Name="death_fg0036" XPos="815" YPos="512" Width="201" Height="257" OffX="85" OffY="29" SrcW="380" SrcH="300" AlphaType="0" />
+        <Image Name="death_fg0024" XPos="615" YPos="0" Width="194" Height="250" OffX="88" OffY="33" SrcW="380" SrcH="300" AlphaType="0" />
+        <Image Name="death_fg0023" XPos="810" YPos="0" Width="189" Height="244" OffX="90" OffY="39" SrcW="380" SrcH="300" AlphaType="0" />
+        <Image Name="death_fg0022" XPos="613" YPos="770" Width="185" Height="238" OffX="92" OffY="45" SrcW="380" SrcH="300" AlphaType="0" />
+        <Image Name="death_fg0017" XPos="799" YPos="770" Width="167" Height="206" OffX="103" OffY="71" SrcW="380" SrcH="300" AlphaType="0" />
+    </Imageset>
+</Imagesets>

@@ -1,0 +1,34 @@
+<Imagesets>
+    <Imageset Name="milk_yglight_0" NativeHorzRes="1024" NativeVertRes="1024">
+        <Image Name="milk_fg0031" XPos="0" YPos="0" Width="183" Height="217" OffX="96" OffY="34" SrcW="380" SrcH="285" AlphaType="0" />
+        <Image Name="milk_fg0032" XPos="0" YPos="218" Width="181" Height="217" OffX="99" OffY="33" SrcW="380" SrcH="285" AlphaType="0" />
+        <Image Name="milk_fg0033" XPos="0" YPos="436" Width="177" Height="217" OffX="103" OffY="32" SrcW="380" SrcH="285" AlphaType="0" />
+        <Image Name="milk_fg0034" XPos="0" YPos="654" Width="174" Height="217" OffX="106" OffY="30" SrcW="380" SrcH="285" AlphaType="0" />
+        <Image Name="milk_fg0030" XPos="184" YPos="0" Width="184" Height="216" OffX="94" OffY="35" SrcW="380" SrcH="285" AlphaType="0" />
+        <Image Name="milk_fg0035" XPos="369" YPos="0" Width="171" Height="216" OffX="109" OffY="29" SrcW="380" SrcH="285" AlphaType="0" />
+        <Image Name="milk_fg0059" XPos="541" YPos="0" Width="183" Height="215" OffX="94" OffY="35" SrcW="380" SrcH="285" AlphaType="0" />
+        <Image Name="milk_fg0029" XPos="725" YPos="0" Width="183" Height="215" OffX="94" OffY="35" SrcW="380" SrcH="285" AlphaType="0" />
+        <Image Name="milk_fg0058" XPos="184" YPos="217" Width="182" Height="215" OffX="94" OffY="34" SrcW="380" SrcH="285" AlphaType="0" />
+        <Image Name="milk_fg0036" XPos="184" YPos="433" Width="172" Height="215" OffX="107" OffY="27" SrcW="380" SrcH="285" AlphaType="0" />
+        <Image Name="milk_fg0028" XPos="184" YPos="649" Width="182" Height="214" OffX="94" OffY="34" SrcW="380" SrcH="285" AlphaType="0" />
+        <Image Name="milk_fg0057" XPos="367" YPos="217" Width="180" Height="213" OffX="95" OffY="34" SrcW="380" SrcH="285" AlphaType="0" />
+        <Image Name="milk_fg0037" XPos="548" YPos="217" Width="175" Height="213" OffX="103" OffY="26" SrcW="380" SrcH="285" AlphaType="0" />
+        <Image Name="milk_fg0027" XPos="724" YPos="217" Width="178" Height="212" OffX="96" OffY="34" SrcW="380" SrcH="285" AlphaType="0" />
+        <Image Name="milk_fg0038" XPos="367" YPos="431" Width="178" Height="211" OffX="99" OffY="25" SrcW="380" SrcH="285" AlphaType="0" />
+        <Image Name="milk_fg0056" XPos="367" YPos="643" Width="176" Height="211" OffX="97" OffY="33" SrcW="380" SrcH="285" AlphaType="0" />
+        <Image Name="milk_fg0026" XPos="546" YPos="431" Width="174" Height="209" OffX="98" OffY="34" SrcW="380" SrcH="285" AlphaType="0" />
+        <Image Name="milk_fg0055" XPos="721" YPos="431" Width="173" Height="209" OffX="99" OffY="32" SrcW="380" SrcH="285" AlphaType="0" />
+        <Image Name="milk_fg0039" XPos="546" YPos="641" Width="181" Height="208" OffX="96" OffY="24" SrcW="380" SrcH="285" AlphaType="0" />
+        <Image Name="milk_fg0025" XPos="728" YPos="641" Width="171" Height="208" OffX="100" OffY="33" SrcW="380" SrcH="285" AlphaType="0" />
+        <Image Name="milk_fg0019" XPos="367" YPos="855" Width="145" Height="168" OffX="117" OffY="43" SrcW="380" SrcH="285" AlphaType="0" />
+        <Image Name="milk_fg0018" XPos="546" YPos="850" Width="144" Height="161" OffX="118" OffY="45" SrcW="380" SrcH="285" AlphaType="0" />
+        <Image Name="milk_fg0017" XPos="184" YPos="864" Width="147" Height="155" OffX="115" OffY="47" SrcW="380" SrcH="285" AlphaType="0" />
+        <Image Name="milk_fg0016" XPos="0" YPos="872" Width="147" Height="149" OffX="114" OffY="49" SrcW="380" SrcH="285" AlphaType="0" />
+        <Image Name="milk_fg0015" XPos="691" YPos="850" Width="147" Height="146" OffX="113" OffY="50" SrcW="380" SrcH="285" AlphaType="0" />
+        <Image Name="milk_fg0014" XPos="839" YPos="850" Width="143" Height="141" OffX="114" OffY="52" SrcW="380" SrcH="285" AlphaType="0" />
+        <Image Name="milk_fg0002" XPos="909" YPos="0" Width="93" Height="130" OffX="143" OffY="77" SrcW="380" SrcH="285" AlphaType="0" />
+        <Image Name="milk_fg0011" XPos="903" YPos="217" Width="120" Height="129" OffX="126" OffY="60" SrcW="380" SrcH="285" AlphaType="0" />
+        <Image Name="milk_fg0000" XPos="900" YPos="641" Width="98" Height="129" OffX="137" OffY="78" SrcW="380" SrcH="285" AlphaType="0" />
+        <Image Name="milk_fg0001" XPos="895" YPos="431" Width="96" Height="129" OffX="140" OffY="78" SrcW="380" SrcH="285" AlphaType="0" />
+    </Imageset>
+</Imagesets>

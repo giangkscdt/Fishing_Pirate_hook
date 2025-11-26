@@ -1,0 +1,13 @@
+<Imagesets>
+    <Imageset Name="pirate_1" NativeHorzRes="1024" NativeVertRes="1024">
+        <Image Name="red4P_miss0009" XPos="0" YPos="0" Width="271" Height="284" OffX="0" OffY="50" SrcW="368" SrcH="375" AlphaType="0" />
+        <Image Name="red4P_down0050" XPos="0" YPos="285" Width="271" Height="284" OffX="0" OffY="50" SrcW="368" SrcH="375" AlphaType="0" />
+        <Image Name="red4P_down0049" XPos="0" YPos="570" Width="271" Height="284" OffX="0" OffY="50" SrcW="368" SrcH="375" AlphaType="0" />
+        <Image Name="red4P_down0030" XPos="272" YPos="0" Width="271" Height="284" OffX="0" OffY="50" SrcW="368" SrcH="375" AlphaType="0" />
+        <Image Name="red4P_down0029" XPos="544" YPos="0" Width="271" Height="284" OffX="0" OffY="50" SrcW="368" SrcH="375" AlphaType="0" />
+        <Image Name="red4P_down0010" XPos="272" YPos="285" Width="271" Height="284" OffX="0" OffY="50" SrcW="368" SrcH="375" AlphaType="0" />
+        <Image Name="red4P_down0009" XPos="272" YPos="570" Width="271" Height="284" OffX="0" OffY="50" SrcW="368" SrcH="375" AlphaType="0" />
+        <Image Name="red4P_dj20050" XPos="544" YPos="285" Width="271" Height="284" OffX="0" OffY="50" SrcW="368" SrcH="375" AlphaType="0" />
+        <Image Name="red4P_dj20049" XPos="544" YPos="570" Width="271" Height="284" OffX="0" OffY="50" SrcW="368" SrcH="375" AlphaType="0" />
+    </Imageset>
+</Imagesets>

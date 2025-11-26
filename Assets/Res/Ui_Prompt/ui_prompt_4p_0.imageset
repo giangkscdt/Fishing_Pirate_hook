@@ -1,0 +1,20 @@
+<Imagesets>
+    <Imageset Name="ui_prompt_4p_0" NativeHorzRes="1024" NativeVertRes="1024">
+        <Image Name="multi face off0011" XPos="0" YPos="0" Width="211" Height="249" OffX="83" OffY="22" SrcW="380" SrcH="285" AlphaType="0" />
+        <Image Name="multi face off0010" XPos="0" YPos="250" Width="211" Height="249" OffX="83" OffY="22" SrcW="380" SrcH="285" AlphaType="0" />
+        <Image Name="1p fishing0011" XPos="0" YPos="500" Width="211" Height="249" OffX="83" OffY="22" SrcW="380" SrcH="285" AlphaType="0" />
+        <Image Name="1p fishing0010" XPos="0" YPos="750" Width="211" Height="249" OffX="83" OffY="22" SrcW="380" SrcH="285" AlphaType="0" />
+        <Image Name="multi face off0009" XPos="212" YPos="0" Width="211" Height="248" OffX="83" OffY="23" SrcW="380" SrcH="285" AlphaType="0" />
+        <Image Name="1p fishing0009" XPos="424" YPos="0" Width="211" Height="248" OffX="83" OffY="23" SrcW="380" SrcH="285" AlphaType="0" />
+        <Image Name="multi face off0012" XPos="636" YPos="0" Width="210" Height="248" OffX="83" OffY="23" SrcW="380" SrcH="285" AlphaType="0" />
+        <Image Name="1p fishing0012" XPos="212" YPos="249" Width="210" Height="248" OffX="83" OffY="23" SrcW="380" SrcH="285" AlphaType="0" />
+        <Image Name="multi face off0013" XPos="212" YPos="498" Width="210" Height="247" OffX="83" OffY="24" SrcW="380" SrcH="285" AlphaType="0" />
+        <Image Name="1p fishing0013" XPos="212" YPos="746" Width="210" Height="247" OffX="83" OffY="24" SrcW="380" SrcH="285" AlphaType="0" />
+        <Image Name="multi face off0014" XPos="423" YPos="249" Width="209" Height="246" OffX="84" OffY="25" SrcW="380" SrcH="285" AlphaType="0" />
+        <Image Name="1p fishing0014" XPos="633" YPos="249" Width="209" Height="246" OffX="84" OffY="25" SrcW="380" SrcH="285" AlphaType="0" />
+        <Image Name="1p fishing0000" XPos="423" YPos="496" Width="207" Height="245" OffX="85" OffY="26" SrcW="380" SrcH="285" AlphaType="0" />
+        <Image Name="1p fishing0001" XPos="423" YPos="742" Width="207" Height="245" OffX="85" OffY="26" SrcW="380" SrcH="285" AlphaType="0" />
+        <Image Name="1p fishing0002" XPos="631" YPos="496" Width="207" Height="245" OffX="85" OffY="26" SrcW="380" SrcH="285" AlphaType="0" />
+        <Image Name="1p fishing0003" XPos="631" YPos="742" Width="207" Height="245" OffX="85" OffY="26" SrcW="380" SrcH="285" AlphaType="0" />
+    </Imageset>
+</Imagesets>

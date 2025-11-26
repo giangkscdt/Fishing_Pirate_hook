@@ -1,0 +1,6 @@
+<Imagesets>
+    <Imageset Name="ak_yglight_4" NativeHorzRes="512" NativeVertRes="256">
+        <Image Name="ak_lg0002" XPos="0" YPos="0" Width="213" Height="137" OffX="70" OffY="74" SrcW="380" SrcH="285" AlphaType="0" />
+        <Image Name="ak_lg0000" XPos="214" YPos="0" Width="212" Height="136" OffX="66" OffY="74" SrcW="380" SrcH="285" AlphaType="0" />
+    </Imageset>
+</Imagesets>

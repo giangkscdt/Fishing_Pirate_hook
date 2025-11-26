@@ -1,0 +1,22 @@
+<Imagesets>
+    <Imageset Name="jw_yglight_2" NativeHorzRes="1024" NativeVertRes="1024">
+        <Image Name="jw_lg0021" XPos="0" YPos="0" Width="239" Height="199" OffX="121" OffY="96" SrcW="480" SrcH="360" AlphaType="0" />
+        <Image Name="jw_lg0046" XPos="240" YPos="0" Width="218" Height="198" OffX="82" OffY="86" SrcW="480" SrcH="360" AlphaType="0" />
+        <Image Name="jw_lg0042" XPos="459" YPos="0" Width="290" Height="196" OffX="83" OffY="82" SrcW="480" SrcH="360" AlphaType="0" />
+        <Image Name="jw_lg0073" XPos="0" YPos="200" Width="297" Height="195" OffX="87" OffY="56" SrcW="480" SrcH="360" AlphaType="0" />
+        <Image Name="jw_lg0020" XPos="750" YPos="0" Width="240" Height="195" OffX="122" OffY="98" SrcW="480" SrcH="360" AlphaType="0" />
+        <Image Name="jw_lg0067" XPos="298" YPos="200" Width="205" Height="193" OffX="84" OffY="82" SrcW="480" SrcH="360" AlphaType="0" />
+        <Image Name="jw_lg0027" XPos="504" YPos="200" Width="199" Height="193" OffX="129" OffY="85" SrcW="480" SrcH="360" AlphaType="0" />
+        <Image Name="jw_lg0041" XPos="704" YPos="200" Width="299" Height="191" OffX="84" OffY="81" SrcW="480" SrcH="360" AlphaType="0" />
+        <Image Name="jw_lg0059" XPos="0" YPos="396" Width="290" Height="189" OffX="86" OffY="77" SrcW="480" SrcH="360" AlphaType="0" />
+        <Image Name="jw_lg0071" XPos="291" YPos="396" Width="299" Height="188" OffX="77" OffY="58" SrcW="480" SrcH="360" AlphaType="0" />
+        <Image Name="jw_lg0040" XPos="591" YPos="396" Width="299" Height="188" OffX="84" OffY="81" SrcW="480" SrcH="360" AlphaType="0" />
+        <Image Name="jw_lg0019" XPos="0" YPos="586" Width="240" Height="188" OffX="123" OffY="101" SrcW="480" SrcH="360" AlphaType="0" />
+        <Image Name="jw_lg0039" XPos="241" YPos="586" Width="300" Height="187" OffX="83" OffY="81" SrcW="480" SrcH="360" AlphaType="0" />
+        <Image Name="jw_lg0028" XPos="542" YPos="586" Width="204" Height="187" OffX="116" OffY="83" SrcW="480" SrcH="360" AlphaType="0" />
+        <Image Name="jw_lg0079" XPos="0" YPos="775" Width="299" Height="186" OffX="84" OffY="81" SrcW="480" SrcH="360" AlphaType="0" />
+        <Image Name="jw_lg0047" XPos="747" YPos="586" Width="209" Height="185" OffX="80" OffY="87" SrcW="480" SrcH="360" AlphaType="0" />
+        <Image Name="jw_lg0029" XPos="300" YPos="775" Width="218" Height="182" OffX="101" OffY="81" SrcW="480" SrcH="360" AlphaType="0" />
+        <Image Name="jw_lg0074" XPos="519" YPos="775" Width="299" Height="181" OffX="86" OffY="62" SrcW="480" SrcH="360" AlphaType="0" />
+    </Imageset>
+</Imagesets>

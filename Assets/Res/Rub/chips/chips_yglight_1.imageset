@@ -1,0 +1,25 @@
+<Imagesets>
+    <Imageset Name="chips_yglight_1" NativeHorzRes="1024" NativeVertRes="1024">
+        <Image Name="chips_fg0017" XPos="0" YPos="0" Width="189" Height="217" OffX="94" OffY="18" SrcW="380" SrcH="300" AlphaType="0" />
+        <Image Name="chips_fg0019" XPos="190" YPos="0" Width="210" Height="215" OffX="83" OffY="21" SrcW="380" SrcH="300" AlphaType="0" />
+        <Image Name="chips_fg0016" XPos="401" YPos="0" Width="163" Height="208" OffX="107" OffY="22" SrcW="380" SrcH="300" AlphaType="0" />
+        <Image Name="chips_fg0014" XPos="565" YPos="0" Width="154" Height="205" OffX="114" OffY="25" SrcW="380" SrcH="300" AlphaType="0" />
+        <Image Name="chips_fg0013" XPos="720" YPos="0" Width="169" Height="202" OffX="105" OffY="27" SrcW="380" SrcH="300" AlphaType="0" />
+        <Image Name="chips_fg0020" XPos="0" YPos="218" Width="198" Height="201" OffX="91" OffY="29" SrcW="380" SrcH="300" AlphaType="0" />
+        <Image Name="chips_fg0051" XPos="0" YPos="420" Width="195" Height="201" OffX="94" OffY="31" SrcW="380" SrcH="300" AlphaType="0" />
+        <Image Name="chips_fg0037" XPos="0" YPos="622" Width="166" Height="200" OffX="114" OffY="50" SrcW="380" SrcH="300" AlphaType="0" />
+        <Image Name="chips_fg0036" XPos="199" YPos="218" Width="201" Height="199" OffX="102" OffY="40" SrcW="380" SrcH="300" AlphaType="0" />
+        <Image Name="chips_fg0052" XPos="0" YPos="823" Width="161" Height="199" OffX="109" OffY="46" SrcW="380" SrcH="300" AlphaType="0" />
+        <Image Name="chips_fg0012" XPos="199" YPos="418" Width="173" Height="195" OffX="100" OffY="32" SrcW="380" SrcH="300" AlphaType="0" />
+        <Image Name="chips_fg0011" XPos="199" YPos="614" Width="165" Height="186" OffX="101" OffY="39" SrcW="380" SrcH="300" AlphaType="0" />
+        <Image Name="chips_fg0022" XPos="199" YPos="801" Width="143" Height="181" OffX="118" OffY="55" SrcW="380" SrcH="300" AlphaType="0" />
+        <Image Name="chips_fg0021" XPos="401" YPos="218" Width="173" Height="179" OffX="105" OffY="42" SrcW="380" SrcH="300" AlphaType="0" />
+        <Image Name="chips_fg0010" XPos="575" YPos="218" Width="143" Height="175" OffX="109" OffY="50" SrcW="380" SrcH="300" AlphaType="0" />
+        <Image Name="chips_fg0003" XPos="719" YPos="218" Width="154" Height="167" OffX="119" OffY="66" SrcW="380" SrcH="300" AlphaType="0" />
+        <Image Name="chips_fg0002" XPos="874" YPos="218" Width="142" Height="167" OffX="123" OffY="68" SrcW="380" SrcH="300" AlphaType="0" />
+        <Image Name="chips_fg0004" XPos="401" YPos="398" Width="150" Height="157" OffX="124" OffY="68" SrcW="380" SrcH="300" AlphaType="0" />
+        <Image Name="chips_fg0000" XPos="890" YPos="0" Width="98" Height="157" OffX="141" OffY="74" SrcW="380" SrcH="300" AlphaType="0" />
+        <Image Name="chips_fg0005" XPos="401" YPos="556" Width="135" Height="138" OffX="135" OffY="74" SrcW="380" SrcH="300" AlphaType="0" />
+        <Image Name="chips_fg0006" XPos="401" YPos="695" Width="110" Height="112" OffX="148" OffY="84" SrcW="380" SrcH="300" AlphaType="0" />
+    </Imageset>
+</Imagesets>

@@ -1,0 +1,10 @@
+<Imagesets>
+    <Imageset Name="xcy_yd_1" NativeHorzRes="512" NativeVertRes="256">
+        <Image Name="xcy_dj0006" XPos="0" YPos="0" Width="147" Height="103" OffX="71" OffY="56" SrcW="300" SrcH="225" AlphaType="0" />
+        <Image Name="xcy_dj0007" XPos="0" YPos="104" Width="146" Height="103" OffX="71" OffY="56" SrcW="300" SrcH="225" AlphaType="0" />
+        <Image Name="xcy_dj0011" XPos="148" YPos="0" Width="142" Height="103" OffX="71" OffY="56" SrcW="300" SrcH="225" AlphaType="0" />
+        <Image Name="xcy_dj0008" XPos="291" YPos="0" Width="144" Height="102" OffX="71" OffY="56" SrcW="300" SrcH="225" AlphaType="0" />
+        <Image Name="xcy_dj0009" XPos="148" YPos="104" Width="142" Height="102" OffX="71" OffY="56" SrcW="300" SrcH="225" AlphaType="0" />
+        <Image Name="xcy_dj0010" XPos="291" YPos="104" Width="141" Height="102" OffX="71" OffY="56" SrcW="300" SrcH="225" AlphaType="0" />
+    </Imageset>
+</Imagesets>

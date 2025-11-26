@@ -1,0 +1,5 @@
+<Imagesets>
+    <Imageset Name="anglerbonus" NativeHorzRes="512" NativeVertRes="512">
+        <Image Name="angler_logo" XPos="0" YPos="0" Width="361" Height="272" OffX="0" OffY="0" SrcW="361" SrcH="272" AlphaType="0" />
+    </Imageset>
+</Imagesets>

@@ -1,0 +1,24 @@
+<Imagesets>
+    <Imageset Name="shoes_yglight_2" NativeHorzRes="1024" NativeVertRes="1024">
+        <Image Name="shoes_fg0039" XPos="0" YPos="0" Width="216" Height="234" OffX="105" OffY="19" SrcW="380" SrcH="285" AlphaType="0" />
+        <Image Name="shoes_fg0038" XPos="0" YPos="235" Width="216" Height="233" OffX="105" OffY="18" SrcW="380" SrcH="285" AlphaType="0" />
+        <Image Name="shoes_fg0037" XPos="217" YPos="0" Width="217" Height="232" OffX="105" OffY="17" SrcW="380" SrcH="285" AlphaType="0" />
+        <Image Name="shoes_fg0041" XPos="0" YPos="469" Width="216" Height="232" OffX="106" OffY="22" SrcW="380" SrcH="285" AlphaType="0" />
+        <Image Name="shoes_fg0040" XPos="0" YPos="702" Width="215" Height="232" OffX="106" OffY="21" SrcW="380" SrcH="285" AlphaType="0" />
+        <Image Name="shoes_fg0036" XPos="435" YPos="0" Width="217" Height="231" OffX="105" OffY="16" SrcW="380" SrcH="285" AlphaType="0" />
+        <Image Name="shoes_fg0042" XPos="653" YPos="0" Width="215" Height="230" OffX="107" OffY="24" SrcW="380" SrcH="285" AlphaType="0" />
+        <Image Name="shoes_fg0035" XPos="217" YPos="233" Width="218" Height="229" OffX="105" OffY="16" SrcW="380" SrcH="285" AlphaType="0" />
+        <Image Name="shoes_fg0034" XPos="436" YPos="233" Width="219" Height="227" OffX="105" OffY="15" SrcW="380" SrcH="285" AlphaType="0" />
+        <Image Name="shoes_fg0043" XPos="656" YPos="233" Width="216" Height="227" OffX="107" OffY="26" SrcW="380" SrcH="285" AlphaType="0" />
+        <Image Name="shoes_fg0033" XPos="217" YPos="463" Width="219" Height="225" OffX="106" OffY="15" SrcW="380" SrcH="285" AlphaType="0" />
+        <Image Name="shoes_fg0044" XPos="217" YPos="689" Width="216" Height="225" OffX="108" OffY="27" SrcW="380" SrcH="285" AlphaType="0" />
+        <Image Name="shoes_fg0045" XPos="437" YPos="463" Width="215" Height="224" OffX="109" OffY="27" SrcW="380" SrcH="285" AlphaType="0" />
+        <Image Name="shoes_fg0032" XPos="653" YPos="463" Width="219" Height="223" OffX="107" OffY="15" SrcW="380" SrcH="285" AlphaType="0" />
+        <Image Name="shoes_fg0031" XPos="437" YPos="688" Width="219" Height="222" OffX="108" OffY="14" SrcW="380" SrcH="285" AlphaType="0" />
+        <Image Name="shoes_fg0047" XPos="657" YPos="688" Width="218" Height="222" OffX="108" OffY="26" SrcW="380" SrcH="285" AlphaType="0" />
+        <Image Name="shoes_fg0013" XPos="869" YPos="0" Width="153" Height="164" OffX="139" OffY="57" SrcW="380" SrcH="285" AlphaType="0" />
+        <Image Name="shoes_fg0012" XPos="873" YPos="463" Width="148" Height="161" OffX="141" OffY="58" SrcW="380" SrcH="285" AlphaType="0" />
+        <Image Name="shoes_fg0011" XPos="876" YPos="688" Width="143" Height="158" OffX="143" OffY="59" SrcW="380" SrcH="285" AlphaType="0" />
+        <Image Name="shoes_fg0010" XPos="873" YPos="233" Width="138" Height="155" OffX="145" OffY="59" SrcW="380" SrcH="285" AlphaType="0" />
+    </Imageset>
+</Imagesets>

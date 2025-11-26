@@ -1,0 +1,18 @@
+<Imagesets>
+    <Imageset Name="xcy_yglight_1" NativeHorzRes="1024" NativeVertRes="512">
+        <Image Name="xcy_light0019" XPos="0" YPos="0" Width="191" Height="162" OffX="37" OffY="20" SrcW="300" SrcH="225" AlphaType="0" />
+        <Image Name="xcy_light0018" XPos="0" YPos="163" Width="188" Height="157" OffX="39" OffY="22" SrcW="300" SrcH="225" AlphaType="0" />
+        <Image Name="xcy_light0017" XPos="0" YPos="321" Width="186" Height="152" OffX="44" OffY="24" SrcW="300" SrcH="225" AlphaType="0" />
+        <Image Name="xcy_light0016" XPos="192" YPos="0" Width="186" Height="147" OffX="52" OffY="27" SrcW="300" SrcH="225" AlphaType="0" />
+        <Image Name="xcy_light0015" XPos="379" YPos="0" Width="187" Height="143" OffX="61" OffY="29" SrcW="300" SrcH="225" AlphaType="0" />
+        <Image Name="xcy_light0014" XPos="567" YPos="0" Width="183" Height="138" OffX="71" OffY="32" SrcW="300" SrcH="225" AlphaType="0" />
+        <Image Name="xcy_light0013" XPos="751" YPos="0" Width="177" Height="132" OffX="79" OffY="35" SrcW="300" SrcH="225" AlphaType="0" />
+        <Image Name="xcy_light0012" XPos="192" YPos="148" Width="169" Height="125" OffX="84" OffY="38" SrcW="300" SrcH="225" AlphaType="0" />
+        <Image Name="xcy_light0011" XPos="192" YPos="274" Width="163" Height="119" OffX="86" OffY="40" SrcW="300" SrcH="225" AlphaType="0" />
+        <Image Name="xcy_light0003" XPos="192" YPos="394" Width="153" Height="103" OffX="75" OffY="55" SrcW="300" SrcH="225" AlphaType="0" />
+        <Image Name="xcy_light0004" XPos="362" YPos="148" Width="152" Height="103" OffX="77" OffY="54" SrcW="300" SrcH="225" AlphaType="0" />
+        <Image Name="xcy_light0005" XPos="362" YPos="252" Width="151" Height="102" OffX="80" OffY="53" SrcW="300" SrcH="225" AlphaType="0" />
+        <Image Name="xcy_light0006" XPos="362" YPos="355" Width="151" Height="101" OffX="82" OffY="52" SrcW="300" SrcH="225" AlphaType="0" />
+        <Image Name="xcy_light0007" XPos="515" YPos="148" Width="151" Height="101" OffX="85" OffY="51" SrcW="300" SrcH="225" AlphaType="0" />
+    </Imageset>
+</Imagesets>

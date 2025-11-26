@@ -1,0 +1,34 @@
+<Imagesets>
+    <Imageset Name="ct_yd" NativeHorzRes="1024" NativeVertRes="512">
+        <Image Name="ct_yd0015" XPos="0" YPos="0" Width="173" Height="90" OffX="78" OffY="80" SrcW="330" SrcH="248" AlphaType="0" />
+        <Image Name="ct_yd0014" XPos="0" YPos="91" Width="172" Height="90" OffX="78" OffY="80" SrcW="330" SrcH="248" AlphaType="0" />
+        <Image Name="ct_yd0013" XPos="0" YPos="182" Width="168" Height="90" OffX="78" OffY="80" SrcW="330" SrcH="248" AlphaType="0" />
+        <Image Name="ct_yd0016" XPos="174" YPos="0" Width="173" Height="89" OffX="78" OffY="80" SrcW="330" SrcH="248" AlphaType="0" />
+        <Image Name="ct_yd0017" XPos="0" YPos="273" Width="170" Height="89" OffX="78" OffY="80" SrcW="330" SrcH="248" AlphaType="0" />
+        <Image Name="ct_yd0018" XPos="0" YPos="363" Width="168" Height="89" OffX="78" OffY="80" SrcW="330" SrcH="248" AlphaType="0" />
+        <Image Name="ct_yd0012" XPos="348" YPos="0" Width="165" Height="89" OffX="78" OffY="80" SrcW="330" SrcH="248" AlphaType="0" />
+        <Image Name="ct_yd0019" XPos="514" YPos="0" Width="165" Height="88" OffX="78" OffY="80" SrcW="330" SrcH="248" AlphaType="0" />
+        <Image Name="ct_yd0011" XPos="680" YPos="0" Width="162" Height="88" OffX="78" OffY="81" SrcW="330" SrcH="248" AlphaType="0" />
+        <Image Name="ct_yd0010" XPos="843" YPos="0" Width="161" Height="88" OffX="78" OffY="81" SrcW="330" SrcH="248" AlphaType="0" />
+        <Image Name="ct_yd0020" XPos="174" YPos="90" Width="163" Height="87" OffX="78" OffY="80" SrcW="330" SrcH="248" AlphaType="0" />
+        <Image Name="ct_yd0009" XPos="174" YPos="178" Width="160" Height="87" OffX="78" OffY="81" SrcW="330" SrcH="248" AlphaType="0" />
+        <Image Name="ct_yd0008" XPos="174" YPos="266" Width="160" Height="87" OffX="78" OffY="81" SrcW="330" SrcH="248" AlphaType="0" />
+        <Image Name="ct_yd0021" XPos="338" YPos="90" Width="162" Height="86" OffX="78" OffY="81" SrcW="330" SrcH="248" AlphaType="0" />
+        <Image Name="ct_yd0023" XPos="501" YPos="90" Width="161" Height="85" OffX="78" OffY="81" SrcW="330" SrcH="248" AlphaType="0" />
+        <Image Name="ct_yd0022" XPos="663" YPos="90" Width="161" Height="85" OffX="78" OffY="81" SrcW="330" SrcH="248" AlphaType="0" />
+        <Image Name="ct_yd0007" XPos="825" YPos="90" Width="160" Height="85" OffX="78" OffY="82" SrcW="330" SrcH="248" AlphaType="0" />
+        <Image Name="ct_yd0005" XPos="338" YPos="177" Width="162" Height="84" OffX="78" OffY="82" SrcW="330" SrcH="248" AlphaType="0" />
+        <Image Name="ct_yd0006" XPos="338" YPos="262" Width="161" Height="84" OffX="78" OffY="82" SrcW="330" SrcH="248" AlphaType="0" />
+        <Image Name="ct_yd0004" XPos="501" YPos="177" Width="164" Height="83" OffX="78" OffY="82" SrcW="330" SrcH="248" AlphaType="0" />
+        <Image Name="ct_yd0024" XPos="338" YPos="347" Width="161" Height="83" OffX="78" OffY="82" SrcW="330" SrcH="248" AlphaType="0" />
+        <Image Name="ct_yd0001" XPos="666" YPos="177" Width="172" Height="82" OffX="78" OffY="82" SrcW="330" SrcH="248" AlphaType="0" />
+        <Image Name="ct_yd0002" XPos="839" YPos="177" Width="169" Height="82" OffX="78" OffY="82" SrcW="330" SrcH="248" AlphaType="0" />
+        <Image Name="ct_yd0027" XPos="501" YPos="261" Width="166" Height="82" OffX="78" OffY="82" SrcW="330" SrcH="248" AlphaType="0" />
+        <Image Name="ct_yd0026" XPos="501" YPos="344" Width="164" Height="82" OffX="78" OffY="82" SrcW="330" SrcH="248" AlphaType="0" />
+        <Image Name="ct_yd0025" XPos="501" YPos="427" Width="162" Height="82" OffX="78" OffY="82" SrcW="330" SrcH="248" AlphaType="0" />
+        <Image Name="ct_yd0000" XPos="668" YPos="261" Width="173" Height="81" OffX="78" OffY="82" SrcW="330" SrcH="248" AlphaType="0" />
+        <Image Name="ct_yd0003" XPos="842" YPos="261" Width="166" Height="81" OffX="78" OffY="83" SrcW="330" SrcH="248" AlphaType="0" />
+        <Image Name="ct_yd0028" XPos="668" YPos="343" Width="169" Height="81" OffX="78" OffY="82" SrcW="330" SrcH="248" AlphaType="0" />
+        <Image Name="ct_yd0029" XPos="838" YPos="343" Width="172" Height="81" OffX="78" OffY="82" SrcW="330" SrcH="248" AlphaType="0" />
+    </Imageset>
+</Imagesets>

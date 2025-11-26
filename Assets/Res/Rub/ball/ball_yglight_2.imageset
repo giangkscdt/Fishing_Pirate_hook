@@ -1,0 +1,26 @@
+<Imagesets>
+    <Imageset Name="ball_yglight_2" NativeHorzRes="1024" NativeVertRes="1024">
+        <Image Name="ball_fg0039" XPos="0" YPos="0" Width="223" Height="224" OffX="80" OffY="31" SrcW="380" SrcH="285" AlphaType="0" />
+        <Image Name="ball_fg0038" XPos="0" YPos="225" Width="223" Height="224" OffX="80" OffY="31" SrcW="380" SrcH="285" AlphaType="0" />
+        <Image Name="ball_fg0026" XPos="0" YPos="450" Width="220" Height="224" OffX="79" OffY="31" SrcW="380" SrcH="285" AlphaType="0" />
+        <Image Name="ball_fg0025" XPos="0" YPos="675" Width="220" Height="224" OffX="79" OffY="31" SrcW="380" SrcH="285" AlphaType="0" />
+        <Image Name="ball_fg0023" XPos="224" YPos="0" Width="211" Height="211" OffX="83" OffY="38" SrcW="380" SrcH="285" AlphaType="0" />
+        <Image Name="ball_fg0022" XPos="436" YPos="0" Width="205" Height="206" OffX="86" OffY="40" SrcW="380" SrcH="285" AlphaType="0" />
+        <Image Name="ball_fg0021" XPos="642" YPos="0" Width="202" Height="202" OffX="87" OffY="42" SrcW="380" SrcH="285" AlphaType="0" />
+        <Image Name="ball_fg0020" XPos="224" YPos="212" Width="196" Height="199" OffX="90" OffY="43" SrcW="380" SrcH="285" AlphaType="0" />
+        <Image Name="ball_fg0019" XPos="224" YPos="412" Width="188" Height="193" OffX="94" OffY="46" SrcW="380" SrcH="285" AlphaType="0" />
+        <Image Name="ball_fg0018" XPos="224" YPos="606" Width="182" Height="190" OffX="97" OffY="47" SrcW="380" SrcH="285" AlphaType="0" />
+        <Image Name="ball_fg0017" XPos="845" YPos="0" Width="175" Height="186" OffX="100" OffY="49" SrcW="380" SrcH="285" AlphaType="0" />
+        <Image Name="ball_fg0016" XPos="224" YPos="797" Width="167" Height="180" OffX="105" OffY="52" SrcW="380" SrcH="285" AlphaType="0" />
+        <Image Name="ball_fg0015" XPos="421" YPos="212" Width="164" Height="178" OffX="108" OffY="53" SrcW="380" SrcH="285" AlphaType="0" />
+        <Image Name="ball_fg0014" XPos="586" YPos="212" Width="159" Height="172" OffX="112" OffY="56" SrcW="380" SrcH="285" AlphaType="0" />
+        <Image Name="ball_fg0011" XPos="746" YPos="212" Width="150" Height="155" OffX="117" OffY="65" SrcW="380" SrcH="285" AlphaType="0" />
+        <Image Name="ball_fg0010" XPos="421" YPos="391" Width="148" Height="151" OffX="118" OffY="67" SrcW="380" SrcH="285" AlphaType="0" />
+        <Image Name="ball_fg0009" XPos="570" YPos="391" Width="145" Height="146" OffX="119" OffY="70" SrcW="380" SrcH="285" AlphaType="0" />
+        <Image Name="ball_fg0004" XPos="716" YPos="391" Width="136" Height="142" OffX="123" OffY="72" SrcW="380" SrcH="285" AlphaType="0" />
+        <Image Name="ball_fg0008" XPos="853" YPos="391" Width="141" Height="141" OffX="121" OffY="73" SrcW="380" SrcH="285" AlphaType="0" />
+        <Image Name="ball_fg0005" XPos="421" YPos="543" Width="138" Height="141" OffX="122" OffY="73" SrcW="380" SrcH="285" AlphaType="0" />
+        <Image Name="ball_fg0006" XPos="560" YPos="543" Width="139" Height="140" OffX="122" OffY="74" SrcW="380" SrcH="285" AlphaType="0" />
+        <Image Name="ball_fg0007" XPos="700" YPos="543" Width="139" Height="139" OffX="122" OffY="74" SrcW="380" SrcH="285" AlphaType="0" />
+    </Imageset>
+</Imagesets>

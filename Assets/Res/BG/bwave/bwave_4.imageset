@@ -1,0 +1,6 @@
+<Imagesets>
+    <Imageset Name="bwave_4" NativeHorzRes="2048" NativeVertRes="512">
+        <Image Name="wave0015" XPos="0" YPos="0" Width="1920" Height="255" OffX="0" OffY="229" SrcW="1920" SrcH="1080" AlphaType="0" />
+        <Image Name="wave0014" XPos="0" YPos="256" Width="1920" Height="254" OffX="0" OffY="230" SrcW="1920" SrcH="1080" AlphaType="0" />
+    </Imageset>
+</Imagesets>

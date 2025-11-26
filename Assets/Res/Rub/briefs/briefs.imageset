@@ -1,0 +1,34 @@
+<Imagesets>
+    <Imageset Name="briefs" NativeHorzRes="1024" NativeVertRes="512">
+        <Image Name="briefs0011" XPos="0" YPos="0" Width="138" Height="107" OffX="125" OffY="71" SrcW="380" SrcH="285" AlphaType="0" />
+        <Image Name="briefs0010" XPos="0" YPos="108" Width="136" Height="107" OffX="126" OffY="72" SrcW="380" SrcH="285" AlphaType="0" />
+        <Image Name="briefs0012" XPos="139" YPos="0" Width="139" Height="106" OffX="124" OffY="72" SrcW="380" SrcH="285" AlphaType="0" />
+        <Image Name="briefs0008" XPos="0" YPos="216" Width="138" Height="106" OffX="125" OffY="75" SrcW="380" SrcH="285" AlphaType="0" />
+        <Image Name="briefs0009" XPos="0" YPos="323" Width="136" Height="106" OffX="126" OffY="73" SrcW="380" SrcH="285" AlphaType="0" />
+        <Image Name="briefs0013" XPos="279" YPos="0" Width="142" Height="104" OffX="122" OffY="74" SrcW="380" SrcH="285" AlphaType="0" />
+        <Image Name="briefs0007" XPos="422" YPos="0" Width="139" Height="104" OffX="124" OffY="78" SrcW="380" SrcH="285" AlphaType="0" />
+        <Image Name="briefs0006" XPos="562" YPos="0" Width="142" Height="103" OffX="122" OffY="80" SrcW="380" SrcH="285" AlphaType="0" />
+        <Image Name="briefs0005" XPos="705" YPos="0" Width="143" Height="102" OffX="121" OffY="83" SrcW="380" SrcH="285" AlphaType="0" />
+        <Image Name="briefs0023" XPos="849" YPos="0" Width="139" Height="102" OffX="122" OffY="85" SrcW="380" SrcH="285" AlphaType="0" />
+        <Image Name="briefs0022" XPos="139" YPos="107" Width="138" Height="102" OffX="123" OffY="84" SrcW="380" SrcH="285" AlphaType="0" />
+        <Image Name="briefs0019" XPos="139" YPos="210" Width="138" Height="102" OffX="123" OffY="81" SrcW="380" SrcH="285" AlphaType="0" />
+        <Image Name="briefs0021" XPos="139" YPos="313" Width="137" Height="102" OffX="124" OffY="83" SrcW="380" SrcH="285" AlphaType="0" />
+        <Image Name="briefs0020" XPos="278" YPos="107" Width="137" Height="102" OffX="124" OffY="82" SrcW="380" SrcH="285" AlphaType="0" />
+        <Image Name="briefs0004" XPos="416" YPos="107" Width="145" Height="101" OffX="119" OffY="85" SrcW="380" SrcH="285" AlphaType="0" />
+        <Image Name="briefs0014" XPos="562" YPos="107" Width="144" Height="101" OffX="121" OffY="77" SrcW="380" SrcH="285" AlphaType="0" />
+        <Image Name="briefs0024" XPos="707" YPos="107" Width="141" Height="101" OffX="120" OffY="87" SrcW="380" SrcH="285" AlphaType="0" />
+        <Image Name="briefs0002" XPos="849" YPos="107" Width="147" Height="100" OffX="117" OffY="89" SrcW="380" SrcH="285" AlphaType="0" />
+        <Image Name="briefs0003" XPos="278" YPos="210" Width="146" Height="100" OffX="118" OffY="88" SrcW="380" SrcH="285" AlphaType="0" />
+        <Image Name="briefs0025" XPos="278" YPos="311" Width="143" Height="100" OffX="119" OffY="88" SrcW="380" SrcH="285" AlphaType="0" />
+        <Image Name="briefs0018" XPos="425" YPos="210" Width="141" Height="100" OffX="121" OffY="82" SrcW="380" SrcH="285" AlphaType="0" />
+        <Image Name="briefs0026" XPos="278" YPos="412" Width="145" Height="99" OffX="117" OffY="90" SrcW="380" SrcH="285" AlphaType="0" />
+        <Image Name="briefs0015" XPos="567" YPos="210" Width="145" Height="99" OffX="120" OffY="80" SrcW="380" SrcH="285" AlphaType="0" />
+        <Image Name="briefs0000" XPos="713" YPos="210" Width="147" Height="98" OffX="116" OffY="91" SrcW="380" SrcH="285" AlphaType="0" />
+        <Image Name="briefs0001" XPos="861" YPos="210" Width="147" Height="98" OffX="116" OffY="91" SrcW="380" SrcH="285" AlphaType="0" />
+        <Image Name="briefs0016" XPos="425" YPos="311" Width="144" Height="98" OffX="120" OffY="82" SrcW="380" SrcH="285" AlphaType="0" />
+        <Image Name="briefs0017" XPos="425" YPos="410" Width="142" Height="98" OffX="121" OffY="83" SrcW="380" SrcH="285" AlphaType="0" />
+        <Image Name="briefs0027" XPos="570" YPos="311" Width="145" Height="98" OffX="117" OffY="91" SrcW="380" SrcH="285" AlphaType="0" />
+        <Image Name="briefs0028" XPos="716" YPos="311" Width="147" Height="98" OffX="116" OffY="91" SrcW="380" SrcH="285" AlphaType="0" />
+        <Image Name="briefs0029" XPos="864" YPos="311" Width="147" Height="98" OffX="116" OffY="91" SrcW="380" SrcH="285" AlphaType="0" />
+    </Imageset>
+</Imagesets>

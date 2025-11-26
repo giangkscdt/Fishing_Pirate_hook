@@ -1,0 +1,27 @@
+<Imagesets>
+    <Imageset Name="bone_1" NativeHorzRes="512" NativeVertRes="512">
+        <Image Name="bone0029" XPos="0" YPos="0" Width="71" Height="163" OffX="154" OffY="61" SrcW="380" SrcH="285" AlphaType="0" />
+        <Image Name="bone0028" XPos="0" YPos="164" Width="68" Height="161" OffX="155" OffY="64" SrcW="380" SrcH="285" AlphaType="0" />
+        <Image Name="bone0014" XPos="72" YPos="0" Width="94" Height="159" OffX="144" OffY="63" SrcW="380" SrcH="285" AlphaType="0" />
+        <Image Name="bone0000" XPos="72" YPos="160" Width="72" Height="158" OffX="155" OffY="61" SrcW="380" SrcH="285" AlphaType="0" />
+        <Image Name="bone0013" XPos="72" YPos="319" Width="82" Height="157" OffX="151" OffY="66" SrcW="380" SrcH="285" AlphaType="0" />
+        <Image Name="bone0015" XPos="167" YPos="0" Width="104" Height="155" OffX="138" OffY="63" SrcW="380" SrcH="285" AlphaType="0" />
+        <Image Name="bone0027" XPos="0" YPos="326" Width="63" Height="153" OffX="157" OffY="70" SrcW="380" SrcH="285" AlphaType="0" />
+        <Image Name="bone0012" XPos="167" YPos="156" Width="68" Height="152" OffX="158" OffY="70" SrcW="380" SrcH="285" AlphaType="0" />
+        <Image Name="bone0001" XPos="167" YPos="309" Width="71" Height="149" OffX="156" OffY="64" SrcW="380" SrcH="285" AlphaType="0" />
+        <Image Name="bone0016" XPos="272" YPos="0" Width="111" Height="145" OffX="133" OffY="66" SrcW="380" SrcH="285" AlphaType="0" />
+        <Image Name="bone0026" XPos="384" YPos="0" Width="60" Height="141" OffX="158" OffY="77" SrcW="380" SrcH="285" AlphaType="0" />
+        <Image Name="bone0011" XPos="445" YPos="0" Width="54" Height="140" OffX="165" OffY="77" SrcW="380" SrcH="285" AlphaType="0" />
+        <Image Name="bone0002" XPos="272" YPos="146" Width="66" Height="135" OffX="159" OffY="70" SrcW="380" SrcH="285" AlphaType="0" />
+        <Image Name="bone0017" XPos="339" YPos="146" Width="112" Height="132" OffX="131" OffY="72" SrcW="380" SrcH="285" AlphaType="0" />
+        <Image Name="bone0010" XPos="452" YPos="146" Width="48" Height="123" OffX="166" OffY="86" SrcW="380" SrcH="285" AlphaType="0" />
+        <Image Name="bone0025" XPos="272" YPos="282" Width="58" Height="122" OffX="158" OffY="87" SrcW="380" SrcH="285" AlphaType="0" />
+        <Image Name="bone0003" XPos="331" YPos="282" Width="59" Height="116" OffX="163" OffY="79" SrcW="380" SrcH="285" AlphaType="0" />
+        <Image Name="bone0018" XPos="391" YPos="282" Width="109" Height="114" OffX="131" OffY="80" SrcW="380" SrcH="285" AlphaType="0" />
+        <Image Name="bone0009" XPos="272" YPos="405" Width="58" Height="102" OffX="160" OffY="96" SrcW="380" SrcH="285" AlphaType="0" />
+        <Image Name="bone0024" XPos="331" YPos="405" Width="60" Height="101" OffX="157" OffY="97" SrcW="380" SrcH="285" AlphaType="0" />
+        <Image Name="bone0004" XPos="392" YPos="405" Width="51" Height="94" OffX="167" OffY="91" SrcW="380" SrcH="285" AlphaType="0" />
+        <Image Name="bone0023" XPos="444" YPos="405" Width="65" Height="77" OffX="154" OffY="109" SrcW="380" SrcH="285" AlphaType="0" />
+        <Image Name="bone0022" XPos="167" YPos="459" Width="73" Height="52" OffX="149" OffY="120" SrcW="380" SrcH="285" AlphaType="0" />
+    </Imageset>
+</Imagesets>

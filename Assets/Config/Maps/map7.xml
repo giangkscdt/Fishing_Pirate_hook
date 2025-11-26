@@ -1,0 +1,111 @@
+<maps hookspeed="3">
+	<map id="0" speed="200" y1="390" y2="400">
+		<object name="xcy" x="0" s="0.4" f="1" />
+		<object name="zy1" x="100" s="0.4" f="1" />
+		<object name="ct" x="200" s="0.4" f="1" />
+		<object name="njby" x="300" s="0.4" f="1" />
+		<object name="xcy" x="750" s="0.4" f="1" />
+		<object name="zy1" x="850" s="0.4" f="1" />
+		<object name="ct" x="950" s="0.4" f="1" />
+		<object name="njby" x="1050" s="0.4" f="1" />
+		<object name="xcy" x="1550" s="0.4" f="1" />
+		<object name="zy1" x="1650" s="0.4" f="1" />
+		<object name="ct" x="1750" s="0.4" f="1" />
+		<object name="njby" x="1850" s="0.4" f="1" />
+	</map>
+
+	<map id="1" speed="130" y1="440" y2="450">
+		<object name="sxy" x="50" s="0.6" f="1" />
+		<object name="sxy" x="150" s="0.6" f="1" />
+		<object name="njxy" x="250" s="0.6" f="1" />
+		<object name="njxy" x="350" s="0.6" f="1" />
+		<object name="ddy" x="1000" s="0.6" f="1" />
+		<object name="ddy" x="1100" s="0.6" f="1" />
+		<object name="lks" x="1250" s="0.6" f="1" />
+		<object name="lks" x="1400" s="0.6" f="1" />
+		<object name="sxy" x="2050" s="0.6" f="1" />
+		<object name="ddy" x="2150" s="0.6" f="1" />
+		<object name="sxy" x="2250" s="0.6" f="1" />
+	</map>
+	
+	<map id="2" speed="150" y1="490" y2="510">
+		<object name="sxy1" x="400" s="0.6" f="1" />
+		<object name="hm" x="500" s="0.6" f="1" />
+		<object name="sxy1" x="600" s="0.6" f="1" />
+		<object name="hm" x="700" s="0.6" f="1" />
+		<object name="sxy1" x="800" s="0.6" f="1" />
+		<object name="sxy1" x="1800" s="0.6" f="1" />
+		<object name="jw" x="1900" s="0.6" f="1" />
+		<object name="sxy1" x="2000" s="0.6" f="1" />
+		<object name="jw" x="2100" s="0.6" f="1" />
+		<object name="sxy1" x="2200" s="0.6" f="1" />
+	</map>
+
+	<map id="3" speed="180" y1="575" y2="590">
+		<object name="lt" x="0" s="1.0" f="1" />
+		<object name="lt" x="200" s="1.0" f="1" />
+		<object name="lt" x="400" s="1.0" f="1" />
+		<object name="lt" x="600" s="1.0" f="1" />
+		<object name="jy" x="1250" s="1.0" f="1" />
+		<object name="jy" x="1500" s="1.0" f="1" />
+		<object name="jy" x="1750" s="1.0" f="1" />
+		<object name="jy" x="2000" s="1.0" f="1" />
+	</map>
+
+	<map id="4" speed="200" y1="660" y2="670">
+		<object name="szy" x="400" s="1.0" f="1" />
+		<object name="szy" x="600" s="1.0" f="1" />
+		<object name="szy" x="800" s="1.0" f="1" />
+		<object name="szy" x="1000" s="1.0" f="1" />
+		<object name="ak" x="1700" s="1.0" f="1" />
+		<object name="ak" x="1900" s="1.0" f="1" />
+		<object name="ak" x="2100" s="1.0" f="1" />
+	</map>
+
+	
+	
+	<map id="5" speed="240" y1="800" y2="800">
+		<object name="can01" x="0" s="0.5" f="0" />
+		<object name="briefs" x="60" s="0.5" f="0" />
+		<object name="ball" x="120" s="0.5" f="0" />
+		<object name="xcy" x="200" s="0.6" f="1" />
+		<object name="bone" x="300" s="0.5" f="0" />
+		<object name="zy1" x="340" s="0.4" f="1" />
+		<object name="shoes" x="440" s="0.5" f="0" />
+		<object name="pot" x="500" s="0.5" f="0" />
+		<object name="zy1" x="560" s="0.4" f="1" />
+		<object name="chips" x="650" s="0.5" f="0" />
+		<object name="hammer" x="700" s="0.5" f="0" />
+		<object name="zy1" x="780" s="0.4" f="1" />
+		<object name="milk" x="860" s="0.5" f="0" />
+		<object name="death" x="920" s="0.5" f="0" />
+		<object name="nail" x="980" s="0.5" f="0" />
+		<object name="can02" x="1040" s="0.5" f="0" />
+		<object name="zy1" x="1100" s="0.4" f="1" />
+		<object name="fork" x="1180" s="0.5" f="0" />
+		<object name="bottle" x="1240" s="0.5" f="0" />
+		<object name="chips" x="1300" s="0.5" f="0" />
+		<object name="hammer" x="1380" s="0.5" f="0" />
+		<object name="hat" x="1460" s="0.5" f="0" />
+		<object name="ball" x="1530" s="0.5" f="0" />
+		<object name="can03" x="1600" s="0.5" f="0" />
+		<object name="can01" x="1650" s="0.5" f="0" />
+		<object name="milk" x="1700" s="0.5" f="0" />
+		<object name="xcy" x="1800" s="0.6" f="1" />
+		<object name="pot" x="1850" s="0.5" f="0" />
+		<object name="nail" x="1920" s="0.5" f="0" />
+		<object name="shoes" x="2000" s="0.5" f="0" />
+		<object name="zy1" x="2100" s="0.4" f="1" />
+		<object name="milk" x="2200" s="0.5" f="0" />
+		<object name="death" x="2260" s="0.5" f="0" />
+		<object name="nail" x="2320" s="0.5" f="0" />
+		<object name="can02" x="2400" s="0.5" f="0" />
+		<object name="zy1" x="2480" s="0.4" f="1" />
+	</map>
+
+	<map id="6" speed="310" y1="950" y2="980">
+		<object name="sy" x="0" s="1.0" f="1" />
+		<object name="lob" x="700" s="1.0" f="1" />
+		<object name="zy" x="1400" s="1.0" f="1" />
+	</map>
+</maps>

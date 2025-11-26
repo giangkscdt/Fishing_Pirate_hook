@@ -1,0 +1,19 @@
+<Imagesets>
+    <Imageset Name="lks_yglight_0" NativeHorzRes="1024" NativeVertRes="1024">
+        <Image Name="lks_lg0030" XPos="0" YPos="0" Width="294" Height="203" OffX="43" OffY="38" SrcW="380" SrcH="285" AlphaType="0" />
+        <Image Name="lks_lg0029" XPos="295" YPos="0" Width="294" Height="203" OffX="42" OffY="38" SrcW="380" SrcH="285" AlphaType="0" />
+        <Image Name="lks_lg0050" XPos="590" YPos="0" Width="271" Height="203" OffX="43" OffY="43" SrcW="380" SrcH="285" AlphaType="0" />
+        <Image Name="lks_lg0040" XPos="0" YPos="204" Width="271" Height="203" OffX="43" OffY="43" SrcW="380" SrcH="285" AlphaType="0" />
+        <Image Name="lks_lg0028" XPos="272" YPos="204" Width="292" Height="201" OffX="41" OffY="39" SrcW="380" SrcH="285" AlphaType="0" />
+        <Image Name="lks_lg0059" XPos="565" YPos="204" Width="292" Height="199" OffX="43" OffY="38" SrcW="380" SrcH="285" AlphaType="0" />
+        <Image Name="lks_lg0031" XPos="0" YPos="408" Width="292" Height="199" OffX="43" OffY="38" SrcW="380" SrcH="285" AlphaType="0" />
+        <Image Name="lks_lg0027" XPos="0" YPos="608" Width="290" Height="198" OffX="39" OffY="40" SrcW="380" SrcH="285" AlphaType="0" />
+        <Image Name="lks_lg0049" XPos="0" YPos="807" Width="282" Height="198" OffX="43" OffY="40" SrcW="380" SrcH="285" AlphaType="0" />
+        <Image Name="lks_lg0041" XPos="293" YPos="408" Width="282" Height="198" OffX="43" OffY="40" SrcW="380" SrcH="285" AlphaType="0" />
+        <Image Name="lks_lg0051" XPos="576" YPos="408" Width="277" Height="198" OffX="42" OffY="46" SrcW="380" SrcH="285" AlphaType="0" />
+        <Image Name="lks_lg0039" XPos="293" YPos="607" Width="277" Height="198" OffX="42" OffY="46" SrcW="380" SrcH="285" AlphaType="0" />
+        <Image Name="lks_lg0052" XPos="571" YPos="607" Width="291" Height="194" OffX="42" OffY="47" SrcW="380" SrcH="285" AlphaType="0" />
+        <Image Name="lks_lg0038" XPos="293" YPos="806" Width="291" Height="194" OffX="42" OffY="47" SrcW="380" SrcH="285" AlphaType="0" />
+        <Image Name="lks_lg0026" XPos="585" YPos="806" Width="288" Height="194" OffX="36" OffY="42" SrcW="380" SrcH="285" AlphaType="0" />
+    </Imageset>
+</Imagesets>

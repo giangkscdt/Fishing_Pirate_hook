@@ -1,0 +1,5 @@
+<Imagesets>
+    <Imageset Name="compbonus" NativeHorzRes="512" NativeVertRes="512">
+        <Image Name="comp bonus" XPos="0" YPos="0" Width="321" Height="339" OffX="3" OffY="2" SrcW="324" SrcH="341" AlphaType="0" />
+    </Imageset>
+</Imagesets>
