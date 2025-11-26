@@ -1,7 +1,0 @@
-<Imagesets>
-    <Imageset Name="can01_yglight_2" NativeHorzRes="256" NativeVertRes="256">
-        <Image Name="can01_fg0002" XPos="0" YPos="0" Width="85" Height="142" OffX="148" OffY="55" SrcW="380" SrcH="285" AlphaType="0" />
-        <Image Name="can01_fg0003" XPos="86" YPos="0" Width="81" Height="142" OffX="150" OffY="53" SrcW="380" SrcH="285" AlphaType="0" />
-        <Image Name="can01_fg0004" XPos="168" YPos="0" Width="79" Height="142" OffX="151" OffY="52" SrcW="380" SrcH="285" AlphaType="0" />
-    </Imageset>
-</Imagesets>

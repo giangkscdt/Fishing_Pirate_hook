@@ -179,6 +179,7 @@ MonoBehaviour:
     - {fileID: 4376416003553582971, guid: 855eeedd4c0e08e4aa2705f07d5b46c2, type: 3}
     - {fileID: 7285808309312287372, guid: 7e5e74638f6fdda448af1e2ce37e5ac9, type: 3}
     - {fileID: 4541456997928624362, guid: 9714f7922535ca44eae9fe1159551f90, type: 3}
+    defence: 0
     slots: []
   - name: Tang2
     yPos: 1
@@ -191,6 +192,7 @@ MonoBehaviour:
     - {fileID: 7461729452243000447, guid: 57f5280d28acc034b8ce35f7b3d027e2, type: 3}
     - {fileID: 1167041718421012829, guid: cf736d6fc15d37742bf30df72b41e2bc, type: 3}
     - {fileID: 4363870231356854963, guid: a76da3061f3f58c4bad286e192f25602, type: 3}
+    defence: 0
     slots: []
   - name: Tang3
     yPos: 0
@@ -202,16 +204,18 @@ MonoBehaviour:
     - {fileID: 3544538811394541511, guid: 062ac32e7402e9b47aa3e504545c88e5, type: 3}
     - {fileID: 7532411977087643659, guid: 8709bcebb2b0009449d485f9dfcae7d3, type: 3}
     - {fileID: 3480257560193357095, guid: e4b09c7bde85b9347b6c089e65a326b8, type: 3}
+    defence: 0
     slots: []
   - name: Tang4
     yPos: -1
     swimLeftToRight: 0
     visibleSlotCount: 10
-    slotSpacing: 2.2
-    moveSpeed: 2.1
+    slotSpacing: 3
+    moveSpeed: 1.8
     fishPrefabs:
     - {fileID: 4387054864729115650, guid: 9776748e799c9bb49a08be38200d9595, type: 3}
     - {fileID: 4937552450215240608, guid: 76cf240d34a9f7d4e9f9b073946957d8, type: 3}
+    defence: 0
     slots: []
   - name: Tang5
     yPos: -2
@@ -222,24 +226,34 @@ MonoBehaviour:
     fishPrefabs:
     - {fileID: 3113579802934175168, guid: 033c7da232182734684535e4c0c94cc3, type: 3}
     - {fileID: 6218044231807363518, guid: 8f6ddfe524354d84dbd64ff2adbf5352, type: 3}
+    defence: 0
     slots: []
   - name: Tang6
     yPos: -3
     swimLeftToRight: 0
-    visibleSlotCount: 5
-    slotSpacing: 5
+    visibleSlotCount: 20
+    slotSpacing: 0.7
     moveSpeed: 2.5
     fishPrefabs:
-    - {fileID: 7024559820712264643, guid: 82eae9e137a320f4fa91607e8705f99a, type: 3}
+    - {fileID: 7978212250578112082, guid: 0f28c1b827d6bd243aca9343ea6b8150, type: 3}
+    - {fileID: 4376416003553582971, guid: 855eeedd4c0e08e4aa2705f07d5b46c2, type: 3}
+    - {fileID: 4541456997928624362, guid: 9714f7922535ca44eae9fe1159551f90, type: 3}
+    - {fileID: 5257427958428410763, guid: 22058c15285c5d249808dc81e77414aa, type: 3}
+    - {fileID: 1711676201448278192, guid: e4bbe7d1d8e7bbf43abb519c5d91bab7, type: 3}
+    - {fileID: 3337300146522424078, guid: 70f4e057c54e5974fa8cd626322064bd, type: 3}
+    - {fileID: 8634166741885232132, guid: 20f7882623609a84d902a3db7fb3c368, type: 3}
+    - {fileID: 7190872785176872788, guid: 6a8671f5ca1475e4aa79882b75d98edd, type: 3}
+    defence: 1
     slots: []
   - name: Tang7
     yPos: -3.8
     swimLeftToRight: 1
-    visibleSlotCount: 2
-    slotSpacing: 8
+    visibleSlotCount: 1
+    slotSpacing: 15
     moveSpeed: 4
     fishPrefabs:
     - {fileID: 5893494112322721011, guid: e11ea97b67bd3ec43babb2611fc2019f, type: 3}
+    defence: 0
     slots: []
   - name: Tang8
     yPos: -4.2
@@ -250,6 +264,7 @@ MonoBehaviour:
     fishPrefabs:
     - {fileID: 7024559820712264643, guid: 82eae9e137a320f4fa91607e8705f99a, type: 3}
     - {fileID: 8188332111713284233, guid: edb8019d3b3f323489cd63cad5c1226e, type: 3}
+    defence: 0
     slots: []
 --- !u!1 &314822079
 GameObject:

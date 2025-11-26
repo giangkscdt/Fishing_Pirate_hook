@@ -23,6 +23,9 @@ public class FishLayer
     // fish prefabs
     public List<GameObject> fishPrefabs;
 
+    // NEW: Defence mode (no group, random fish each slot)
+    public bool defence = false;
+
     // runtime list of slot transforms
     [HideInInspector] public List<Transform> slots = new List<Transform>();
 }
@@ -31,21 +34,16 @@ public class FishManager : MonoBehaviour
 {
     public List<FishLayer> layers = new List<FishLayer>();
 
-    // ---------------------------------------------------------
     void Start()
     {
         InitAllLayers();
     }
 
-    // ---------------------------------------------------------
     void Update()
     {
         UpdateAllSlots();
     }
 
-    // ---------------------------------------------------------
-    // Initialize lanes, create slots, then spawn fish pattern
-    // ---------------------------------------------------------
     void InitAllLayers()
     {
         Camera cam = Camera.main;
@@ -72,7 +70,6 @@ public class FishManager : MonoBehaviour
             float regionWidth = spacing * totalSlots;
             float regionMin = -regionWidth * 0.5f;
 
-            // ----------- Create slot objects -----------
             for (int i = 0; i < totalSlots; i++)
             {
                 GameObject slotObj = new GameObject(layer.name + "_Slot_" + i);
@@ -84,112 +81,97 @@ public class FishManager : MonoBehaviour
                 layer.slots.Add(slotObj.transform);
             }
 
-            // ----------- NEW: spawn by pattern groups -----------
-            SpawnPattern(layer);
+            // Defence mode or Group mode
+            if (layer.defence)
+                SpawnDefence(layer);
+            else
+                SpawnPattern(layer);
         }
     }
 
-    // ---------------------------------------------------------
-    // NEW: Spawn pattern = (2-3 fish) + (1-3 empty slots)
-    // ---------------------------------------------------------
+    // =========================================================
+    // DEFENCE MODE: No group, no empty, each slot random fish
+    // =========================================================
+    void SpawnDefence(FishLayer layer)
+    {
+        if (layer.fishPrefabs == null || layer.fishPrefabs.Count == 0) return;
+
+        foreach (Transform slot in layer.slots)
+        {
+            GameObject prefab = layer.fishPrefabs[Random.Range(0, layer.fishPrefabs.Count)];
+            SpawnSpecificFish(layer, slot, prefab);
+        }
+    }
+
+    // =========================================================
+    // ORIGINAL Pattern mode (2-3 fish + 1-3 empty)
+    // =========================================================
     void SpawnPattern(FishLayer layer)
     {
-        if (layer.fishPrefabs == null || layer.fishPrefabs.Count == 0)
-            return;
+        if (layer.fishPrefabs == null || layer.fishPrefabs.Count == 0) return;
 
         int total = layer.slots.Count;
         int index = 0;
 
         while (index < total)
         {
-            // ----------- Pick a fish type for the group -----------
             GameObject prefab = layer.fishPrefabs[Random.Range(0, layer.fishPrefabs.Count)];
+            int fishGroup = Random.Range(1, 3);  // 1 or 3 fishes
+            int emptyGroup = Random.Range(1, 3); // 1 to 3 empty slots
 
-            // ----------- Group size: 2-3 fishes -----------
-            int fishGroup = Random.Range(2, 4); // 2 or 3
-            // ----------- Empty slots: 1-3 -----------
-            int emptyGroup = Random.Range(1, 4); // 1, 2, or 3
-
-            // ----------- Spawn fish in adjacent slots -----------
-            for (int i = 0; i < fishGroup; i++)
+            for (int i = 0; i < fishGroup && index < total; i++)
             {
-                if (index >= total) return;
-
-                Transform slot = layer.slots[index];
-                SpawnSpecificFish(layer, slot, prefab);
+                SpawnSpecificFish(layer, layer.slots[index], prefab);
                 index++;
             }
 
-            // ----------- Leave empty slots -----------
-            for (int i = 0; i < emptyGroup; i++)
+            for (int i = 0; i < emptyGroup && index < total; i++)
             {
-                if (index >= total) return;
-                // no fish in this slot
-                index++;
+                index++; // leave empty
             }
         }
     }
 
-    // ---------------------------------------------------------
-    // Spawn one specific fish prefab inside slot
-    // ---------------------------------------------------------
     void SpawnSpecificFish(FishLayer layer, Transform slot, GameObject prefab)
     {
-        if (prefab == null) return;
+        if (!prefab) return;
 
-        GameObject fish = Instantiate(prefab, slot);
+        GameObject fish = Object.Instantiate(prefab, slot);
         fish.transform.localPosition = Vector3.zero;
 
         // Flip based on swim direction
         Vector3 s = fish.transform.localScale;
         float absX = Mathf.Abs(s.x);
         if (absX < 0.0001f) absX = 0.0001f;
-
-        if (layer.swimLeftToRight)
-            s.x = absX;
-        else
-            s.x = -absX;
-
+        s.x = layer.swimLeftToRight ? absX : -absX;
         fish.transform.localScale = s;
 
-        // ---------------------------------------------------------
-        // NEW: Add random animation offset so fish do not move in sync
-        // ---------------------------------------------------------
-
+        // Random animation offset (keep for Defence mode)
         Animator animator = fish.GetComponent<Animator>();
         if (animator != null)
         {
-            // Start animation at a random point in [0,1]
-            float randomOffset = Random.Range(0f, 1f);
-            animator.Play(0, -1, randomOffset);
-
-            // Also random playback speed (subtle)
+            animator.Play(0, -1, Random.Range(0f, 1f));
             animator.speed = Random.Range(0.9f, 1.2f);
         }
 
-        // Legacy Animation component (if you use it)
         Animation anim = fish.GetComponent<Animation>();
         if (anim != null)
         {
             foreach (AnimationState st in anim)
             {
-                st.time = Random.Range(0f, st.length); // random start frame
+                st.time = Random.Range(0f, st.length);
                 st.speed = Random.Range(0.9f, 1.2f);
             }
             anim.Play();
         }
     }
 
-
-    // ---------------------------------------------------------
-    // Move all slots and wrap them
-    // ---------------------------------------------------------
     void UpdateAllSlots()
     {
         Camera cam = Camera.main;
         if (cam == null) return;
 
-        float halfW = cam.orthographicSize * cam.aspect; // X/2
+        float halfW = cam.orthographicSize * cam.aspect;
         float X = halfW * 2f;
 
         foreach (var layer in layers)
@@ -210,20 +192,13 @@ public class FishManager : MonoBehaviour
 
             foreach (var slot in layer.slots)
             {
-                if (slot == null) continue;
+                if (!slot) continue;
 
                 Vector3 pos = slot.position;
                 pos.x += dir * speed * Time.deltaTime;
 
-                // wrap
-                if (pos.x > regionMax)
-                {
-                    pos.x -= regionWidth;
-                }
-                else if (pos.x < regionMin)
-                {
-                    pos.x += regionWidth;
-                }
+                if (pos.x > regionMax) pos.x -= regionWidth;
+                else if (pos.x < regionMin) pos.x += regionWidth;
 
                 pos.y = layer.yPos;
                 slot.position = pos;
