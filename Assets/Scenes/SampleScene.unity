@@ -203,7 +203,7 @@ MonoBehaviour:
     swimLeftToRight: 0
     visibleSlotCount: 10
     slotSpacing: 4
-    moveSpeed: 1.3
+    moveSpeed: 2.1
     fishPrefabs:
     - {fileID: 4387054864729115650, guid: 9776748e799c9bb49a08be38200d9595, type: 3}
     slots: []
@@ -212,7 +212,7 @@ MonoBehaviour:
     swimLeftToRight: 1
     visibleSlotCount: 10
     slotSpacing: 4
-    moveSpeed: 1.4
+    moveSpeed: 2.3
     fishPrefabs:
     - {fileID: 3113579802934175168, guid: 033c7da232182734684535e4c0c94cc3, type: 3}
     slots: []
@@ -221,7 +221,7 @@ MonoBehaviour:
     swimLeftToRight: 0
     visibleSlotCount: 5
     slotSpacing: 5
-    moveSpeed: 1.4
+    moveSpeed: 2.5
     fishPrefabs:
     - {fileID: 7024559820712264643, guid: 82eae9e137a320f4fa91607e8705f99a, type: 3}
     slots: []
@@ -230,7 +230,7 @@ MonoBehaviour:
     swimLeftToRight: 1
     visibleSlotCount: 3
     slotSpacing: 8
-    moveSpeed: 1.5
+    moveSpeed: 3
     fishPrefabs:
     - {fileID: 7024559820712264643, guid: 82eae9e137a320f4fa91607e8705f99a, type: 3}
     slots: []
