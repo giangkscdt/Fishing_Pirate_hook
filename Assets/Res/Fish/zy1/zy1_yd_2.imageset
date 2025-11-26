@@ -1,6 +1,0 @@
-<Imagesets>
-    <Imageset Name="zy1_yd_2" NativeHorzRes="512" NativeVertRes="256">
-        <Image Name="zy1_yd0037" XPos="0" YPos="0" Width="184" Height="132" OffX="69" OffY="57" SrcW="330" SrcH="248" AlphaType="0" />
-        <Image Name="zy1_yd0038" XPos="185" YPos="0" Width="183" Height="132" OffX="69" OffY="57" SrcW="330" SrcH="248" AlphaType="0" />
-    </Imageset>
-</Imagesets>

@@ -1,5 +1,0 @@
-<Imagesets>
-    <Imageset Name="szy_yd_1" NativeHorzRes="256" NativeVertRes="256">
-        <Image Name="szy_yd0029" XPos="0" YPos="0" Width="164" Height="161" OffX="99" OffY="58" SrcW="380" SrcH="285" AlphaType="0" />
-    </Imageset>
-</Imagesets>

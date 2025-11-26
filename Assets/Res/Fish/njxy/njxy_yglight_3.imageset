@@ -1,6 +1,0 @@
-<Imagesets>
-    <Imageset Name="njxy_yglight_3" NativeHorzRes="256" NativeVertRes="256">
-        <Image Name="njxy_lg0007" XPos="0" YPos="0" Width="184" Height="109" OffX="81" OffY="81" SrcW="330" SrcH="248" AlphaType="0" />
-        <Image Name="njxy_lg0008" XPos="0" YPos="110" Width="185" Height="106" OffX="83" OffY="83" SrcW="330" SrcH="248" AlphaType="0" />
-    </Imageset>
-</Imagesets>
