@@ -116,8 +116,8 @@ public class FishManager : MonoBehaviour
         while (index < total)
         {
             GameObject prefab = layer.fishPrefabs[Random.Range(0, layer.fishPrefabs.Count)];
-            int fishGroup = Random.Range(1, 3);  // 1 or 3 fishes
-            int emptyGroup = Random.Range(1, 3); // 1 to 3 empty slots
+            int fishGroup = Random.Range(1, 4);  // 1 or 3 fishes
+            int emptyGroup = Random.Range(1, 2); // 1 to 3 empty slots
 
             for (int i = 0; i < fishGroup && index < total; i++)
             {
@@ -190,19 +190,41 @@ public class FishManager : MonoBehaviour
             float dir = layer.swimLeftToRight ? 1f : -1f;
             float speed = layer.moveSpeed;
 
-            foreach (var slot in layer.slots)
+            for (int i = 0; i < layer.slots.Count; i++)
             {
+                var slot = layer.slots[i];
                 if (!slot) continue;
 
                 Vector3 pos = slot.position;
+
+                // Shared X scrolling movement
                 pos.x += dir * speed * Time.deltaTime;
 
+                // Loop horizontally
                 if (pos.x > regionMax) pos.x -= regionWidth;
                 else if (pos.x < regionMin) pos.x += regionWidth;
 
-                pos.y = layer.yPos;
+                if (layer.defence)
+                {
+                    // === DEFENCE MODE: horizontal scroll + vertical wave ===
+                    float t = Time.time + i * 0.3f; // different phase for each slot
+
+                    float waveSpeed = layer.moveSpeed * 1.2f;
+                    float waveAmpY = spacing * 0.4f; // height of the wave
+
+                    pos.y = layer.yPos + Mathf.Sin(t * waveSpeed) * waveAmpY;
+                }
+                else
+                {
+                    // original straight line
+                    pos.y = layer.yPos;
+                }
+
+
+
                 slot.position = pos;
             }
         }
     }
+
 }
