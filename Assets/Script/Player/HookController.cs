@@ -6,7 +6,7 @@ public class HookController : MonoBehaviour
     public Transform head;
     public Transform rod;
     public Transform hook;
-    public Transform hookEndPos;
+    public Transform hookEndPos;   // Fish_HookEndPos in hierarchy
 
     [Header("Settings")]
     public float moveSpeed = 3f;
@@ -42,6 +42,14 @@ public class HookController : MonoBehaviour
 
         // Hook always follows rod end
         hook.position = hookEndPos.position;
+
+        // If we have a hooked fish, move it with hookEndPos by transform only
+        if (hookedFish != null)
+        {
+            hookedFish.transform.position = hookEndPos.position;
+            hookedFish.transform.rotation = hookEndPos.rotation;
+            // No parenting, no scale inheritance -> no stretching
+        }
     }
 
     void RotateHead()
@@ -110,9 +118,11 @@ public class HookController : MonoBehaviour
 
     void UpdateRodLength()
     {
+        // Stretch only the line visual
         Vector3 scale = rod.localScale;
         scale.y = currentLength;
         rod.localScale = scale;
+
         rod.localPosition = Vector3.zero;
     }
 
@@ -120,7 +130,7 @@ public class HookController : MonoBehaviour
     {
         if (hookedFish)
         {
-            hookedFish.transform.SetParent(null);
+            // Re-enable physics
             var rb = hookedFish.GetComponent<Rigidbody2D>();
             if (rb) rb.gravityScale = 1f;
         }
@@ -141,11 +151,13 @@ public class HookController : MonoBehaviour
         hookedFish = other.gameObject;
         isHooking = true;
 
-        other.transform.SetParent(hookEndPos);
-        other.transform.localPosition = Vector3.zero;
-
-        var rb = other.GetComponent<Rigidbody2D>();
+        // Stop gravity so it does not fall
+        var rb = hookedFish.GetComponent<Rigidbody2D>();
         if (rb) rb.gravityScale = 0f;
+
+        // Snap once to hook position (then Update() keeps it there)
+        hookedFish.transform.position = hookEndPos.position;
+        hookedFish.transform.rotation = hookEndPos.rotation;
 
         Debug.Log("Fish hooked! Battle start!");
     }
