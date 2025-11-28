@@ -112,25 +112,40 @@ public class FishManager : MonoBehaviour
 
         int total = layer.slots.Count;
         int index = 0;
+        GameObject lastPrefab = null;
 
         while (index < total)
         {
-            GameObject prefab = layer.fishPrefabs[Random.Range(0, layer.fishPrefabs.Count)];
-            int fishGroup = Random.Range(1, 4);  // 1 or 3 fishes
-            int emptyGroup = Random.Range(1, 2); // 1 to 3 empty slots
+            // Pick new fish type that is NOT same as last one
+            GameObject prefab;
+            int safety = 20;
+            do
+            {
+                prefab = layer.fishPrefabs[Random.Range(0, layer.fishPrefabs.Count)];
+                safety--;
+            }
+            while (prefab == lastPrefab && safety > 0);
 
+            lastPrefab = prefab;
+
+            int fishGroup = Random.Range(1, 4);  // 1 or 2 fishes
+            int emptyGroup = Random.Range(1, 3); // 1 or 2 empty slots
+
+            // Spawn fish group
             for (int i = 0; i < fishGroup && index < total; i++)
             {
                 SpawnSpecificFish(layer, layer.slots[index], prefab);
                 index++;
             }
 
+            // Empty slots
             for (int i = 0; i < emptyGroup && index < total; i++)
             {
                 index++; // leave empty
             }
         }
     }
+
 
     void SpawnSpecificFish(FishLayer layer, Transform slot, GameObject prefab)
     {

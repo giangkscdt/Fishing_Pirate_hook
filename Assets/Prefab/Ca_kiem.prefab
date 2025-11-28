@@ -13,9 +13,9 @@ GameObject:
   - component: {fileID: 6232638291386105760}
   - component: {fileID: 4106893855788120860}
   - component: {fileID: 4239912121043519377}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Ca_kiem
-  m_TagString: Untagged
+  m_TagString: Fish
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
