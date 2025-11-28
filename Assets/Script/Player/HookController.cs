@@ -7,9 +7,12 @@ public class HookController : MonoBehaviour
     public Transform head;
     public Transform rod;
     public Transform hook;
-    public Transform hookEndPos;   // Fish_HookEndPos in hierarchy
-
+    public Transform hookEndPos;
     public Transform fishKeepPos;
+
+    // === ADDED ===
+    public SkillFishing skillFishing;
+    public SkillFishingUI ui;
 
     [Header("Settings")]
     public float moveSpeed = 3f;
@@ -17,12 +20,10 @@ public class HookController : MonoBehaviour
     public float maxLength = 5f;
     private float currentLength = 0.5f;
 
-    // Lower / retract flags
     private bool isLowering = false;
     private bool isRetracting = false;
     private bool reachedBottom = false;
 
-    // Battle state
     private bool isHooking = false;
     private GameObject hookedFish;
 
@@ -45,13 +46,11 @@ public class HookController : MonoBehaviour
         }
         else
         {
-            BattleControl();
+            BattleControl(); // now fully SkillFishing based
         }
 
-        // Keep hook at line end
         hook.position = hookEndPos.position;
 
-        // While in battle, keep fish snapped to hook end
         if (hookedFish != null && isHooking)
         {
             hookedFish.transform.position = hookEndPos.position;
@@ -66,7 +65,6 @@ public class HookController : MonoBehaviour
 
     void LoweringSystem()
     {
-        // Press Q ONCE to start lowering
         if (Input.GetKeyDown(KeyCode.Q) && !isLowering && !isRetracting)
         {
             isLowering = true;
@@ -75,28 +73,23 @@ public class HookController : MonoBehaviour
 
         if (isLowering && !reachedBottom)
         {
-            // Lower line
             currentLength += moveSpeed * Time.deltaTime;
 
             if (currentLength >= maxLength)
             {
                 currentLength = maxLength;
                 reachedBottom = true;
-
-                // Start retract when reach bottom
                 isLowering = false;
                 isRetracting = true;
             }
         }
         else if (isRetracting)
         {
-            // Retract line
             currentLength -= moveSpeed * Time.deltaTime;
 
             if (currentLength <= minLength)
             {
                 currentLength = minLength;
-                // Fully back to start, stop any auto movement
                 ResetLoweringStates();
             }
         }
@@ -106,59 +99,53 @@ public class HookController : MonoBehaviour
 
     void ResetLoweringStates()
     {
-        // Clear all lower / retract states
         isLowering = false;
         isRetracting = false;
         reachedBottom = false;
     }
 
+    // ==========================================================
+    // === REPLACED BattleControl() - SkillFishing takes control
+    // ==========================================================
     void BattleControl()
     {
-        // Player pull up with A, fish pull down when no input
-        if (Input.GetKey(KeyCode.A))
-        {
-            currentLength -= moveSpeed * Time.deltaTime;
-        }
-        else
-        {
-            currentLength += moveSpeed * 0.6f * Time.deltaTime;
-        }
+        bool pullingUp = Input.GetKey(KeyCode.A);
 
-        currentLength = Mathf.Clamp(currentLength, minLength, maxLength);
+        var result = skillFishing.TickBattle(pullingUp);
+
+        ui.UpdateBar(skillFishing.GetNormalizedDepth());
+
+        float normDepth = Mathf.Clamp01(skillFishing.depth / skillFishing.maxDepth);
+        currentLength = Mathf.Lerp(minLength, maxLength, normDepth);
         UpdateRodLength();
 
-        // Catch condition
-        if (currentLength <= minLength)
+        if (!skillFishing.isHooked)
         {
-            // Make sure no auto lowering after catch
-            ResetLoweringStates();
-
-            if (!isCollected && hookedFish != null)
+            if (result == SkillFishing.BattleResult.Win)
             {
-                isCollected = true;
+                Debug.Log("Player caught the fish!");
+                skillFishing.EndBattle();
+                ui.Hide();
+                isHooking = false;
                 StartCoroutine(FishCollectAnimation());
             }
-
-            return;
-        }
-        // Escape condition
-        else if (currentLength >= maxLength)
-        {
-            ReleaseFish();
+            else if (result == SkillFishing.BattleResult.Lose)
+            {
+                Debug.Log("Fish escaped!");
+                skillFishing.EndBattle();
+                ui.Hide();
+                ReleaseFish();
+            }
         }
     }
 
     IEnumerator FishCollectAnimation()
     {
-        // Stop battle, so Update does not snap fish to hook
         isHooking = false;
-
-        // Local reference to avoid losing fish if hookedFish changes
         GameObject fish = hookedFish;
 
         if (fish == null)
         {
-            // Nothing to animate
             isCollected = false;
             ResetLoweringStates();
             yield break;
@@ -166,8 +153,6 @@ public class HookController : MonoBehaviour
 
         Vector3 start = fish.transform.position;
         Vector3 end = fishKeepPos.position;
-
-        // Simple arc control point
         Vector3 controlPoint = start + Vector3.up * 2f;
 
         float t = 0f;
@@ -177,7 +162,6 @@ public class HookController : MonoBehaviour
         {
             if (fish == null)
             {
-                // Fish destroyed externally, stop animation
                 isCollected = false;
                 ResetLoweringStates();
                 yield break;
@@ -195,7 +179,6 @@ public class HookController : MonoBehaviour
             yield return null;
         }
 
-        // Increase score and destroy fish
         score++;
         Debug.Log("Score = " + score);
 
@@ -205,8 +188,6 @@ public class HookController : MonoBehaviour
         }
 
         hookedFish = null;
-
-        // Reset for next round
         isCollected = false;
         ResetLoweringStates();
     }
@@ -216,7 +197,6 @@ public class HookController : MonoBehaviour
         Vector3 scale = rod.localScale;
         scale.y = currentLength;
         rod.localScale = scale;
-
         rod.localPosition = Vector3.zero;
     }
 
@@ -232,7 +212,6 @@ public class HookController : MonoBehaviour
         isHooking = false;
         isCollected = false;
 
-        // After escape, only retract back, do not lower again
         isLowering = false;
         isRetracting = true;
         reachedBottom = false;
@@ -240,7 +219,6 @@ public class HookController : MonoBehaviour
 
     void OnTriggerEnter2D(Collider2D other)
     {
-        // Only hook fish, only when lowering downward
         if (!other.CompareTag("Fish")) return;
         if (isHooking) return;
         if (!isLowering) return;
@@ -254,6 +232,10 @@ public class HookController : MonoBehaviour
         hookedFish.transform.position = hookEndPos.position;
         hookedFish.transform.rotation = hookEndPos.rotation;
 
-        Debug.Log("Fish hooked! Battle start!");
+        // === ADDED ===
+        skillFishing.StartBattle();
+        ui.Show();
+
+        Debug.Log("Fish hooked! Skill battle start!");
     }
 }
