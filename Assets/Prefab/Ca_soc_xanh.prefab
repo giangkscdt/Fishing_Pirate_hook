@@ -165,7 +165,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b119bb1b9eecd7445a20c84c28021c12, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  baseStrength: 8
+  baseStrength: 1
   maxDepth: 10
   catchSpeed: 2
   escapeSpeed: 3

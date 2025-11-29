@@ -3,145 +3,102 @@ using UnityEngine;
 public class SkillFishing : MonoBehaviour
 {
     [Header("Player / Reel")]
-    public float reelForceMultiplier = 1.0f;
+    public float reelForceMultiplier = 3.0f;   // how much each tap adds
     public float maxSafeTension = 10f;
     public float minSafeTension = -10f;
 
-    [Header("Fish Stats")]
-    public float baseStrength = 8f;
-    public float maxDepth = 10f;
-    public float catchSpeed = 2f;
-    public float escapeSpeed = 3f;
-
     [Header("Runtime Debug")]
-    public float reelSpeed;
     public float playerForce;
     public float fishForce;
     public float tension;
     public float depth;
+    public float reelMomentum;                // NEW: build up from taps
+
+    [HideInInspector] public float baseStrength;
+    [HideInInspector] public float catchSpeed;
+    [HideInInspector] public float escapeSpeed;
+    [HideInInspector] public float maxDepth = 10f;
 
     private float hookTime = 0f;
     public bool isHooked = false;
 
-    void Start()
+    public void SetupFishStats(float strength, float catchS, float escapeS)
     {
-        ResetFish();
+        baseStrength = Mathf.Max(0.1f, strength);
+        catchSpeed = Mathf.Max(0.1f, catchS);
+        escapeSpeed = Mathf.Max(0.1f, escapeS);
+        maxDepth = 10f;
     }
 
-    void ResetFish()
+    public void StartBattle(float initialDepth)
     {
-        depth = maxDepth * 0.7f;
         hookTime = 0f;
+        depth = Mathf.Clamp(initialDepth, 0f, maxDepth);
+        reelMomentum = 0f;     // reset momentum at start
         isHooked = true;
     }
 
-    void Update()
-    {
-        if (!isHooked)
-            return;
-
-        hookTime += Time.deltaTime;
-
-        float input = Input.GetAxis("Vertical");
-        reelSpeed = Mathf.Max(0f, input);
-
-        playerForce = reelSpeed * reelForceMultiplier;
-
-        fishForce = ComputeFishForce(hookTime);
-
-        tension = playerForce - fishForce;
-
-        if (tension > maxSafeTension)
-        {
-            Debug.Log("Line broke! Too much force.");
-            isHooked = false;
-            return;
-        }
-        else if (tension < minSafeTension)
-        {
-            depth += escapeSpeed * Time.deltaTime;
-        }
-        else
-        {
-            depth -= catchSpeed * Time.deltaTime;
-        }
-
-        if (depth <= 0f)
-        {
-            Debug.Log("Fish caught! Skill success.");
-            isHooked = false;
-        }
-        else if (depth >= maxDepth)
-        {
-            Debug.Log("Fish escaped...");
-            isHooked = false;
-        }
-    }
-
-    float ComputeFishForce(float t)
-    {
-        float s = baseStrength;
-
-        if (t < 1f) return s * 1.2f;
-        if (t < 3f) return s * 0.9f;
-        if (t < 5f) return s * 1.3f;
-        return s * 0.6f;
-    }
-
-    // ==================================================================
-    // === ADDED FUNCTIONS BELOW - do not remove original code above ===
-    // ==================================================================
-
-    // HookController calls this when battle starts
-    public void StartBattle()
-    {
-        hookTime = 0f;
-        depth = maxDepth * 0.7f;
-        isHooked = true;
-    }
-
-    // HookController calls this when battle ends (Win or Lose)
-    public void EndBattle()
-    {
-        isHooked = false;
-    }
-
-    public float GetNormalizedDepth()
-    {
-        // 1.0 = close to surface (win)
-        // 0.0 = deep underwater (lose)
-        return 1f - Mathf.Clamp01(depth / maxDepth);
-    }
-
-    // Compare HookController request
     public enum BattleResult { None, Win, Lose }
 
-    public BattleResult TickBattle(bool pullingUp)
+    // pullingImpulse = true ONLY on the frame A is pressed (GetKeyDown)
+    public BattleResult TickBattle(bool pullingImpulse)
     {
         if (!isHooked)
             return BattleResult.None;
 
         hookTime += Time.deltaTime;
 
-        playerForce = pullingUp ? reelForceMultiplier : 0f;
-        fishForce = ComputeFishForce(hookTime);
+        // 1) Build reel momentum from taps (weaker boost)
+        if (pullingImpulse)
+        {
+            reelMomentum += reelForceMultiplier * 0.5f;
+        }
 
+        // 2) Momentum decays faster to force fast tapping
+        float reelDecay = 3.0f;
+        reelMomentum = Mathf.Max(0f, reelMomentum - reelDecay * Time.deltaTime);
+
+        // 3) Player force is based on limited momentum
+        playerForce = Mathf.Clamp(reelMomentum, 0f, maxSafeTension * 0.8f);
+
+        // 4) Fish force same as before
+        fishForce = ComputeFishForce(hookTime);
         tension = playerForce - fishForce;
 
-        if (tension > maxSafeTension)
+        // 5) Depth rules (no tapping = ALWAYS fish advantage)
+        if (playerForce <= 0.1f)
         {
-            isHooked = false;
-            return BattleResult.Lose;
+            depth += escapeSpeed * Time.deltaTime;
         }
-        else if (tension < minSafeTension)
+        else if (tension >= minSafeTension)
+        {
+            depth -= catchSpeed * Time.deltaTime;
+        }
+        else
+        {
+            depth += escapeSpeed * Time.deltaTime;
+        }
+
+        // 6) Win/Lose check same as your original
+
+
+        // 6) Depth logic (who is winning)
+        // If player is NOT tapping -> always lose depth
+        if (playerForce <= 0.01f)
         {
             depth += escapeSpeed * Time.deltaTime;
         }
         else
         {
-            depth -= catchSpeed * Time.deltaTime;
+            // Now tension matters:
+            if (tension >= minSafeTension)
+                depth -= catchSpeed * Time.deltaTime;
+            else
+                depth += escapeSpeed * Time.deltaTime;
         }
 
+
+        // 7) Check win / lose conditions
         if (depth <= 0f)
         {
             isHooked = false;
@@ -154,5 +111,15 @@ public class SkillFishing : MonoBehaviour
         }
 
         return BattleResult.None;
+    }
+
+    float ComputeFishForce(float t)
+    {
+        float s = baseStrength;
+
+        if (t < 1f) return s * 1.0f;  // start
+        if (t < 3f) return s * 0.8f;  // easier window
+        if (t < 5f) return s * 1.1f;  // small spike
+        return s * 0.5f;              // tired at the end
     }
 }

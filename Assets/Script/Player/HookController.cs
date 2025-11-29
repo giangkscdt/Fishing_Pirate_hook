@@ -10,9 +10,8 @@ public class HookController : MonoBehaviour
     public Transform hookEndPos;
     public Transform fishKeepPos;
 
-    // === ADDED ===
     public SkillFishing skillFishing;
-    public SkillFishingUI ui;
+    public FishingBarUI ui;
 
     [Header("Settings")]
     public float moveSpeed = 3f;
@@ -21,14 +20,10 @@ public class HookController : MonoBehaviour
     private float currentLength = 0.5f;
 
     private bool isLowering = false;
-    private bool isRetracting = false;
-    private bool reachedBottom = false;
-
     private bool isHooking = false;
-    private GameObject hookedFish;
 
+    private GameObject hookedFish;
     private int score = 0;
-    private bool isCollected = false;
 
     void Start()
     {
@@ -41,13 +36,9 @@ public class HookController : MonoBehaviour
         RotateHead();
 
         if (!isHooking)
-        {
             LoweringSystem();
-        }
         else
-        {
-            BattleControl(); // now fully SkillFishing based
-        }
+            BattleControl();
 
         hook.position = hookEndPos.position;
 
@@ -65,89 +56,59 @@ public class HookController : MonoBehaviour
 
     void LoweringSystem()
     {
-        if (Input.GetKeyDown(KeyCode.Q) && !isLowering && !isRetracting)
-        {
+        if (Input.GetKeyDown(KeyCode.Q) && !isLowering)
             isLowering = true;
-            reachedBottom = false;
-        }
 
-        if (isLowering && !reachedBottom)
+        if (isLowering)
         {
             currentLength += moveSpeed * Time.deltaTime;
-
             if (currentLength >= maxLength)
             {
                 currentLength = maxLength;
-                reachedBottom = true;
                 isLowering = false;
-                isRetracting = true;
             }
+            UpdateRodLength();
         }
-        else if (isRetracting)
-        {
-            currentLength -= moveSpeed * Time.deltaTime;
-
-            if (currentLength <= minLength)
-            {
-                currentLength = minLength;
-                ResetLoweringStates();
-            }
-        }
-
-        UpdateRodLength();
     }
 
-    void ResetLoweringStates()
-    {
-        isLowering = false;
-        isRetracting = false;
-        reachedBottom = false;
-    }
-
-    // ==========================================================
-    // === REPLACED BattleControl() - SkillFishing takes control
-    // ==========================================================
     void BattleControl()
     {
-        bool pullingUp = Input.GetKey(KeyCode.A);
+        if (skillFishing == null) return;
 
-        var result = skillFishing.TickBattle(pullingUp);
-
-        ui.UpdateBar(skillFishing.GetNormalizedDepth());
+        bool pullingImpulse = Input.GetKeyDown(KeyCode.A);
+        var result = skillFishing.TickBattle(pullingImpulse);
 
         float normDepth = Mathf.Clamp01(skillFishing.depth / skillFishing.maxDepth);
         currentLength = Mathf.Lerp(minLength, maxLength, normDepth);
         UpdateRodLength();
 
+        // === NEW: update UI with tension, not depth ===
+        ui.UpdateTension(
+            skillFishing.tension,
+            skillFishing.minSafeTension,
+            skillFishing.maxSafeTension,
+            result,
+            skillFishing.isHooked
+        );
+        // ==============================================
+
         if (!skillFishing.isHooked)
         {
             if (result == SkillFishing.BattleResult.Win)
-            {
-                Debug.Log("Player caught the fish!");
-                skillFishing.EndBattle();
-                ui.Hide();
-                isHooking = false;
                 StartCoroutine(FishCollectAnimation());
-            }
             else if (result == SkillFishing.BattleResult.Lose)
-            {
-                Debug.Log("Fish escaped!");
-                skillFishing.EndBattle();
-                ui.Hide();
                 ReleaseFish();
-            }
         }
     }
 
     IEnumerator FishCollectAnimation()
     {
-        isHooking = false;
+        isHooking = true;
         GameObject fish = hookedFish;
 
         if (fish == null)
         {
-            isCollected = false;
-            ResetLoweringStates();
+            ResetLine();
             yield break;
         }
 
@@ -160,13 +121,6 @@ public class HookController : MonoBehaviour
 
         while (t < 1f)
         {
-            if (fish == null)
-            {
-                isCollected = false;
-                ResetLoweringStates();
-                yield break;
-            }
-
             t += Time.deltaTime * 1.2f;
 
             Vector3 p1 = Vector3.Lerp(start, controlPoint, t);
@@ -183,21 +137,10 @@ public class HookController : MonoBehaviour
         Debug.Log("Score = " + score);
 
         if (fish != null)
-        {
             Destroy(fish);
-        }
 
         hookedFish = null;
-        isCollected = false;
-        ResetLoweringStates();
-    }
-
-    void UpdateRodLength()
-    {
-        Vector3 scale = rod.localScale;
-        scale.y = currentLength;
-        rod.localScale = scale;
-        rod.localPosition = Vector3.zero;
+        ResetLine();
     }
 
     void ReleaseFish()
@@ -209,22 +152,41 @@ public class HookController : MonoBehaviour
         }
 
         hookedFish = null;
-        isHooking = false;
-        isCollected = false;
+        ResetLine();
+    }
 
-        isLowering = false;
-        isRetracting = true;
-        reachedBottom = false;
+    void ResetLine()
+    {
+        isHooking = false;
+        currentLength = minLength;
+        UpdateRodLength();
+    }
+
+    void UpdateRodLength()
+    {
+        Vector3 scale = rod.localScale;
+        scale.y = currentLength;
+        rod.localScale = scale;
+        rod.localPosition = Vector3.zero;
     }
 
     void OnTriggerEnter2D(Collider2D other)
     {
         if (!other.CompareTag("Fish")) return;
-        if (isHooking) return;
         if (!isLowering) return;
 
         hookedFish = other.gameObject;
         isHooking = true;
+        isLowering = false;
+
+        var fishCtrl = hookedFish.GetComponent<FishController>();
+        skillFishing.SetupFishStats(
+            fishCtrl.baseStrength,
+            fishCtrl.catchSpeed,
+            fishCtrl.escapeSpeed
+        );
+
+        skillFishing.StartBattle(currentLength);
 
         var rb = hookedFish.GetComponent<Rigidbody2D>();
         if (rb) rb.gravityScale = 0f;
@@ -232,10 +194,6 @@ public class HookController : MonoBehaviour
         hookedFish.transform.position = hookEndPos.position;
         hookedFish.transform.rotation = hookEndPos.rotation;
 
-        // === ADDED ===
-        skillFishing.StartBattle();
         ui.Show();
-
-        Debug.Log("Fish hooked! Skill battle start!");
     }
 }

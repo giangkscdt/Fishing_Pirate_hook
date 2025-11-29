@@ -3,44 +3,92 @@ using UnityEngine.UI;
 
 public class FishingBarUI : MonoBehaviour
 {
+    [Header("UI References")]
+    public Image progressImage;           // dynamic: tension color and height
+    public Image backImage;               // static: blue tension range background
+    public RectTransform fishIcon;
     public SkillFishing skillFishing;
 
-    [Header("UI Elements")]
-    public RectTransform barArea;      // FishingBar
-    public RectTransform hookZone;     // Green moving zone
-    public RectTransform fishIcon;     // Moves with fish
-    public Image progressFill;         // Vertical catch progress
-
-    [Header("Control Settings")]
-    public float hookMoveSpeed = 300f; // Upward speed
-    public float fallSpeed = 200f;     // Gravity feel
-
     private float barHeight;
+    private bool isActive = false;
 
     void Start()
     {
-        barHeight = barArea.rect.height;
+        if (progressImage == null || backImage == null)
+        {
+            Debug.LogError("FishingBarUI missing image references!");
+            return;
+        }
+
+        // Setup fill
+        SetupFill(progressImage);
+        SetupFill(backImage);
+
+        // Blue background always 100%
+        backImage.fillAmount = 1f;
+        backImage.color = Color.blue;
+
+        barHeight = progressImage.rectTransform.rect.height;
+
+        Hide();
     }
 
-    void Update()
+    void SetupFill(Image img)
     {
-        if (!skillFishing.isHooked) return;
+        img.type = Image.Type.Filled;
+        img.fillMethod = Image.FillMethod.Vertical;
+        img.fillOrigin = (int)Image.OriginVertical.Bottom;
+    }
 
-        // 1. HookZone movement: only A presses move upward
-        Vector2 hz = hookZone.anchoredPosition;
-        if (Input.GetKey(KeyCode.A))
-            hz.y += hookMoveSpeed * Time.deltaTime;
+    public void UpdateTension(
+        float tension,
+        float minSafe,
+        float maxSafe,
+        SkillFishing.BattleResult state,
+        bool isHooked)
+    {
+        if (!isActive) return;
+
+        float tNorm = Mathf.InverseLerp(minSafe, maxSafe, tension);
+        tNorm = Mathf.Clamp01(tNorm); // 0..1
+
+        // After battle done: force top/bottom
+        if (!isHooked)
+        {
+            if (state == SkillFishing.BattleResult.Win)
+                tNorm = 1f;
+            else if (state == SkillFishing.BattleResult.Lose)
+                tNorm = 0f;
+        }
+
+        // Fill green/yellow/red bar
+        progressImage.fillAmount = tNorm;
+
+        // Move fish icon
+        Vector2 anchored = fishIcon.anchoredPosition;
+        anchored.y = tNorm * barHeight;
+        fishIcon.anchoredPosition = anchored;
+
+        // Color gradient Blue -> Green -> Yellow -> Red
+        if (tNorm < 0.25f)
+            progressImage.color = Color.Lerp(Color.blue, Color.green, tNorm * 4f);
+        else if (tNorm < 0.5f)
+            progressImage.color = Color.green;
+        else if (tNorm < 0.75f)
+            progressImage.color = Color.Lerp(Color.green, Color.yellow, (tNorm - 0.5f) * 4f);
         else
-            hz.y -= fallSpeed * Time.deltaTime;
-        hz.y = Mathf.Clamp(hz.y, 0, barHeight);
-        hookZone.anchoredPosition = hz;
+            progressImage.color = Color.Lerp(Color.yellow, Color.red, (tNorm - 0.75f) * 4f);
+    }
 
-        // 2. FishIcon vertical follows depth
-        float normDepth = Mathf.Clamp01(skillFishing.depth / skillFishing.maxDepth);
-        float fishY = barHeight * (1f - normDepth);
-        fishIcon.anchoredPosition = new Vector2(fishIcon.anchoredPosition.x, fishY);
+    public void Show()
+    {
+        gameObject.SetActive(true);
+        isActive = true;
+    }
 
-        // 3. Catch progress fill
-        progressFill.fillAmount = skillFishing.GetNormalizedDepth();
+    public void Hide()
+    {
+        gameObject.SetActive(false);
+        isActive = false;
     }
 }
