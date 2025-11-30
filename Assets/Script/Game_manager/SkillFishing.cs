@@ -4,15 +4,15 @@ public class SkillFishing : MonoBehaviour
 {
     [Header("Player / Reel")]
     public float reelForceMultiplier = 3.0f;   // how much each tap adds
-    public float maxSafeTension = 10f;
-    public float minSafeTension = -10f;
+    public float maxSafeTension = 10f;         // line break threshold
+    public float minSafeTension = -10f;        // slack threshold
 
     [Header("Runtime Debug")]
     public float playerForce;
     public float fishForce;
     public float tension;
     public float depth;
-    public float reelMomentum;                // NEW: build up from taps
+    public float reelMomentum;                // build up from taps
 
     [HideInInspector] public float baseStrength;
     [HideInInspector] public float catchSpeed;
@@ -34,13 +34,13 @@ public class SkillFishing : MonoBehaviour
     {
         hookTime = 0f;
         depth = Mathf.Clamp(initialDepth, 0f, maxDepth);
-        reelMomentum = 0f;     // reset momentum at start
+        reelMomentum = 0f;
         isHooked = true;
     }
 
     public enum BattleResult { None, Win, Lose }
 
-    // pullingImpulse = true ONLY on the frame A is pressed (GetKeyDown)
+    // pullingImpulse = true on the exact frame A is pressed (GetKeyDown)
     public BattleResult TickBattle(bool pullingImpulse)
     {
         if (!isHooked)
@@ -48,24 +48,31 @@ public class SkillFishing : MonoBehaviour
 
         hookTime += Time.deltaTime;
 
-        // 1) Build reel momentum from taps (weaker boost)
+        // 1) Tapping adds momentum
         if (pullingImpulse)
         {
             reelMomentum += reelForceMultiplier * 0.5f;
         }
 
-        // 2) Momentum decays faster to force fast tapping
+        // 2) Momentum decays quickly
         float reelDecay = 3.0f;
         reelMomentum = Mathf.Max(0f, reelMomentum - reelDecay * Time.deltaTime);
 
-        // 3) Player force is based on limited momentum
+        // 3) Player force (limit max)
         playerForce = Mathf.Clamp(reelMomentum, 0f, maxSafeTension * 0.8f);
 
-        // 4) Fish force same as before
+        // 4) Fish force
         fishForce = ComputeFishForce(hookTime);
         tension = playerForce - fishForce;
 
-        // 5) Depth rules (no tapping = ALWAYS fish advantage)
+        // >>> NEW: Instant lose if tension exceeds max safe tension <<<
+        if (tension > maxSafeTension)
+        {
+            isHooked = false;
+            return BattleResult.Lose;
+        }
+
+        // 5) Depth update rules
         if (playerForce <= 0.1f)
         {
             depth += escapeSpeed * Time.deltaTime;
@@ -79,26 +86,7 @@ public class SkillFishing : MonoBehaviour
             depth += escapeSpeed * Time.deltaTime;
         }
 
-        // 6) Win/Lose check same as your original
-
-
-        // 6) Depth logic (who is winning)
-        // If player is NOT tapping -> always lose depth
-        if (playerForce <= 0.01f)
-        {
-            depth += escapeSpeed * Time.deltaTime;
-        }
-        else
-        {
-            // Now tension matters:
-            if (tension >= minSafeTension)
-                depth -= catchSpeed * Time.deltaTime;
-            else
-                depth += escapeSpeed * Time.deltaTime;
-        }
-
-
-        // 7) Check win / lose conditions
+        // 6) Check win/lose by depth
         if (depth <= 0f)
         {
             isHooked = false;
@@ -117,9 +105,9 @@ public class SkillFishing : MonoBehaviour
     {
         float s = baseStrength;
 
-        if (t < 1f) return s * 1.0f;  // start
+        if (t < 1f) return s * 1.0f;  // strong start
         if (t < 3f) return s * 0.8f;  // easier window
-        if (t < 5f) return s * 1.1f;  // small spike
-        return s * 0.5f;              // tired at the end
+        if (t < 5f) return s * 1.1f;  // spike
+        return s * 0.5f;              // tired
     }
 }

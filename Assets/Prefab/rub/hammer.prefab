@@ -13,9 +13,9 @@ GameObject:
   - component: {fileID: 7938352505029720837}
   - component: {fileID: 7902942130918268014}
   - component: {fileID: 2470031119567060905}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: hammer
-  m_TagString: Untagged
+  m_TagString: Fish
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

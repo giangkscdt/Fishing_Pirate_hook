@@ -13,9 +13,9 @@ GameObject:
   - component: {fileID: 1441157368924260792}
   - component: {fileID: 152699318000339813}
   - component: {fileID: -5838884924569757047}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: chips
-  m_TagString: Untagged
+  m_TagString: Fish
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

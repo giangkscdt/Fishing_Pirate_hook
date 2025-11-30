@@ -13,9 +13,9 @@ GameObject:
   - component: {fileID: 6766132508668037616}
   - component: {fileID: 2967383048377856739}
   - component: {fileID: -6815256387105800330}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: bottle
-  m_TagString: Untagged
+  m_TagString: Fish
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

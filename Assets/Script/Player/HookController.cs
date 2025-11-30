@@ -22,6 +22,9 @@ public class HookController : MonoBehaviour
     private bool isLowering = false;
     private bool isHooking = false;
 
+    // NEW: retracting state
+    private bool isRetracting = false;
+
     private GameObject hookedFish;
     private int score = 0;
 
@@ -56,17 +59,39 @@ public class HookController : MonoBehaviour
 
     void LoweringSystem()
     {
-        if (Input.GetKeyDown(KeyCode.Q) && !isLowering)
+        // Start lowering only if not lowering or retracting
+        if (Input.GetKeyDown(KeyCode.Q) && !isLowering && !isRetracting)
             isLowering = true;
 
+        // Lower rope
         if (isLowering)
         {
             currentLength += moveSpeed * Time.deltaTime;
+
             if (currentLength >= maxLength)
             {
                 currentLength = maxLength;
                 isLowering = false;
+
+                // Auto retract if bottom reached and no fish hooked
+                if (hookedFish == null)
+                    isRetracting = true;
             }
+
+            UpdateRodLength();
+        }
+
+        // Retract rope up
+        if (isRetracting)
+        {
+            currentLength -= moveSpeed * Time.deltaTime;
+
+            if (currentLength <= minLength)
+            {
+                currentLength = minLength;
+                isRetracting = false;
+            }
+
             UpdateRodLength();
         }
     }
@@ -82,7 +107,6 @@ public class HookController : MonoBehaviour
         currentLength = Mathf.Lerp(minLength, maxLength, normDepth);
         UpdateRodLength();
 
-        // === NEW: update UI with tension, not depth ===
         ui.UpdateTension(
             skillFishing.tension,
             skillFishing.minSafeTension,
@@ -90,7 +114,6 @@ public class HookController : MonoBehaviour
             result,
             skillFishing.isHooked
         );
-        // ==============================================
 
         if (!skillFishing.isHooked)
         {
@@ -158,8 +181,10 @@ public class HookController : MonoBehaviour
     void ResetLine()
     {
         isHooking = false;
+        isRetracting = false; // ensure reset to normal state
         currentLength = minLength;
         UpdateRodLength();
+        ui.Hide(); // hide tension bar after battle ends
     }
 
     void UpdateRodLength()
@@ -174,10 +199,12 @@ public class HookController : MonoBehaviour
     {
         if (!other.CompareTag("Fish")) return;
         if (!isLowering) return;
+        if (isRetracting) return; // Do not hook fish while retracting
 
         hookedFish = other.gameObject;
         isHooking = true;
         isLowering = false;
+        isRetracting = false; // stop retracting since we got a fish
 
         var fishCtrl = hookedFish.GetComponent<FishController>();
         skillFishing.SetupFishStats(
