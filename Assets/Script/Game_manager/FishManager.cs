@@ -168,6 +168,7 @@ public class FishManager : MonoBehaviour
             anim.speed = Random.Range(0.9f, 1.2f);
         }
     }
+    
 
     void UpdateAllSlots()
     {
@@ -185,26 +186,82 @@ public class FishManager : MonoBehaviour
                 Vector3 pos = slot.position;
                 pos.x += dir * speed;
 
-                if (layer.swimLeftToRight)
+                bool offRight = pos.x > RightSpawnPos.position.x;
+                bool offLeft = pos.x < LeftSpawnPos.position.x;
+
+                bool needWrap =
+                    (layer.swimLeftToRight && offRight) ||
+                    (!layer.swimLeftToRight && offLeft);
+
+                if (needWrap)
                 {
-                    if (pos.x > RightSpawnPos.position.x)
-                        pos.x = LeftSpawnPos.position.x;
-                }
-                else
-                {
-                    if (pos.x < LeftSpawnPos.position.x)
-                        pos.x = RightSpawnPos.position.x;
+                    // Check if spacing is safe for teleport
+                    if (!SlotIsTooCloseToOtherFish(layer, slot))
+                    {
+                        // Teleport to opposite side
+                        pos.x = layer.swimLeftToRight
+                            ? LeftSpawnPos.position.x
+                            : RightSpawnPos.position.x;
+                    }
+                    else
+                    {
+                        // Keep swimming offscreen until spacing OK
+                        slot.position = pos;
+                        continue;
+                    }
                 }
 
+                // Y lane motion
                 if (layer.defence)
                 {
                     float t = Time.time + slot.GetSiblingIndex();
                     pos.y = layer.yPos + Mathf.Sin(t * 2.5f) * 0.35f;
                 }
-                else pos.y = layer.yPos;
+                else
+                {
+                    pos.y = layer.yPos;
+                }
 
                 slot.position = pos;
             }
         }
     }
+
+
+    void TryPlaceInHiddenSlot(FishLayer layer, Transform slot, int start, int end, float dir)
+    {
+        Vector3 pos = slot.position;
+        int safety = 30;
+
+        for (int j = start; j <= end && safety > 0; j++)
+        {
+            safety--;
+            Transform other = layer.slots[j];
+            if (other == slot) continue;
+
+            Vector3 checkPos = StartPositionForSlot(layer, dir);
+
+            // If empty space found -> move slot here
+            if (!SlotIsTooCloseToOtherFish(layer, slot))
+            {
+                checkPos.y = layer.yPos;
+                slot.position = checkPos;
+                return;
+            }
+        }
+
+        // If no space -> keep moving outside slightly
+        pos.x += dir * 0.5f;
+        slot.position = pos;
+    }
+
+    Vector3 StartPositionForSlot(FishLayer layer, float dir)
+    {
+        if (layer.swimLeftToRight)
+            return new Vector3(LeftSpawnPos.position.x - 2f, layer.yPos, 0);
+        else
+            return new Vector3(RightSpawnPos.position.x + 2f, layer.yPos, 0);
+    }
+
+
 }

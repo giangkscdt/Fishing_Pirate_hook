@@ -1,8 +1,13 @@
 using System.Collections;
 using UnityEngine;
+using TMPro; // ADD THIS
 
 public class HookController : MonoBehaviour
 {
+    [Header("Head Rotation Settings")]
+    public float rotationSpeed = 1.5f; // adjustable in Inspector
+    public float rotationAngle = 10f;  // adjustable in Inspector
+
     [Header("References")]
     public Transform head;
     public Transform rod;
@@ -26,12 +31,20 @@ public class HookController : MonoBehaviour
     private bool isRetracting = false;
 
     private GameObject hookedFish;
+
     private int score = 0;
+    public TMP_Text scoreText; // ADD THIS
+    public GameObject starPrefab;
+    public RectTransform scoreUIPos; // UI target position
 
     void Start()
     {
         currentLength = minLength;
         UpdateRodLength();
+
+        // Initialize score UI
+        if (scoreText != null)
+            scoreText.text = score.ToString();
     }
 
     void Update()
@@ -54,16 +67,18 @@ public class HookController : MonoBehaviour
 
     void RotateHead()
     {
-        head.Rotate(0f, 0f, Mathf.Sin(Time.time * 1.5f) * 0.2f);
+        if (head == null) return;
+
+        float angle = Mathf.Sin(Time.time * rotationSpeed) * rotationAngle;
+        head.localRotation = Quaternion.Euler(0f, 0f, angle);
     }
+
 
     void LoweringSystem()
     {
-        // Start lowering only if not lowering or retracting
         if (Input.GetKeyDown(KeyCode.Q) && !isLowering && !isRetracting)
             isLowering = true;
 
-        // Lower rope
         if (isLowering)
         {
             currentLength += moveSpeed * Time.deltaTime;
@@ -73,7 +88,6 @@ public class HookController : MonoBehaviour
                 currentLength = maxLength;
                 isLowering = false;
 
-                // Auto retract if bottom reached and no fish hooked
                 if (hookedFish == null)
                     isRetracting = true;
             }
@@ -81,7 +95,6 @@ public class HookController : MonoBehaviour
             UpdateRodLength();
         }
 
-        // Retract rope up
         if (isRetracting)
         {
             currentLength -= moveSpeed * Time.deltaTime;
@@ -157,6 +170,15 @@ public class HookController : MonoBehaviour
         }
 
         score++;
+        if (scoreText != null)
+            scoreText.text = score.ToString(); // UPDATE UI SCORE
+        for (int i = 0; i < 5; i++)
+        {
+            GameObject star = Instantiate(starPrefab, hookEndPos.position, Quaternion.identity);
+            var fx = star.GetComponent<StarFlyEffect>();
+            fx.targetUI = scoreUIPos;
+        }
+
         Debug.Log("Score = " + score);
 
         if (fish != null)
@@ -181,10 +203,10 @@ public class HookController : MonoBehaviour
     void ResetLine()
     {
         isHooking = false;
-        isRetracting = false; // ensure reset to normal state
+        isRetracting = false;
         currentLength = minLength;
         UpdateRodLength();
-        ui.Hide(); // hide tension bar after battle ends
+        ui.Hide();
     }
 
     void UpdateRodLength()
@@ -199,12 +221,12 @@ public class HookController : MonoBehaviour
     {
         if (!other.CompareTag("Fish")) return;
         if (!isLowering) return;
-        if (isRetracting) return; // Do not hook fish while retracting
+        if (isRetracting) return;
 
         hookedFish = other.gameObject;
         isHooking = true;
         isLowering = false;
-        isRetracting = false; // stop retracting since we got a fish
+        isRetracting = false;
 
         var fishCtrl = hookedFish.GetComponent<FishController>();
         skillFishing.SetupFishStats(

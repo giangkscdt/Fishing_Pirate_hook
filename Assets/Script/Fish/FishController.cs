@@ -30,6 +30,7 @@ public class FishController : MonoBehaviour
     {
         isHooked = true;
     }
+    
 
     // If you pull fish upward (optional)
     public void ApplyPull(float pullForce)
