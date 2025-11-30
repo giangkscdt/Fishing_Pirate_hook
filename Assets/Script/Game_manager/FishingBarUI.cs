@@ -4,9 +4,9 @@ using UnityEngine.UI;
 public class FishingBarUI : MonoBehaviour
 {
     [Header("UI References")]
-    public Image progressImage;           // dynamic: tension color and height
-    public Image backImage;               // static: blue tension range background
-    public RectTransform fishIcon;
+    public Image progressImage;           // reserved for another parameter (for example green bar)
+    public Image backImage;               // BLUE bar that shows tension (0%..100%)
+    public RectTransform fishIcon;        // icon that moves along the bar
     public SkillFishing skillFishing;
 
     private float barHeight;
@@ -14,21 +14,33 @@ public class FishingBarUI : MonoBehaviour
 
     void Start()
     {
-        if (progressImage == null || backImage == null)
+        if (backImage == null)
         {
-            Debug.LogError("FishingBarUI missing image references!");
+            Debug.LogError("FishingBarUI: backImage is not assigned.");
             return;
         }
 
-        // Setup fill
-        SetupFill(progressImage);
+        // progressImage is optional, so no hard error if null
+
+        // Setup fill type for both images (vertical from bottom)
+        if (progressImage != null)
+            SetupFill(progressImage);
+
         SetupFill(backImage);
 
-        // Blue background always 100%
-        backImage.fillAmount = 1f;
+        // Tension bar (blue) starts empty (0%)
+        backImage.fillAmount = 0f;
         backImage.color = Color.blue;
 
-        barHeight = progressImage.rectTransform.rect.height;
+        // Optional: prepare progressImage but do not use it yet
+        if (progressImage != null)
+        {
+            progressImage.fillAmount = 0f;
+            progressImage.color = Color.green;
+        }
+
+        // Cache bar height from the tension bar rect
+        barHeight = backImage.rectTransform.rect.height;
 
         Hide();
     }
@@ -40,6 +52,9 @@ public class FishingBarUI : MonoBehaviour
         img.fillOrigin = (int)Image.OriginVertical.Bottom;
     }
 
+    // tension: current tension value
+    // minSafe: tension value at 0% of bar (for example -10)
+    // maxSafe: tension value at 100% of bar (for example +10)
     public void UpdateTension(
         float tension,
         float minSafe,
@@ -47,12 +62,17 @@ public class FishingBarUI : MonoBehaviour
         SkillFishing.BattleResult state,
         bool isHooked)
     {
-        if (!isActive) return;
+        if (!isActive || backImage == null)
+            return;
 
+        // Map tension -> 0..1
+        // tension == minSafe -> 0
+        // tension == maxSafe -> 1
         float tNorm = Mathf.InverseLerp(minSafe, maxSafe, tension);
-        tNorm = Mathf.Clamp01(tNorm); // 0..1
+        tNorm = Mathf.Clamp01(tNorm);
 
-        // After battle done: force top/bottom
+        // When the battle is finished and hook is released,
+        // snap the bar to top/bottom depending on result.
         if (!isHooked)
         {
             if (state == SkillFishing.BattleResult.Win)
@@ -61,23 +81,42 @@ public class FishingBarUI : MonoBehaviour
                 tNorm = 0f;
         }
 
-        // Fill green/yellow/red bar
-        progressImage.fillAmount = tNorm;
+        // Apply to BLUE tension bar
+        backImage.fillAmount = tNorm;
 
-        // Move fish icon
-        Vector2 anchored = fishIcon.anchoredPosition;
-        anchored.y = tNorm * barHeight;
-        fishIcon.anchoredPosition = anchored;
+        // Move fish icon along the bar height (bottom -> top)
+        if (fishIcon != null)
+        {
+            Vector2 anchored = fishIcon.anchoredPosition;
+            anchored.y = tNorm * barHeight;
+            fishIcon.anchoredPosition = anchored;
+        }
 
-        // Color gradient Blue -> Green -> Yellow -> Red
+        // Color gradient for tension:
+        // low = blue, medium = green/yellow, high = red
         if (tNorm < 0.25f)
-            progressImage.color = Color.Lerp(Color.blue, Color.green, tNorm * 4f);
+        {
+            // 0..0.25: blue to green
+            backImage.color = Color.Lerp(Color.blue, Color.green, tNorm * 4f);
+        }
         else if (tNorm < 0.5f)
-            progressImage.color = Color.green;
+        {
+            // 0.25..0.5: solid green
+            backImage.color = Color.green;
+        }
         else if (tNorm < 0.75f)
-            progressImage.color = Color.Lerp(Color.green, Color.yellow, (tNorm - 0.5f) * 4f);
+        {
+            // 0.5..0.75: green to yellow
+            backImage.color = Color.Lerp(Color.green, Color.yellow, (tNorm - 0.5f) * 4f);
+        }
         else
-            progressImage.color = Color.Lerp(Color.yellow, Color.red, (tNorm - 0.75f) * 4f);
+        {
+            // 0.75..1.0: yellow to red
+            backImage.color = Color.Lerp(Color.yellow, Color.red, (tNorm - 0.75f) * 4f);
+        }
+
+        // NOTE: progressImage is not changed here.
+        // You can use it later for another parameter.
     }
 
     public void Show()

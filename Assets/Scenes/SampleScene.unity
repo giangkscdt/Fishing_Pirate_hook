@@ -2091,17 +2091,17 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   reelForceMultiplier: 2
-  maxSafeTension: 10
-  minSafeTension: -10
-  baseStrength: 1
-  maxDepth: 10
-  catchSpeed: 3
-  escapeSpeed: 2
+  maxSafeTension: 8
+  minSafeTension: -8
   playerForce: 0
   fishForce: 0
   tension: 0
   depth: 0
   reelMomentum: 0
+  baseStrength: 1
+  catchSpeed: 3
+  escapeSpeed: 2
+  maxDepth: 10
   isHooked: 0
 --- !u!1 &1969303745
 GameObject:
