@@ -12,6 +12,8 @@ public class FishLayer
     public float moveSpeed = 2f;
     public List<GameObject> fishPrefabs;
     public bool defence = false;
+
+    // Runtime slot list
     [HideInInspector] public List<Transform> slots = new List<Transform>();
 }
 
@@ -32,6 +34,7 @@ public class FishManager : MonoBehaviour
         UpdateAllSlots();
     }
 
+    // Check if slot has fish too close
     bool SlotIsTooCloseToOtherFish(FishLayer layer, Transform slot)
     {
         foreach (Transform other in layer.slots)
@@ -53,6 +56,7 @@ public class FishManager : MonoBehaviour
         return false;
     }
 
+    // Create initial slot array and spawn fish
     void InitAllLayers()
     {
         Camera cam = Camera.main;
@@ -78,11 +82,10 @@ public class FishManager : MonoBehaviour
             for (int i = 0; i < totalSlots; i++)
             {
                 GameObject slotObj = new GameObject(layer.name + "_Slot_" + i);
-                slotObj.transform.parent = this.transform;
+                slotObj.transform.parent = transform;
 
                 float posX = regionMin + spacing * (i + 0.5f);
-                slotObj.transform.position =
-                    new Vector3(posX, layer.yPos, 0f);
+                slotObj.transform.position = new Vector3(posX, layer.yPos, 0f);
 
                 layer.slots.Add(slotObj.transform);
             }
@@ -100,8 +103,7 @@ public class FishManager : MonoBehaviour
 
         foreach (Transform slot in layer.slots)
         {
-            if (SlotIsTooCloseToOtherFish(layer, slot))
-                continue;
+            if (SlotIsTooCloseToOtherFish(layer, slot)) continue;
 
             GameObject prefab =
                 layer.fishPrefabs[Random.Range(0, layer.fishPrefabs.Count)];
@@ -136,10 +138,8 @@ public class FishManager : MonoBehaviour
             for (int i = 0; i < fishGroup && index < total; i++)
             {
                 Transform slot = layer.slots[index];
-
                 if (!SlotIsTooCloseToOtherFish(layer, slot))
                     SpawnSpecificFish(layer, slot, prefab);
-
                 index++;
             }
 
@@ -167,8 +167,15 @@ public class FishManager : MonoBehaviour
             anim.Play(0, -1, Random.Range(0f, 1f));
             anim.speed = Random.Range(0.9f, 1.2f);
         }
+
+        FishController fc = fish.GetComponent<FishController>();
+        if (fc != null)
+        {
+            fc.startX = slot.position.x;
+            fc.swimLeftToRight = layer.swimLeftToRight;
+            fc.onOverDistance = OnFishOverSwimDistance;
+        }
     }
-    
 
     void UpdateAllSlots()
     {
@@ -195,23 +202,19 @@ public class FishManager : MonoBehaviour
 
                 if (needWrap)
                 {
-                    // Check if spacing is safe for teleport
                     if (!SlotIsTooCloseToOtherFish(layer, slot))
                     {
-                        // Teleport to opposite side
                         pos.x = layer.swimLeftToRight
                             ? LeftSpawnPos.position.x
                             : RightSpawnPos.position.x;
                     }
                     else
                     {
-                        // Keep swimming offscreen until spacing OK
                         slot.position = pos;
                         continue;
                     }
                 }
 
-                // Y lane motion
                 if (layer.defence)
                 {
                     float t = Time.time + slot.GetSiblingIndex();
@@ -227,41 +230,75 @@ public class FishManager : MonoBehaviour
         }
     }
 
-
-    void TryPlaceInHiddenSlot(FishLayer layer, Transform slot, int start, int end, float dir)
+    Transform FindEmptyHiddenSlot(FishLayer layer, bool toRightSide)
     {
-        Vector3 pos = slot.position;
-        int safety = 30;
+        float edgeX = toRightSide ?
+            RightSpawnPos.position.x :
+            LeftSpawnPos.position.x;
 
-        for (int j = start; j <= end && safety > 0; j++)
+        foreach (var slot in layer.slots)
         {
-            safety--;
-            Transform other = layer.slots[j];
-            if (other == slot) continue;
-
-            Vector3 checkPos = StartPositionForSlot(layer, dir);
-
-            // If empty space found -> move slot here
-            if (!SlotIsTooCloseToOtherFish(layer, slot))
+            if (slot.childCount == 0)
             {
-                checkPos.y = layer.yPos;
-                slot.position = checkPos;
-                return;
+                if (toRightSide && slot.position.x > edgeX)
+                    return slot;
+
+                if (!toRightSide && slot.position.x < edgeX)
+                    return slot;
             }
         }
-
-        // If no space -> keep moving outside slightly
-        pos.x += dir * 0.5f;
-        slot.position = pos;
+        return null;
     }
 
-    Vector3 StartPositionForSlot(FishLayer layer, float dir)
+    // Teleport fish to an empty hidden slot (or create new one)
+    void OnFishOverSwimDistance(FishController fish)
     {
-        if (layer.swimLeftToRight)
-            return new Vector3(LeftSpawnPos.position.x - 2f, layer.yPos, 0);
-        else
-            return new Vector3(RightSpawnPos.position.x + 2f, layer.yPos, 0);
+        Transform oldSlot = fish.transform.parent;
+        if (!oldSlot) return;
+
+        FishLayer layer = null;
+        foreach (var l in layers)
+        {
+            if (l.slots.Contains(oldSlot))
+            {
+                layer = l;
+                break;
+            }
+        }
+        if (layer == null) return;
+
+        bool moveRight = layer.swimLeftToRight;
+
+        // find hidden empty slot outside screen
+        Transform newSlot = FindEmptyHiddenSlot(layer, moveRight);
+
+        if (newSlot == null)
+        {
+            // create new offscreen slot
+            GameObject newSlotObj = new GameObject(layer.name + "_ExtraSlot");
+            newSlotObj.transform.parent = transform;
+
+            float newX = moveRight ?
+                RightSpawnPos.position.x + layer.slotSpacing :
+                LeftSpawnPos.position.x - layer.slotSpacing;
+
+            newSlotObj.transform.position = new Vector3(newX, layer.yPos, 0f);
+
+            newSlot = newSlotObj.transform;
+            layer.slots.Add(newSlot);
+        }
+
+        // Move slot outside slightly
+        float posX = moveRight ?
+            RightSpawnPos.position.x + 1f :
+            LeftSpawnPos.position.x - 1f;
+
+        newSlot.position = new Vector3(posX, layer.yPos, 0f);
+
+        // Reparent the fish to new slot
+        fish.transform.parent = newSlot;
+        fish.transform.localPosition = Vector3.zero;
+
+        fish.startX = newSlot.position.x;
     }
-
-
 }

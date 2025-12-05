@@ -184,8 +184,8 @@ MonoBehaviour:
   - name: Tang2
     yPos: 1
     swimLeftToRight: 0
-    visibleSlotCount: 10
-    slotSpacing: 1.2
+    visibleSlotCount: 5
+    slotSpacing: 3
     moveSpeed: 1
     fishPrefabs:
     - {fileID: 6024760398114569373, guid: 4ff39c15d6b281a45b05df0d3cc2b1d1, type: 3}
@@ -220,8 +220,8 @@ MonoBehaviour:
   - name: Tang5
     yPos: -2
     swimLeftToRight: 1
-    visibleSlotCount: 7
-    slotSpacing: 2.4
+    visibleSlotCount: 4
+    slotSpacing: 3
     moveSpeed: 2.3
     fishPrefabs:
     - {fileID: 3113579802934175168, guid: 033c7da232182734684535e4c0c94cc3, type: 3}
