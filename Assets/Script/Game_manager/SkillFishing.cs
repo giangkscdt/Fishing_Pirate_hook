@@ -3,7 +3,7 @@ using UnityEngine;
 public class SkillFishing : MonoBehaviour
 {
     [Header("Player / Reel")]
-    public float reelForceMultiplier = 3.0f;   // how much each tap adds
+    public float reelForceMultiplier = 5.0f;   // how much each tap adds
     public float maxSafeTension = 10f;         // line break threshold
     public float minSafeTension = -10f;        // slack threshold
 
@@ -51,15 +51,15 @@ public class SkillFishing : MonoBehaviour
         // 1) Tapping adds momentum
         if (pullingImpulse)
         {
-            reelMomentum += reelForceMultiplier * 0.5f;
+            reelMomentum += reelForceMultiplier * 0.9f;
         }
 
         // 2) Momentum decays quickly
-        float reelDecay = 3.0f;
+        float reelDecay = 2.0f;
         reelMomentum = Mathf.Max(0f, reelMomentum - reelDecay * Time.deltaTime);
 
         // 3) Player force (limit max)
-        playerForce = Mathf.Clamp(reelMomentum, 0f, maxSafeTension * 0.8f);
+        playerForce = Mathf.Clamp(reelMomentum, 0f, maxSafeTension * 0.9f);
 
         // 4) Fish force
         fishForce = ComputeFishForce(hookTime);

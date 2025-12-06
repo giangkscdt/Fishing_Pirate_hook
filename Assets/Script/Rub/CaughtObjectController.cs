@@ -14,9 +14,9 @@ public class CaughtObjectController : MonoBehaviour
     public ObjectType objectType = ObjectType.Other;
 
     [Header("Physics Settings")]
-    public float weight = 5f;        // pull down force
-    public float maxDepth = 10f;     // limit how far down
-    public float pullSpeed = 2f;     // speed player can pull up
+    public float weight = 5f;
+    public float maxDepth = 10f;
+    public float pullSpeed = 2f;
 
     [Header("Runtime State")]
     public bool isHooked = false;
@@ -26,22 +26,19 @@ public class CaughtObjectController : MonoBehaviour
     {
         if (isHooked)
         {
-            // Now gravity applies only when hooked
             verticalVelocity -= weight * Time.deltaTime;
 
             Vector3 pos = transform.position;
             pos.y += verticalVelocity * Time.deltaTime;
 
-            pos.y = Mathf.Max(pos.y, -maxDepth); // clamp
+            pos.y = Mathf.Max(pos.y, -maxDepth);
             transform.position = pos;
         }
         else
         {
-            // No weight until hooked
             verticalVelocity = 0f;
         }
     }
-
 
     public void Hooked()
     {

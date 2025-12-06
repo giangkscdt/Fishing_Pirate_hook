@@ -18,9 +18,6 @@ public class HookController : MonoBehaviour
     public SkillFishing skillFishing;
     public FishingBarUI ui;
 
-    [Header("Fixed Joystick")]
-    public FixedJoystick fixedJoystick;
-
     [Header("Settings")]
     public float moveSpeed = 3f;
     public float minLength = 0.5f;
@@ -31,23 +28,12 @@ public class HookController : MonoBehaviour
     private bool isHooking = false;
     private bool isRetracting = false;
 
-    private GameObject hookedFish;
+    private GameObject hookedObject;
 
     private int score = 0;
     public TMP_Text scoreText;
     public GameObject starPrefab;
     public RectTransform scoreUIPos;
-
-    // Auto release system
-    private float joystickStillThreshold = 0.05f;
-    private float maxStillTime = 0.7f;
-    private float stillTimer = 0f;
-    private Vector2 lastJoystickDir;
-
-    // One joystick cycle = 6 impulses (press and release A)
-    private int impulseCount = 0;
-    private int maxImpulses = 6;
-    private float lastSign = 0f;
 
     void Start()
     {
@@ -56,9 +42,6 @@ public class HookController : MonoBehaviour
 
         if (scoreText != null)
             scoreText.text = score.ToString();
-
-        if (fixedJoystick != null)
-            fixedJoystick.gameObject.SetActive(true);
     }
 
     void Update()
@@ -72,10 +55,10 @@ public class HookController : MonoBehaviour
 
         hook.position = hookEndPos.position;
 
-        if (hookedFish != null && isHooking)
+        if (hookedObject != null && isHooking)
         {
-            hookedFish.transform.position = hookEndPos.position;
-            hookedFish.transform.rotation = hookEndPos.rotation;
+            hookedObject.transform.position = hookEndPos.position;
+            hookedObject.transform.rotation = hookEndPos.rotation;
         }
     }
 
@@ -87,7 +70,6 @@ public class HookController : MonoBehaviour
 
     void LoweringSystem()
     {
-        // Q key support for PC
         if (Input.GetKeyDown(KeyCode.Q) && !isLowering && !isRetracting)
             isLowering = true;
 
@@ -99,7 +81,8 @@ public class HookController : MonoBehaviour
             {
                 currentLength = maxLength;
                 isLowering = false;
-                if (hookedFish == null)
+
+                if (hookedObject == null)
                     isRetracting = true;
             }
             UpdateRodLength();
@@ -120,130 +103,108 @@ public class HookController : MonoBehaviour
 
     void BattleControl()
     {
-        Vector2 joy = new Vector2(fixedJoystick.Horizontal, fixedJoystick.Vertical);
+        if (skillFishing == null) return;
 
-        bool pullingImpulse = false;
+        var fishCtrl = hookedObject != null ? hookedObject.GetComponent<FishController>() : null;
 
-        float sign = Mathf.Sign(joy.x + joy.y);
-
-        if ((joy - lastJoystickDir).magnitude > joystickStillThreshold)
-        {
-            stillTimer = 0f;
-
-            // detect direction change
-            if (sign != 0f && lastSign != 0f && sign != lastSign)
-            {
-                if (impulseCount < maxImpulses)
-                {
-                    impulseCount++;
-                    pullingImpulse = true; // simulate pressing A
-                }
-                else
-                {
-                    impulseCount = 0; // reset after 6 presses
-                }
-            }
-            lastSign = sign;
-        }
-        else
-        {
-            stillTimer += Time.deltaTime;
-            if (stillTimer >= maxStillTime)
-            {
-                pullingImpulse = false;
-                impulseCount = 0; // reset if idle
-            }
-        }
-
-        lastJoystickDir = joy;
-
+        bool pullingImpulse = Input.GetKeyDown(KeyCode.A);
         var result = skillFishing.TickBattle(pullingImpulse);
 
         float normDepth = Mathf.Clamp01(skillFishing.depth / skillFishing.maxDepth);
         currentLength = Mathf.Lerp(minLength, maxLength, normDepth);
         UpdateRodLength();
 
-        ui.UpdateTension(
-            skillFishing.tension,
-            skillFishing.minSafeTension,
-            skillFishing.maxSafeTension,
-            result,
-            skillFishing.isHooked
-        );
+        if (fishCtrl != null)
+        {
+            ui.UpdateTension(
+                skillFishing.tension,
+                skillFishing.minSafeTension,
+                skillFishing.maxSafeTension,
+                result,
+                skillFishing.isHooked
+            );
+        }
 
         if (!skillFishing.isHooked)
         {
-            if (result == SkillFishing.BattleResult.Win)
-                StartCoroutine(FishCollectAnimation());
-            else if (result == SkillFishing.BattleResult.Lose)
-                ReleaseFish();
+            if (fishCtrl != null)
+            {
+                if (result == SkillFishing.BattleResult.Win)
+                    StartCoroutine(CollectAnimation());
+                else if (result == SkillFishing.BattleResult.Lose)
+                    ReleaseObject();
+            }
+            else
+            {
+                if (currentLength <= minLength + 0.01f)
+                    StartCoroutine(CollectAnimation());
+            }
         }
     }
 
-    IEnumerator FishCollectAnimation()
+    IEnumerator CollectAnimation()
     {
         isHooking = true;
-        GameObject fish = hookedFish;
+        GameObject obj = hookedObject;
 
-        if (fish == null)
+        if (obj == null)
         {
             ResetLine();
             yield break;
         }
 
-        Vector3 start = fish.transform.position;
+        Vector3 start = obj.transform.position;
         Vector3 end = fishKeepPos.position;
-        Vector3 controlPoint = start + Vector3.up * 2f;
+        Vector3 ctrl = start + Vector3.up * 2f;
 
         float t = 0f;
-        Vector3 originalScale = fish.transform.localScale;
+        Vector3 originalScale = obj.transform.localScale;
 
         while (t < 1f)
         {
             t += Time.deltaTime * 1.2f;
 
-            Vector3 p1 = Vector3.Lerp(start, controlPoint, t);
-            Vector3 p2 = Vector3.Lerp(controlPoint, end, t);
-            fish.transform.position = Vector3.Lerp(p1, p2, t);
+            Vector3 p1 = Vector3.Lerp(start, ctrl, t);
+            Vector3 p2 = Vector3.Lerp(ctrl, end, t);
+            obj.transform.position = Vector3.Lerp(p1, p2, t);
 
             float scaleFactor = Mathf.Lerp(1f, 0f, t);
-            fish.transform.localScale = originalScale * scaleFactor;
+            obj.transform.localScale = originalScale * scaleFactor;
 
             yield return null;
         }
 
-        var fishCtrl = fish.GetComponent<FishController>();
+        var fishCtrl = obj.GetComponent<FishController>();
         if (fishCtrl != null)
-            score += fishCtrl.fishScore; // score based on fish
-        else
-            score++;
-
-        if (scoreText != null)
-            scoreText.text = score.ToString();
-
-        for (int i = 0; i < 5; i++)
         {
-            GameObject star = Instantiate(starPrefab, hookEndPos.position, Quaternion.identity);
-            var fx = star.GetComponent<StarFlyEffect>();
-            fx.targetUI = scoreUIPos;
+            score += fishCtrl.fishScore;
+            if (scoreText != null)
+                scoreText.text = score.ToString();
+
+            for (int i = 0; i < 5; i++)
+            {
+                GameObject star = Instantiate(starPrefab, hookEndPos.position, Quaternion.identity);
+                var fx = star.GetComponent<StarFlyEffect>();
+                fx.targetUI = scoreUIPos;
+            }
         }
 
-        if (fish != null)
-            Destroy(fish);
+        if (obj)
+            Destroy(obj);
 
-        hookedFish = null;
+        hookedObject = null;
         ResetLine();
     }
 
-    void ReleaseFish()
+    void ReleaseObject()
     {
-        if (hookedFish)
+        if (hookedObject)
         {
-            var rb = hookedFish.GetComponent<Rigidbody2D>();
+            var rb = hookedObject.GetComponent<Rigidbody2D>();
             if (rb) rb.gravityScale = 1f;
         }
 
-        hookedFish = null;
+        hookedObject = null;
         ResetLine();
     }
 
@@ -254,14 +215,6 @@ public class HookController : MonoBehaviour
         currentLength = minLength;
         UpdateRodLength();
         ui.Hide();
-        impulseCount = 0;
-    }
-
-    void UpdateRodLength()
-    {
-        Vector3 scale = rod.localScale;
-        scale.y = currentLength;
-        rod.localScale = scale;
     }
     public void OnLowerStart()
     {
@@ -271,32 +224,49 @@ public class HookController : MonoBehaviour
         }
     }
 
+    void UpdateRodLength()
+    {
+        Vector3 scale = rod.localScale;
+        scale.y = currentLength;
+        rod.localScale = scale;
+        rod.localPosition = Vector3.zero;
+    }
+
     void OnTriggerEnter2D(Collider2D other)
     {
-        if (!other.CompareTag("Fish")) return;
         if (!isLowering) return;
         if (isRetracting) return;
 
-        hookedFish = other.gameObject;
+        var fishCtrl = other.GetComponent<FishController>();
+        var objCtrl = other.GetComponent<CaughtObjectController>();
+
+        if (fishCtrl == null && objCtrl == null)
+            return;
+
+        hookedObject = other.gameObject;
         isHooking = true;
         isLowering = false;
         isRetracting = false;
 
-        var fishCtrl = hookedFish.GetComponent<FishController>();
-        skillFishing.SetupFishStats(
-            fishCtrl.baseStrength,
-            fishCtrl.catchSpeed,
-            fishCtrl.escapeSpeed
-        );
-
-        skillFishing.StartBattle(currentLength);
-
-        var rb = hookedFish.GetComponent<Rigidbody2D>();
+        var rb = hookedObject.GetComponent<Rigidbody2D>();
         if (rb) rb.gravityScale = 0f;
 
-        hookedFish.transform.position = hookEndPos.position;
-        hookedFish.transform.rotation = hookEndPos.rotation;
+        hookedObject.transform.position = hookEndPos.position;
+        hookedObject.transform.rotation = hookEndPos.rotation;
 
-        ui.Show();
+        if (fishCtrl != null)
+        {
+            skillFishing.SetupFishStats(
+                fishCtrl.baseStrength,
+                fishCtrl.catchSpeed,
+                fishCtrl.escapeSpeed
+            );
+            skillFishing.StartBattle(currentLength);
+            ui.Show();
+        }
+        else
+        {
+            skillFishing.isHooked = false;
+        }
     }
 }
