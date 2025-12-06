@@ -100,6 +100,10 @@ public class SkillFishing : MonoBehaviour
 
         return BattleResult.None;
     }
+    public void SetPlayerReelInput(float input)
+    {
+        playerForce = input;
+    }
 
     float ComputeFishForce(float t)
     {

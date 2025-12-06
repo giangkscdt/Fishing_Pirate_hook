@@ -1,12 +1,12 @@
 using System.Collections;
 using UnityEngine;
-using TMPro; // ADD THIS
+using TMPro;
 
 public class HookController : MonoBehaviour
 {
     [Header("Head Rotation Settings")]
-    public float rotationSpeed = 1.5f; // adjustable in Inspector
-    public float rotationAngle = 10f;  // adjustable in Inspector
+    public float rotationSpeed = 1.5f;
+    public float rotationAngle = 10f;
 
     [Header("References")]
     public Transform head;
@@ -18,6 +18,9 @@ public class HookController : MonoBehaviour
     public SkillFishing skillFishing;
     public FishingBarUI ui;
 
+    [Header("Fixed Joystick")]
+    public FixedJoystick fixedJoystick;
+
     [Header("Settings")]
     public float moveSpeed = 3f;
     public float minLength = 0.5f;
@@ -26,25 +29,36 @@ public class HookController : MonoBehaviour
 
     private bool isLowering = false;
     private bool isHooking = false;
-
-    // NEW: retracting state
     private bool isRetracting = false;
 
     private GameObject hookedFish;
 
     private int score = 0;
-    public TMP_Text scoreText; // ADD THIS
+    public TMP_Text scoreText;
     public GameObject starPrefab;
-    public RectTransform scoreUIPos; // UI target position
+    public RectTransform scoreUIPos;
+
+    // Auto release system
+    private float joystickStillThreshold = 0.05f;
+    private float maxStillTime = 0.7f;
+    private float stillTimer = 0f;
+    private Vector2 lastJoystickDir;
+
+    // One joystick cycle = 6 impulses (press and release A)
+    private int impulseCount = 0;
+    private int maxImpulses = 6;
+    private float lastSign = 0f;
 
     void Start()
     {
         currentLength = minLength;
         UpdateRodLength();
 
-        // Initialize score UI
         if (scoreText != null)
             scoreText.text = score.ToString();
+
+        if (fixedJoystick != null)
+            fixedJoystick.gameObject.SetActive(true);
     }
 
     void Update()
@@ -67,15 +81,13 @@ public class HookController : MonoBehaviour
 
     void RotateHead()
     {
-        if (head == null) return;
-
         float angle = Mathf.Sin(Time.time * rotationSpeed) * rotationAngle;
         head.localRotation = Quaternion.Euler(0f, 0f, angle);
     }
 
-
     void LoweringSystem()
     {
+        // Q key support for PC
         if (Input.GetKeyDown(KeyCode.Q) && !isLowering && !isRetracting)
             isLowering = true;
 
@@ -87,11 +99,9 @@ public class HookController : MonoBehaviour
             {
                 currentLength = maxLength;
                 isLowering = false;
-
                 if (hookedFish == null)
                     isRetracting = true;
             }
-
             UpdateRodLength();
         }
 
@@ -104,16 +114,49 @@ public class HookController : MonoBehaviour
                 currentLength = minLength;
                 isRetracting = false;
             }
-
             UpdateRodLength();
         }
     }
 
     void BattleControl()
     {
-        if (skillFishing == null) return;
+        Vector2 joy = new Vector2(fixedJoystick.Horizontal, fixedJoystick.Vertical);
 
-        bool pullingImpulse = Input.GetKeyDown(KeyCode.A);
+        bool pullingImpulse = false;
+
+        float sign = Mathf.Sign(joy.x + joy.y);
+
+        if ((joy - lastJoystickDir).magnitude > joystickStillThreshold)
+        {
+            stillTimer = 0f;
+
+            // detect direction change
+            if (sign != 0f && lastSign != 0f && sign != lastSign)
+            {
+                if (impulseCount < maxImpulses)
+                {
+                    impulseCount++;
+                    pullingImpulse = true; // simulate pressing A
+                }
+                else
+                {
+                    impulseCount = 0; // reset after 6 presses
+                }
+            }
+            lastSign = sign;
+        }
+        else
+        {
+            stillTimer += Time.deltaTime;
+            if (stillTimer >= maxStillTime)
+            {
+                pullingImpulse = false;
+                impulseCount = 0; // reset if idle
+            }
+        }
+
+        lastJoystickDir = joy;
+
         var result = skillFishing.TickBattle(pullingImpulse);
 
         float normDepth = Mathf.Clamp01(skillFishing.depth / skillFishing.maxDepth);
@@ -169,17 +212,21 @@ public class HookController : MonoBehaviour
             yield return null;
         }
 
-        score++;
+        var fishCtrl = fish.GetComponent<FishController>();
+        if (fishCtrl != null)
+            score += fishCtrl.fishScore; // score based on fish
+        else
+            score++;
+
         if (scoreText != null)
-            scoreText.text = score.ToString(); // UPDATE UI SCORE
+            scoreText.text = score.ToString();
+
         for (int i = 0; i < 5; i++)
         {
             GameObject star = Instantiate(starPrefab, hookEndPos.position, Quaternion.identity);
             var fx = star.GetComponent<StarFlyEffect>();
             fx.targetUI = scoreUIPos;
         }
-
-        Debug.Log("Score = " + score);
 
         if (fish != null)
             Destroy(fish);
@@ -207,6 +254,7 @@ public class HookController : MonoBehaviour
         currentLength = minLength;
         UpdateRodLength();
         ui.Hide();
+        impulseCount = 0;
     }
 
     void UpdateRodLength()
@@ -214,7 +262,13 @@ public class HookController : MonoBehaviour
         Vector3 scale = rod.localScale;
         scale.y = currentLength;
         rod.localScale = scale;
-        rod.localPosition = Vector3.zero;
+    }
+    public void OnLowerStart()
+    {
+        if (!isLowering && !isRetracting)
+        {
+            isLowering = true;
+        }
     }
 
     void OnTriggerEnter2D(Collider2D other)
