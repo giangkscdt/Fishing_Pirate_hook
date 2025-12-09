@@ -35,6 +35,10 @@ public class HookController : MonoBehaviour
     public GameObject starPrefab;
     public RectTransform scoreUIPos;
 
+    private bool inputPressDown = false;
+    private bool inputPressUp = false;
+
+
     void Start()
     {
         currentLength = minLength;
@@ -46,6 +50,9 @@ public class HookController : MonoBehaviour
 
     void Update()
     {
+        inputPressDown = false;
+        inputPressUp = false;
+        UpdateInput(); // <--- NEW
         RotateHead();
 
         if (!isHooking)
@@ -70,8 +77,10 @@ public class HookController : MonoBehaviour
 
     void LoweringSystem()
     {
-        if (Input.GetKeyDown(KeyCode.Q) && !isLowering && !isRetracting)
+        // Start lowering hook using Mouse or Touch or Q
+        if ((inputPressDown || Input.GetKeyDown(KeyCode.Q)) && !isLowering && !isRetracting)
             isLowering = true;
+
 
         if (isLowering)
         {
@@ -101,13 +110,61 @@ public class HookController : MonoBehaviour
         }
     }
 
+    void UpdateInput()
+    {
+        // Mouse left click
+        if (Input.GetMouseButtonDown(0))
+            inputPressDown = true;
+        if (Input.GetMouseButtonUp(0))
+            inputPressUp = true;
+
+        // Touch for phone
+        if (Input.touchCount > 0)
+        {
+            Touch t = Input.GetTouch(0);
+            if (t.phase == TouchPhase.Began)
+                inputPressDown = true;
+            if (t.phase == TouchPhase.Ended || t.phase == TouchPhase.Canceled)
+                inputPressUp = true;
+        }
+
+        // Keyboard A (fallback)
+        if (Input.GetKeyDown(KeyCode.A))
+            inputPressDown = true;
+        if (Input.GetKeyUp(KeyCode.A))
+            inputPressUp = true;
+    }
+
+
     void BattleControl()
     {
         if (skillFishing == null) return;
 
         var fishCtrl = hookedObject != null ? hookedObject.GetComponent<FishController>() : null;
+        var objCtrl = hookedObject != null ? hookedObject.GetComponent<CaughtObjectController>() : null;
 
-        bool pullingImpulse = Input.GetKeyDown(KeyCode.A);
+        // Non-fish object handling (shoe, ball, rabbit...)
+        if (objCtrl != null)
+        {
+            if (inputPressDown)
+            {
+                currentLength -= moveSpeed * Time.deltaTime; // shorten rope
+                currentLength = Mathf.Max(minLength, currentLength);
+                UpdateRodLength();
+            }
+
+            // Check collect condition
+            if (currentLength <= minLength + 0.01f)
+            {
+                StartCoroutine(CollectAnimation());
+            }
+
+            return;
+        }
+
+
+        // Fish battle handling
+        bool pullingImpulse = inputPressDown;
         var result = skillFishing.TickBattle(pullingImpulse);
 
         float normDepth = Mathf.Clamp01(skillFishing.depth / skillFishing.maxDepth);
@@ -130,17 +187,17 @@ public class HookController : MonoBehaviour
             if (fishCtrl != null)
             {
                 if (result == SkillFishing.BattleResult.Win)
+                {
                     StartCoroutine(CollectAnimation());
+                }
                 else if (result == SkillFishing.BattleResult.Lose)
+                {
                     ReleaseObject();
-            }
-            else
-            {
-                if (currentLength <= minLength + 0.01f)
-                    StartCoroutine(CollectAnimation());
+                }
             }
         }
     }
+
 
     IEnumerator CollectAnimation()
     {
@@ -153,6 +210,8 @@ public class HookController : MonoBehaviour
             yield break;
         }
 
+        bool isFish = obj.GetComponent<FishController>() != null;
+
         Vector3 start = obj.transform.position;
         Vector3 end = fishKeepPos.position;
         Vector3 ctrl = start + Vector3.up * 2f;
@@ -162,39 +221,48 @@ public class HookController : MonoBehaviour
 
         while (t < 1f)
         {
+            if (obj == null) yield break;
+
             t += Time.deltaTime * 1.2f;
 
             Vector3 p1 = Vector3.Lerp(start, ctrl, t);
             Vector3 p2 = Vector3.Lerp(ctrl, end, t);
+
             obj.transform.position = Vector3.Lerp(p1, p2, t);
 
-            float scaleFactor = Mathf.Lerp(1f, 0f, t);
-            obj.transform.localScale = originalScale * scaleFactor;
+            if (isFish) // Only fish scale to zero
+            {
+                float scaleFactor = Mathf.Lerp(1f, 0f, t);
+                obj.transform.localScale = originalScale * scaleFactor;
+            }
 
             yield return null;
         }
 
-        var fishCtrl = obj.GetComponent<FishController>();
-        if (fishCtrl != null)
+        if (isFish)
         {
-            score += fishCtrl.fishScore;
-            if (scoreText != null)
-                scoreText.text = score.ToString();
-
-            for (int i = 0; i < 5; i++)
+            FishController f = obj.GetComponent<FishController>();
+            if (f != null)
             {
-                GameObject star = Instantiate(starPrefab, hookEndPos.position, Quaternion.identity);
-                var fx = star.GetComponent<StarFlyEffect>();
-                fx.targetUI = scoreUIPos;
+                score += f.fishScore;
+                if (scoreText != null) scoreText.text = score.ToString();
+
+                for (int i = 0; i < 5; i++)
+                {
+                    GameObject star = Instantiate(starPrefab, hookEndPos.position, Quaternion.identity);
+                    var fx = star.GetComponent<StarFlyEffect>();
+                    fx.targetUI = scoreUIPos;
+                }
             }
         }
 
-        if (obj)
+        if (obj != null)
             Destroy(obj);
 
         hookedObject = null;
         ResetLine();
     }
+
 
     void ReleaseObject()
     {
@@ -266,7 +334,15 @@ public class HookController : MonoBehaviour
         }
         else
         {
-            skillFishing.isHooked = false;
+            // Non-fish object hooked: enable pulling by gravity + A press
+            
+            if (objCtrl != null)
+            {
+                objCtrl.Hooked(); // enable physics DOWN
+                isHooking = true; // allow pull control
+                ui.Hide(); // no battle bar
+            }
         }
+
     }
 }

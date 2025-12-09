@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 1050411100525724663}
   - component: {fileID: 3355536254214708919}
   - component: {fileID: 5697057245279279183}
+  - component: {fileID: -2696195310722363665}
   m_Layer: 8
   m_Name: nail
   m_TagString: Fish
@@ -152,3 +153,20 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.48, y: 0.91}
   m_EdgeRadius: 0
+--- !u!114 &-2696195310722363665
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5795581606826487029}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a2bfe67d114508a418a2509dc29634ec, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  objectType: 3
+  weight: 1
+  maxDepth: 10
+  pullSpeed: 2
+  isHooked: 0

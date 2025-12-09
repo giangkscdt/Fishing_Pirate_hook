@@ -166,7 +166,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   objectType: 3
-  weight: 5
+  weight: 1
   maxDepth: 10
   pullSpeed: 2
   isHooked: 0

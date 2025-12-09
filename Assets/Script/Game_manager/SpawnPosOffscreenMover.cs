@@ -16,8 +16,8 @@ public class SpawnPosOffscreenMover : MonoBehaviour
         float halfWidth = cam.orthographicSize * cam.aspect;
 
         // world edges
-        float leftOff = -halfWidth - 10f;
-        float rightOff = halfWidth + 10f;
+        float leftOff = -2 * halfWidth;
+        float rightOff = 2 * halfWidth;
 
         // find objects
         GameObject left = GameObject.Find(leftName);
