@@ -30,13 +30,21 @@ public class SkillFishing : MonoBehaviour
         maxDepth = 10f;
     }
 
-    public void StartBattle(float initialDepth)
+    public void StartBattle(float initialDepth, FishController fishCtrl)
     {
         hookTime = 0f;
+
         depth = Mathf.Clamp(initialDepth, 0f, maxDepth);
         reelMomentum = 0f;
+
         isHooked = true;
+
+        // Call the actual animation trigger function
+        if (fishCtrl != null)
+            fishCtrl.Hooked();
     }
+
+
 
     public enum BattleResult { None, Win, Lose }
 

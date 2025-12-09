@@ -2,7 +2,7 @@ using UnityEngine;
 
 public class FishController : MonoBehaviour
 {
-    public int fishScore = 1; // NEW: score for this fish
+    public int fishScore = 1; // score for this fish
 
     public float baseStrength = 8f;
     public float maxDepth = 10f;
@@ -18,6 +18,9 @@ public class FishController : MonoBehaviour
 
     private float screenWidth = 0f;
 
+    // NEW: animator for battle animation
+    private Animator anim;
+
     void Start()
     {
         Camera cam = Camera.main;
@@ -26,6 +29,9 @@ public class FishController : MonoBehaviour
             float halfW = cam.orthographicSize * cam.aspect;
             screenWidth = halfW * 2f;
         }
+
+        // get animator
+        anim = GetComponent<Animator>();
     }
 
     void Update()
@@ -44,6 +50,19 @@ public class FishController : MonoBehaviour
     public void Hooked()
     {
         isHooked = true;
+
+        // NEW: enter battle animation
+        if (anim != null)
+            anim.SetBool("isBattle", true);
+    }
+
+    // NEW: call this when collecting or releasing
+    public void EndBattle()
+    {
+        isHooked = false;
+
+        if (anim != null)
+            anim.SetBool("isBattle", false);
     }
 
     public void ApplyPull(float pullForce)

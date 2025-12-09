@@ -329,7 +329,8 @@ public class HookController : MonoBehaviour
                 fishCtrl.catchSpeed,
                 fishCtrl.escapeSpeed
             );
-            skillFishing.StartBattle(currentLength);
+            skillFishing.StartBattle(currentLength, fishCtrl);
+
             ui.Show();
         }
         else
