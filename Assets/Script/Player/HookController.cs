@@ -38,7 +38,6 @@ public class HookController : MonoBehaviour
     private bool inputPressDown = false;
     private bool inputPressUp = false;
 
-
     void Start()
     {
         currentLength = minLength;
@@ -53,7 +52,7 @@ public class HookController : MonoBehaviour
     {
         inputPressDown = false;
         inputPressUp = false;
-        UpdateInput(); // <--- NEW
+        UpdateInput();
         RotateHead();
 
         if (!isHooking)
@@ -69,11 +68,12 @@ public class HookController : MonoBehaviour
             hookedObject.transform.rotation = hookEndPos.rotation;
         }
     }
+
     void HandleLineBreak()
     {
         Debug.Log("Line broke!");
-        //ui.ShowLineBreakEffect();   // optional
     }
+
     void RotateHead()
     {
         float angle = Mathf.Sin(Time.time * rotationSpeed) * rotationAngle;
@@ -82,10 +82,8 @@ public class HookController : MonoBehaviour
 
     void LoweringSystem()
     {
-        // Start lowering hook using Mouse or Touch or Q
         if ((inputPressDown || Input.GetKeyDown(KeyCode.Q)) && !isLowering && !isRetracting)
             isLowering = true;
-
 
         if (isLowering)
         {
@@ -117,13 +115,11 @@ public class HookController : MonoBehaviour
 
     void UpdateInput()
     {
-        // Mouse left click
         if (Input.GetMouseButtonDown(0))
             inputPressDown = true;
         if (Input.GetMouseButtonUp(0))
             inputPressUp = true;
 
-        // Touch for phone
         if (Input.touchCount > 0)
         {
             Touch t = Input.GetTouch(0);
@@ -133,13 +129,11 @@ public class HookController : MonoBehaviour
                 inputPressUp = true;
         }
 
-        // Keyboard A (fallback)
         if (Input.GetKeyDown(KeyCode.A))
             inputPressDown = true;
         if (Input.GetKeyUp(KeyCode.A))
             inputPressUp = true;
     }
-
 
     void BattleControl()
     {
@@ -148,17 +142,15 @@ public class HookController : MonoBehaviour
         var fishCtrl = hookedObject != null ? hookedObject.GetComponent<FishController>() : null;
         var objCtrl = hookedObject != null ? hookedObject.GetComponent<CaughtObjectController>() : null;
 
-        // Non-fish object handling (shoe, ball, rabbit...)
         if (objCtrl != null)
         {
             if (inputPressDown)
             {
-                currentLength -= moveSpeed * Time.deltaTime; // shorten rope
+                currentLength -= moveSpeed * Time.deltaTime;
                 currentLength = Mathf.Max(minLength, currentLength);
                 UpdateRodLength();
             }
 
-            // Check collect condition
             if (currentLength <= minLength + 0.01f)
             {
                 StartCoroutine(CollectAnimation());
@@ -167,8 +159,6 @@ public class HookController : MonoBehaviour
             return;
         }
 
-
-        // Fish battle handling
         bool pullingImpulse = inputPressDown;
         var result = skillFishing.TickBattle(pullingImpulse);
 
@@ -185,13 +175,11 @@ public class HookController : MonoBehaviour
                 result,
                 skillFishing.isHooked
             );
-            // NEW: Update fish strength bar (fish icon moves top to bottom)
-            // NEW: update fish icon position using fish health
-            ui.UpdateFishStrength(
-                skillFishing.fishHealth,       // current health value
-                skillFishing.fishMaxHealth     // the health max value
-            );
 
+            ui.UpdateFishStrength(
+                skillFishing.fishHealth,
+                skillFishing.fishMaxHealth
+            );
         }
 
         if (!skillFishing.isHooked)
@@ -204,11 +192,46 @@ public class HookController : MonoBehaviour
                 }
                 else if (result == SkillFishing.BattleResult.Lose)
                 {
-                    ReleaseObject();
+                    StartCoroutine(FishEscapeSequence(fishCtrl));
                 }
             }
         }
     }
+
+    private IEnumerator FishEscapeSequence(FishController fish)
+    {
+        isHooking = false;
+
+        yield return StartCoroutine(
+            fish.EscapeFast(
+                hookEndPos,   // pulled by fish
+                rod           // single rope being stretched
+            )
+        );
+
+        ResetLineToPlayer();
+    }
+
+
+    void ResetLineToPlayer()
+    {
+        // 1. restore parent
+        hookEndPos.SetParent(transform);
+
+        // 2. restore rope length
+        currentLength = minLength;
+        UpdateRodLength();
+
+        // 3. move hookEndPos to the bottom of the rope
+        hookEndPos.localPosition = new Vector3(0f, -currentLength, 0f);
+
+        // 4. move actual hook to hookEndPos
+        hook.position = hookEndPos.position;
+
+        // 5. reset rope rotation
+        rod.rotation = Quaternion.identity;
+    }
+
 
 
     IEnumerator CollectAnimation()
@@ -242,7 +265,7 @@ public class HookController : MonoBehaviour
 
             obj.transform.position = Vector3.Lerp(p1, p2, t);
 
-            if (isFish) // Only fish scale to zero
+            if (isFish)
             {
                 float scaleFactor = Mathf.Lerp(1f, 0f, t);
                 obj.transform.localScale = originalScale * scaleFactor;
@@ -275,7 +298,6 @@ public class HookController : MonoBehaviour
         ResetLine();
     }
 
-
     void ReleaseObject()
     {
         if (hookedObject)
@@ -296,12 +318,11 @@ public class HookController : MonoBehaviour
         UpdateRodLength();
         ui.Hide();
     }
+
     public void OnLowerStart()
     {
         if (!isLowering && !isRetracting)
-        {
             isLowering = true;
-        }
     }
 
     void UpdateRodLength()
@@ -309,14 +330,15 @@ public class HookController : MonoBehaviour
         Vector3 scale = rod.localScale;
         scale.y = currentLength;
         rod.localScale = scale;
+
         rod.localPosition = Vector3.zero;
     }
+
     void OnDestroy()
     {
         if (skillFishing != null)
             skillFishing.OnLineBreak -= HandleLineBreak;
     }
-
 
     void OnTriggerEnter2D(Collider2D other)
     {
@@ -353,15 +375,12 @@ public class HookController : MonoBehaviour
         }
         else
         {
-            // Non-fish object hooked: enable pulling by gravity + A press
-            
             if (objCtrl != null)
             {
-                objCtrl.Hooked(); // enable physics DOWN
-                isHooking = true; // allow pull control
-                ui.Hide(); // no battle bar
+                objCtrl.Hooked();
+                isHooking = true;
+                ui.Hide();
             }
         }
-
     }
 }

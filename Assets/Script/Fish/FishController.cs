@@ -1,3 +1,4 @@
+using System.Collections;
 using UnityEngine;
 
 public class FishController : MonoBehaviour
@@ -100,4 +101,35 @@ public class FishController : MonoBehaviour
         float upValue = catchSpeed * pullForce * Time.deltaTime;
         transform.position += Vector3.up * upValue;
     }
+    public IEnumerator EscapeFast(Transform hookEnd, Transform rod)
+    {
+        isHooked = false;
+
+        // Save rope original scale
+        Vector3 originalScale = rod.localScale;
+
+        // Parent rope and hook to fish so they move together
+        hookEnd.SetParent(transform);
+        rod.SetParent(transform);
+
+        float speed = escapeSpeed * 1.2f; // slower, not too fast downward
+
+        // Fish escapes DOWN until off-screen
+        while (transform.position.y > -20f)
+        {
+            transform.position += Vector3.down * speed * Time.deltaTime;
+
+            // No stretching, rope uses original length
+            rod.localScale = originalScale;
+
+            yield return null;
+        }
+
+        // After leaving screen, destroy fish
+        Destroy(gameObject);
+    }
+
+
+
+
 }
