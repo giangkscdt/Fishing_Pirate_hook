@@ -22,6 +22,10 @@ public class SkillFishing : MonoBehaviour
     private float hookTime = 0f;
     public bool isHooked = false;
     public System.Action OnLineBreak;
+    // New variables you must add inside SkillFishing:
+    public float fishMaxHealth = 100f;   // fish starting health
+    public float fishHealth = 100f;      // runtime health
+
 
 
     public void SetupFishStats(float strength, float catchS, float escapeS)
@@ -40,10 +44,11 @@ public class SkillFishing : MonoBehaviour
         reelMomentum = 0f;
 
         isHooked = true;
-
+        fishHealth = fishMaxHealth; // reset HP
         // Call the actual animation trigger function
         if (fishCtrl != null)
             fishCtrl.Hooked();
+
     }
 
 
@@ -108,6 +113,24 @@ public class SkillFishing : MonoBehaviour
             depth += escapeSpeed * Time.deltaTime;
         }
 
+        // === Apply damage to fish if player pulls correctly ===
+        // pullingImpulse means player pressed A
+        // tension inside safe range means correct pull
+
+        if (pullingImpulse && tension > minSafeTension && tension < maxSafeTension)
+        {
+            float dmg = catchSpeed * 8f;
+            fishHealth -= dmg;
+
+            // Check if fish is defeated
+            if (fishHealth <= 0f)
+            {
+                fishHealth = 0f;
+                isHooked = false;
+                return BattleResult.Win;
+            }
+        }
+
         // 6) Check win/lose by depth
         if (depth <= 0f)
         {
@@ -120,6 +143,9 @@ public class SkillFishing : MonoBehaviour
             return BattleResult.Lose;
         }
 
+       
+
+
         return BattleResult.None;
     }
     public void SetPlayerReelInput(float input)
@@ -129,11 +155,23 @@ public class SkillFishing : MonoBehaviour
 
     float ComputeFishForce(float t)
     {
+        // Base fish pulling strength
         float s = baseStrength;
 
-        if (t < 1f) return s * 1.0f;  // strong start
-        if (t < 3f) return s * 0.8f;  // easier window
-        if (t < 5f) return s * 1.1f;  // spike
-        return s * 0.5f;              // tired
+        // Health factor: fish becomes weaker when health is low
+        // Example:
+        // 100% health -> factor = 1.0
+        //  50% health -> factor = 0.5
+        //   0% health -> factor = 0.2 (still pulls a bit)
+        float healthFactor = Mathf.Clamp(fishHealth / fishMaxHealth, 0.2f, 1.0f);
+
+        // Time based pulling pattern
+        if (t < 1f) s *= 1.0f;  // strong start
+        else if (t < 3f) s *= 0.8f;  // easier window
+        else if (t < 5f) s *= 1.1f;  // power spike
+        else s *= 0.5f;  // tired after long battle
+
+        // Apply health reduction to final force
+        return s * healthFactor;
     }
 }

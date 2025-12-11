@@ -185,6 +185,13 @@ public class HookController : MonoBehaviour
                 result,
                 skillFishing.isHooked
             );
+            // NEW: Update fish strength bar (fish icon moves top to bottom)
+            // NEW: update fish icon position using fish health
+            ui.UpdateFishStrength(
+                skillFishing.fishHealth,       // current health value
+                skillFishing.fishMaxHealth     // the health max value
+            );
+
         }
 
         if (!skillFishing.isHooked)

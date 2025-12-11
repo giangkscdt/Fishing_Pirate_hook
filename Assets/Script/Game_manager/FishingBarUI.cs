@@ -55,6 +55,23 @@ public class FishingBarUI : MonoBehaviour
     // tension: current tension value
     // minSafe: tension value at 0% of bar (for example -10)
     // maxSafe: tension value at 100% of bar (for example +10)
+    // New method: update fish strength and move icon top-to-bottom
+    public void UpdateFishStrength(float strength, float maxStrength)
+    {
+        if (!isActive || fishIcon == null)
+            return;
+
+        float sNorm = Mathf.InverseLerp(0f, maxStrength, strength);
+        sNorm = Mathf.Clamp01(sNorm);
+
+        float yPos = sNorm * barHeight;
+
+        Vector2 anchored = fishIcon.anchoredPosition;
+        anchored.y = yPos;
+        fishIcon.anchoredPosition = anchored;
+    }
+
+
     public void UpdateTension(
         float tension,
         float minSafe,
@@ -85,12 +102,12 @@ public class FishingBarUI : MonoBehaviour
         backImage.fillAmount = tNorm;
 
         // Move fish icon along the bar height (bottom -> top)
-        if (fishIcon != null)
-        {
-            Vector2 anchored = fishIcon.anchoredPosition;
-            anchored.y = tNorm * barHeight;
-            fishIcon.anchoredPosition = anchored;
-        }
+        //if (fishIcon != null)
+        //{
+        //    Vector2 anchored = fishIcon.anchoredPosition;
+        //    anchored.y = tNorm * barHeight;
+        //    fishIcon.anchoredPosition = anchored;
+        //}
 
         // Color gradient for tension:
         // low = blue, medium = green/yellow, high = red
@@ -118,6 +135,7 @@ public class FishingBarUI : MonoBehaviour
         // NOTE: progressImage is not changed here.
         // You can use it later for another parameter.
     }
+
 
     public void Show()
     {

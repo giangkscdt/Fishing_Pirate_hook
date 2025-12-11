@@ -21,6 +21,29 @@ public class FishController : MonoBehaviour
     // NEW: animator for battle animation
     private Animator anim;
 
+    // ============================================================
+    // NEW: Fish health system
+    // ============================================================
+
+    public float maxHealth = 100f;   // maximum HP of this fish
+    public float health = 100f;      // runtime remaining HP
+
+    // Reduces health and clamps at 0
+    public void TakeDamage(float dmg)
+    {
+        health -= dmg;
+        if (health < 0f)
+            health = 0f;
+    }
+
+    // Returns true when HP reaches zero
+    public bool IsDead()
+    {
+        return health <= 0f;
+    }
+    // ============================================================
+
+
     void Start()
     {
         Camera cam = Camera.main;
@@ -32,6 +55,9 @@ public class FishController : MonoBehaviour
 
         // get animator
         anim = GetComponent<Animator>();
+
+        // NEW: ensure HP always starts at full
+        health = maxHealth;
     }
 
     void Update()
@@ -51,6 +77,9 @@ public class FishController : MonoBehaviour
     {
         isHooked = true;
 
+        // NEW: reset HP on hook (optional but recommended)
+        health = maxHealth;
+
         // NEW: enter battle animation
         if (anim != null)
             anim.SetBool("isBattle", true);
@@ -61,6 +90,7 @@ public class FishController : MonoBehaviour
     {
         isHooked = false;
 
+        // reset battle animation
         if (anim != null)
             anim.SetBool("isBattle", false);
     }
