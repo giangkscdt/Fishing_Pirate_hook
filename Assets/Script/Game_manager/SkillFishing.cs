@@ -21,6 +21,8 @@ public class SkillFishing : MonoBehaviour
 
     private float hookTime = 0f;
     public bool isHooked = false;
+    public System.Action OnLineBreak;
+
 
     public void SetupFishStats(float strength, float catchS, float escapeS)
     {
@@ -66,19 +68,31 @@ public class SkillFishing : MonoBehaviour
         float reelDecay = 2.0f;
         reelMomentum = Mathf.Max(0f, reelMomentum - reelDecay * Time.deltaTime);
 
-        // 3) Player force (limit max)
-        playerForce = Mathf.Clamp(reelMomentum, 0f, maxSafeTension * 0.9f);
+        // 3) Player force can exceed the safe tension a little.
+        // This allows the player to break the line by pulling too much.
+        playerForce = Mathf.Clamp(reelMomentum, 0f, maxSafeTension * 1.2f);
+
 
         // 4) Fish force
         fishForce = ComputeFishForce(hookTime);
-        tension = playerForce - fishForce;
+        // Combined tension model: both fish force and player force stress the line.
+        // Using Abs makes sure direction does not matter.
+        tension = Mathf.Abs(playerForce + fishForce);
+
 
         // >>> NEW: Instant lose if tension exceeds max safe tension <<<
         if (tension > maxSafeTension)
         {
             isHooked = false;
+
+            // Fire line break event
+            if (OnLineBreak != null)
+                OnLineBreak();
+
             return BattleResult.Lose;
         }
+
+
 
         // 5) Depth update rules
         if (playerForce <= 0.1f)

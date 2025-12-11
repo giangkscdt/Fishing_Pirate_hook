@@ -43,6 +43,7 @@ public class HookController : MonoBehaviour
     {
         currentLength = minLength;
         UpdateRodLength();
+        skillFishing.OnLineBreak += HandleLineBreak;
 
         if (scoreText != null)
             scoreText.text = score.ToString();
@@ -68,7 +69,11 @@ public class HookController : MonoBehaviour
             hookedObject.transform.rotation = hookEndPos.rotation;
         }
     }
-
+    void HandleLineBreak()
+    {
+        Debug.Log("Line broke!");
+        //ui.ShowLineBreakEffect();   // optional
+    }
     void RotateHead()
     {
         float angle = Mathf.Sin(Time.time * rotationSpeed) * rotationAngle;
@@ -299,6 +304,12 @@ public class HookController : MonoBehaviour
         rod.localScale = scale;
         rod.localPosition = Vector3.zero;
     }
+    void OnDestroy()
+    {
+        if (skillFishing != null)
+            skillFishing.OnLineBreak -= HandleLineBreak;
+    }
+
 
     void OnTriggerEnter2D(Collider2D other)
     {
